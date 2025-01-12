@@ -5,17 +5,14 @@ https://www.youtube.com/watch?v=CesC-FaUT38
 // 폰트 //
 
 후보
-Krub
-Montserrat Subrayada
-Moul
-Niagara Solid
-Nico Moji
+Montserrat Subrayada https://fonts.google.com/specimen/Montserrat+Subrayada
 
 유력
-Nova Flat
-Odibee Sans
-Onyx
-Orbitron
+Space Grotesk https://fonts.google.com/specimen/Space+Grotesk?query=space
+Nova Flat https://fonts.google.com/specimen/Nova+Flat
+Odibee Sans https://fonts.google.com/specimen/Odibee+Sans
+Space Mono https://fonts.google.com/specimen/Space+Mono?query=space
+Orbitron https://fonts.google.com/?query=Orbitron
 
 // 행성 정보 //
 1. Mecury  /////////////////////////////////////////////
