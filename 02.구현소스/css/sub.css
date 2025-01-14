@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url(./inc.css);
+@import url(./reset.css);
+@import url(./variables.css);
+body {
+  background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
+}
+body .spin-box {
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: -1;
+}
+body .spin-box span {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+body .first-area {
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .first-area div {
+  display: flex;
+  height: 35vh;
+  width: 55%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+body .first-area div h1 {
+  font-size: 6vw;
+}
+body .first-area div p {
+  width: 50vw;
+  font-size: 1.7vw;
+}
+body .introduction-area {
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .introduction-area div {
+  display: flex;
+  height: 35vh;
+  width: 55%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+body .introduction-area div h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+}
+body .introduction-area div p {
+  width: 50vw;
+  font-size: 1.7vw;
+}
+body .Namesake-area {
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .Namesake-area div {
+  display: flex;
+  height: 35vh;
+  width: 55%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+body .Namesake-area div h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+}
+body .Namesake-area div p {
+  width: 50vw;
+  font-size: 1.7vw;
+}
+body .potential-area {
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6vw;
+}
+body .potential-area div {
+  display: flex;
+  height: 45vh;
+  width: 55%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+body .potential-area div h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 6vw;
+}
+body .potential-area div p {
+  width: 50vw;
+  font-size: 1.7vw;
+}
+body .Structure-area {
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6vw;
+}
+body .Structure-area div {
+  display: flex;
+  height: 40vh;
+  width: 55%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+body .Structure-area div h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 6vw;
+}
+body .Structure-area div p {
+  width: 50vw;
+  font-size: 1.4vw;
+}
+body .gallery {
+  /* 타이틀 */
+  /* 그리드박스 */
+  /* 그리드 각 박스 공통 */
+  /* 이미지 공통 셋팅 */
+  /* 
+      [ 개별적 변경하기 - 그리드 위치와 크기 변경 ]
+      방법) 개별요소에 column과 row의 시작/끝번호를 지정함
+
+      grid-column: 시작번호/끝번호
+      grid-row: 시작번호/끝번호
+  */
+  /* 그리드 구성박스 변경주기 */
+}
+body .gallery h2 {
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: max(4vw, 54px);
+}
+body .gallery .grid {
+  display: grid;
+  /* 박스중앙위치 및 최대크기설정 */
+  max-width: 1300px;
+  margin: 0 auto;
+  outline: 2px dashed lightcoral;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: min(1.5vw, 15px) min(1vw, 10px);
+}
+body .gallery .grid > div {
+  position: relative;
+  /* 부모자격 */
+  /* 가로/세로 비율속성 */
+  aspect-ratio: 1/1;
+}
+body .gallery .grid img {
+  width: 100%;
+  height: 100%;
+  /* 이미지를 배경처럼 박스에서
+          일정부분을 자르고 채우기 */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* object-fit설정시 이미지 위치기준변경
+          상단기준으로 변경 */
+  -o-object-position: top;
+     object-position: top;
+  /* 블록박스 이미지 하단간극 없애기 */
+  vertical-align: middle;
+}
+body .gallery .second {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}/*# sourceMappingURL=sub.css.map */

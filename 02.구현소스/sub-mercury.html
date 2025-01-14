@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 탭 아이콘 셋팅 -->
+    <title>Mercury</title>
+
+    <!-- 서브 SCSS -->
+    <link rel="stylesheet" href="./css/sub.css" />
+
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- 제이쿼리UI -->
+    <script src="./js/jquery-ui.min.js"></script>
+
+    <!-- 메인 JS 불러오기 -->
+    <script type="module" src="./js/sub.js"></script>
+  </head>
+  <body>
+    <!-- [ 메인영역 ] -->
+    <main class="s-main-area">
+      <!-- 행성 -->
+      <div class="spin-box">
+        <span>
+          <img src="./images/sub/1_Mercury/mercury_1.png" alt="" />
+        </span>
+      </div>
+      <!-- 1. 첫 컨텐츠 영역 -->
+      <section class="first-area">
+        <!-- 1) 행성 정보 -->
+        <div class="desc-box">
+          <!-- 1-1) 타이틀 -->
+          <div class="desc-tit">
+            <h1>MERCURY</h1>
+          </div>
+          <!-- 1-2) 설명 -->
+          <div class="desc-desc">
+            <p>
+              The smallest planet in our solar system and nearest to the Sun,<br />
+              Mercury is only slightly larger than Earth's Moon.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--2. introduction 영역 -->
+      <section class="introduction-area">
+        <!-- 1) 행성 정보 -->
+        <div class="desc-box">
+          <!-- 1-1) 타이틀 -->
+          <div class="desc-tit">
+            <h2>introduction</h2>
+          </div>
+          <!-- 1-2) 설명 -->
+          <div class="desc-desc">
+            <p>
+              surface temperatures : 800°F(430°C) ~ -290°F(-180°C) <br />
+              the fastest planet, zipping around the Sun every 88 Earth days.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--3. Namesake 영역 -->
+      <section class="Namesake-area">
+        <!-- 1) 행성 정보 -->
+        <div class="desc-box">
+          <!-- 1-1) 타이틀 -->
+          <div class="desc-tit">
+            <h2>Namesake</h2>
+          </div>
+          <!-- 1-2) 설명 -->
+          <div class="desc-desc">
+            <p>named for the swiftest of the ancient Roman gods.</p>
+          </div>
+        </div>
+      </section>
+      <!--4. Potential for Life 영역 -->
+      <section class="potential-area">
+        <!-- 1) 행성 정보 -->
+        <div class="desc-box">
+          <!-- 1-1) 타이틀 -->
+          <div class="desc-tit">
+            <h2>Potential for Life</h2>
+          </div>
+          <!-- 1-2) 설명 -->
+          <div class="desc-desc">
+            <p>
+              Mercury's environment is not conducive to life as we know it. The
+              temperatures and solar radiation that characterize this planet are
+              most likely too extreme for organisms to adapt to.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--5. Structure 영역 -->
+      <section class="Structure-area">
+        <!-- 1) 행성 정보 -->
+        <div class="desc-box">
+          <!-- 1-1) 타이틀 -->
+          <div class="desc-tit">
+            <h2>Structure</h2>
+          </div>
+          <!-- 1-2) 설명 -->
+          <div class="desc-desc">
+            <p>
+              Mercury is the second densest planet, after Earth. It has a large
+              metallic core with a radius of about 1,289 miles (2,074
+              kilometers), about 85% of the planet's radius. There is evidence
+              that it is partly molten or liquid. Mercury's outer shell,
+              comparable to Earth's outer shell (called the mantle and crust),
+              is only about 400 kilometers (250 miles) thick.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- 갤러리 영역 -->
+      <section class="gallery">
+        <h2 class="gallery-tit">gellery of mercury</h2>
+        <!-- 그리드 레이아웃박스 -->
+        <div class="grid"></div>
+        <script>
+          let hCode = "";
+          for (let i = 1; i <= 7; i++) {
+            hCode += `
+              <div>
+                <img src="./images/sub/1_mercury/${i}.jpg" alt="planet">
+              </div>
+            `;
+          } ///// for //////
+    
+          // .grid에 요소출력
+          document.querySelector(
+            ".grid"
+          ).innerHTML = hCode;
+        </script>
+      </section>
+    </main>
+  </body>
+</html>
