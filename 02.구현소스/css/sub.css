@@ -201,7 +201,6 @@ body .gallery {
   /* 타이틀 */
   /* 그리드박스 */
   /* 그리드 각 박스 공통 */
-  /* 이미지 공통 셋팅 */
   /* 
       [ 개별적 변경하기 - 그리드 위치와 크기 변경 ]
       방법) 개별요소에 column과 row의 시작/끝번호를 지정함
@@ -228,24 +227,28 @@ body .gallery .grid {
   grid-gap: min(1.5vw, 15px) min(1vw, 10px);
 }
 body .gallery .grid > div {
-  position: relative;
   /* 부모자격 */
-  /* 가로/세로 비율속성 */
-  aspect-ratio: 1/1;
+  position: relative;
+  /* 이미지 공통 셋팅 */
 }
-body .gallery .grid img {
+body .gallery .grid > div:nth-child(2) {
+  grid-area: 1/2/2/4;
+}
+body .gallery .grid > div img {
   width: 100%;
   height: 100%;
   /* 이미지를 배경처럼 박스에서
-          일정부분을 자르고 채우기 */
+  일정부분을 자르고 채우기 */
   -o-object-fit: cover;
      object-fit: cover;
   /* object-fit설정시 이미지 위치기준변경
-          상단기준으로 변경 */
+  상단기준으로 변경 */
   -o-object-position: top;
      object-position: top;
   /* 블록박스 이미지 하단간극 없애기 */
   vertical-align: middle;
+  /* 가로/세로 비율속성 */
+  aspect-ratio: 1/1;
 }
 body .gallery .second {
   grid-column: 1/1;
