@@ -1,14 +1,17 @@
 // 헤더, 푸터 //
-@import url(./inc.css);
+@import "./inc";
 // 리셋 //
-@import url(./reset.css);
+@import "./reset";
 // 폰트 //
-@import url(./variables.css);
+@import "./variables";
+
+@import 'https://fonts.googleapis.com/css2?family=Orbitron&display=swap';
 
 // 메인영역 //
 ////// 포지션 fixed 구역시작 ///////
 body {
   background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
+  font-family: $font-set;
 
   .spin-box {
     position: fixed;
