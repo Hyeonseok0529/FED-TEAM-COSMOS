@@ -4,8 +4,9 @@
 @import "./reset";
 // 폰트 //
 @import "./variables";
-
-@import 'https://fonts.googleapis.com/css2?family=Orbitron&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
+// 쿼리 //
+@import "./sub-query";
 
 // 메인영역 //
 ////// 포지션 fixed 구역시작 ///////
@@ -29,7 +30,33 @@ body {
   }
   ////// 포지션 fixed 구역끝 ///////
 
-  // 첫 컨텐츠 영역 //
+  @mixin flex-set {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    width: 55%;
+  }
+
+  @mixin query-set {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+    div {
+      width: 100%;
+      align-items: center;
+      h2 {
+        line-height: 6rem;
+      }
+      p {
+        width: 80%;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // 첫 컨텐츠 영역 ////////////////////////////////////////////////////////////////////////
   .first-area {
     color: #fff;
     display: flex;
@@ -37,13 +64,16 @@ body {
     justify-content: flex-end;
     align-items: center;
     div {
-      display: flex;
       height: 35vh;
-      width: 55%;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      justify-content: flex-start;
+      /* 믹스인 사용으로 인한 주석 */
+      // display: flex;
+      // width: 55%;
+      // align-items: flex-start;
+      // flex-direction: column;
+      // justify-content: center;
+      // justify-content: flex-start;
+
+      @include flex-set();
       h1 {
         font-size: 6vw;
       }
@@ -54,21 +84,23 @@ body {
     }
   }
 
-  // introduction 영역 //
+  // 첫 컨텐츠 영역 미디어쿼리 //
+  @include tablet-medium {
+    .spin-box {
+      justify-content: center;
+      top: -10rem;
+    }
+    .first-area {
+      @include query-set();
+    }
+  }
+
+  // introduction 영역 //////////////////////////////////////////////////////////////
   .introduction-area {
-    color: #fff;
-    display: flex;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: center;
+    @extend .first-area;
     div {
-      display: flex;
       height: 35vh;
-      width: 55%;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      justify-content: flex-start;
+      @include flex-set();
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -79,22 +111,19 @@ body {
       }
     }
   }
+  // introduction 영역 미디어쿼리 //
+  @include tablet-medium {
+    .introduction-area {
+      @include query-set();
+    }
+  }
 
-  // Namesake 영역 //
+  // Namesake 영역 //////////////////////////////////////////////////////////////
   .Namesake-area {
-    color: #fff;
-    display: flex;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: center;
+    @extend .first-area;
     div {
-      display: flex;
       height: 35vh;
-      width: 55%;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      justify-content: flex-start;
+      @include flex-set();
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -105,27 +134,29 @@ body {
       }
     }
   }
+  // Namesake 영역 미디어쿼리 //
+  @include tablet-medium {
+    .Namesake-area {
+      @include query-set();
+      text-align: center;
+    }
+  }
 
-  @mixin common-box{
+  @mixin common-box {
     display: flex;
     height: 100vh;
     justify-content: flex-start;
     align-items: center;
     margin-left: 6vw;
+    color: #fff;
   }
 
-  // potential for life 영역 //
+  // potential for life 영역 //////////////////////////////////////////////////////////////
   .potential-area {
-    color: #fff;
     @include common-box;
     div {
-      display: flex;
       height: 45vh;
-      width: 55%;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      justify-content: flex-start;
+      @include flex-set();
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -137,22 +168,20 @@ body {
       }
     }
   }
-  // Structure 영역 //
+  // potential for life 영역 미디어쿼리 //
+  @include tablet-medium {
+    .potential-area {
+      @include query-set();
+    }
+  }
+
+  // Structure 영역 ////////////////////////////////////////////////////////////////
   .Structure-area {
-    color: #fff;
-    display: flex;
-    height: 100vh;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 6vw;
+    @include common-box;
+    margin-bottom: 30rem;
     div {
-      display: flex;
       height: 40vh;
-      width: 55%;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      justify-content: flex-start;
+      @include flex-set();
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -165,10 +194,18 @@ body {
     }
   }
 
+  // Structure 영역 미디어쿼리 //
+  @include tablet-medium {
+    .Structure-area {
+      @include query-set();
+    }
+  }
+
+  // gallery 영역 //////////////////////////////////////////
   .gallery {
     /* 타이틀 */
     h2 {
-      margin-bottom: 2vh;
+      margin-bottom: 10vh;
       text-transform: uppercase;
       color: #fff;
       text-align: center;
@@ -181,7 +218,7 @@ body {
       /* 박스중앙위치 및 최대크기설정 */
       max-width: 1300px;
       margin: 0 auto;
-      outline: 2px dashed lightcoral;
+      // outline: 2px dashed lightcoral;
 
       grid-template-columns: repeat(3, 1fr);
 
@@ -191,8 +228,17 @@ body {
     .grid > div {
       /* 부모자격 */
       position: relative;
-      &:nth-child(2){
+      &:nth-child(2) {
         grid-area: 1 / 2 / 2 / 4;
+        aspect-ratio: 2 / 1;
+      }
+      &:nth-child(3) {
+        grid-area: 2 / 1 / 2 / 3;
+        aspect-ratio: 2 / 1;
+      }
+      &:nth-child(6) {
+        grid-area: 4 / 2 / 3 / 4;
+        aspect-ratio: 2 / 1;
       }
       /* 이미지 공통 셋팅 */
       img {
@@ -221,7 +267,46 @@ body {
     /* 그리드 구성박스 변경주기 */
     .second {
       grid-column: 1 / 1;
-      grid-row: 1 / 1 ;
+      grid-row: 1 / 1;
+    }
+  }
+
+  // gallery 서브메뉴 //
+  .gallery-smenu {
+    position: fixed;
+    z-index: -1;
+    background-color: #000000a2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    > button {
+      position: fixed;
+      top: 11vh;
+      right: 14vh;
+      border-radius: 50%;
+    }
+    .smenu-contbox {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-flex {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      .smenu-imgbox {
+        display: flex;
+        overflow: hidden;
+        width: 70%;
+        justify-content: center;
+      }
+      .smenu-imgbox > img {
+        object-fit: cover;
+      }
     }
   }
 }
