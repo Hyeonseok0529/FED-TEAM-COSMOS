@@ -5,6 +5,8 @@
 // 변경대상: .smenu-contbox img
 const $smenuImg = $(".smenu-contbox");
 const $smenuImgbox = $(".smenu-imgbox");
+const $gallerySmenu = $(".gallery-smenu");
+const $closeBtn = $(".close");
 
 // 닫기버튼 셋팅
 // $(".close").click(() => $(".gallery-smenu").fadeOut());
@@ -17,6 +19,10 @@ let currImg = $(this).attr("src");/* .find(''); */
 console.log(currImg)
 
 // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
-$smenuImgbox.html(`<img src="${currImg}" alt="이미지"></img>`);
+$smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
 
+// 3. 상세이미지 보기 박스 보이기
+$gallerySmenu.fadeIn(300);
 }) ///// click /////
+
+$closeBtn.click(()=>$gallerySmenu.fadeOut(300));

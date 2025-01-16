@@ -311,7 +311,16 @@ body .gallery .grid {
 body .gallery .grid > div {
   /* 부모자격 */
   position: relative;
+  box-shadow: 0 0 5px aqua;
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 10px;
   /* 이미지 공통 셋팅 */
+}
+body .gallery .grid > div:hover {
+  box-shadow: 0 0 30px aqua;
+  translate: -1% -1%;
+  z-index: 9;
 }
 body .gallery .grid > div:nth-child(2) {
   grid-area: 1/2/2/4;
@@ -347,12 +356,13 @@ body .gallery .second {
 }
 body .gallery-smenu {
   position: fixed;
-  z-index: -1;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.6352941176);
   height: 100%;
   width: 100%;
   top: 0;
   padding: 0;
+  display: none;
 }
 body .gallery-smenu > button {
   position: fixed;

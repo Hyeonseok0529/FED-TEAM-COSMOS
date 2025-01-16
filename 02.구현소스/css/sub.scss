@@ -228,6 +228,15 @@ body {
     .grid > div {
       /* 부모자격 */
       position: relative;
+      box-shadow: 0 0 5px aqua;
+      transition: .3s;
+      overflow: hidden;
+        border-radius: 10px;
+      &:hover{
+        box-shadow: 0 0 30px aqua;
+        translate: -1% -1%;
+        z-index: 9;
+      }
       &:nth-child(2) {
         grid-area: 1 / 2 / 2 / 4;
         aspect-ratio: 2 / 1;
@@ -274,12 +283,13 @@ body {
   // gallery 서브메뉴 //
   .gallery-smenu {
     position: fixed;
-    z-index: -1;
+    z-index: 9999;
     background-color: #000000a2;
     height: 100%;
     width: 100%;
     top: 0;
     padding: 0;
+    display: none;
     > button {
       position: fixed;
       top: 11vh;
