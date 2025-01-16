@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 도깨비 PJ : 리셋 CSS - reset.css */
 /* 기본 초기화 셋팅 */
-@import 'https://fonts.googleapis.com/css2?family=Orbitron&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
 html, body {
   overflow-x: hidden;
 }
@@ -74,44 +74,60 @@ body .spin-box span {
   width: 50%;
   justify-content: center;
 }
-body .first-area {
+body .first-area, body .Namesake-area, body .introduction-area {
   color: #fff;
   display: flex;
   height: 100vh;
   justify-content: flex-end;
   align-items: center;
 }
-body .first-area div {
-  display: flex;
+body .first-area div, body .Namesake-area div, body .introduction-area div {
   height: 35vh;
-  width: 55%;
+  /* 믹스인 사용으로 인한 주석 */
+  display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
+  width: 55%;
 }
-body .first-area div h1 {
+body .first-area div h1, body .Namesake-area div h1, body .introduction-area div h1 {
   font-size: 6vw;
 }
-body .first-area div p {
+body .first-area div p, body .Namesake-area div p, body .introduction-area div p {
   width: 50vw;
   font-size: 1.7vw;
 }
-body .introduction-area {
-  color: #fff;
-  display: flex;
-  height: 100vh;
-  justify-content: flex-end;
-  align-items: center;
+@media (max-width: 1000px) {
+  body .spin-box {
+    justify-content: center;
+    top: -10rem;
+  }
+  body .first-area, body .Namesake-area, body .introduction-area {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  body .first-area div, body .Namesake-area div, body .introduction-area div {
+    width: 100%;
+    align-items: center;
+  }
+  body .first-area div h2, body .Namesake-area div h2, body .introduction-area div h2 {
+    line-height: 6rem;
+  }
+  body .first-area div p, body .Namesake-area div p, body .introduction-area div p {
+    width: 80%;
+    font-size: 1.3rem;
+  }
 }
 body .introduction-area div {
-  display: flex;
   height: 35vh;
-  width: 55%;
+  display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
+  width: 55%;
 }
 body .introduction-area div h2 {
   font-size: 6vw;
@@ -121,21 +137,32 @@ body .introduction-area div p {
   width: 50vw;
   font-size: 1.7vw;
 }
-body .Namesake-area {
-  color: #fff;
-  display: flex;
-  height: 100vh;
-  justify-content: flex-end;
-  align-items: center;
+@media (max-width: 1000px) {
+  body .introduction-area {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  body .introduction-area div {
+    width: 100%;
+    align-items: center;
+  }
+  body .introduction-area div h2 {
+    line-height: 6rem;
+  }
+  body .introduction-area div p {
+    width: 80%;
+    font-size: 1.3rem;
+  }
 }
 body .Namesake-area div {
-  display: flex;
   height: 35vh;
-  width: 55%;
+  display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
+  width: 55%;
 }
 body .Namesake-area div h2 {
   font-size: 6vw;
@@ -145,22 +172,41 @@ body .Namesake-area div p {
   width: 50vw;
   font-size: 1.7vw;
 }
+@media (max-width: 1000px) {
+  body .Namesake-area {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+  }
+  body .Namesake-area div {
+    width: 100%;
+    align-items: center;
+  }
+  body .Namesake-area div h2 {
+    line-height: 6rem;
+  }
+  body .Namesake-area div p {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+}
 body .potential-area {
-  color: #fff;
   display: flex;
   height: 100vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
+  color: #fff;
 }
 body .potential-area div {
-  display: flex;
   height: 45vh;
-  width: 55%;
+  display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
+  width: 55%;
 }
 body .potential-area div h2 {
   font-size: 6vw;
@@ -171,22 +217,41 @@ body .potential-area div p {
   width: 50vw;
   font-size: 1.7vw;
 }
+@media (max-width: 1000px) {
+  body .potential-area {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  body .potential-area div {
+    width: 100%;
+    align-items: center;
+  }
+  body .potential-area div h2 {
+    line-height: 6rem;
+  }
+  body .potential-area div p {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+}
 body .Structure-area {
-  color: #fff;
   display: flex;
   height: 100vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
+  color: #fff;
+  margin-bottom: 30rem;
 }
 body .Structure-area div {
-  display: flex;
   height: 40vh;
-  width: 55%;
+  display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
+  width: 55%;
 }
 body .Structure-area div h2 {
   font-size: 6vw;
@@ -196,6 +261,24 @@ body .Structure-area div h2 {
 body .Structure-area div p {
   width: 50vw;
   font-size: 1.4vw;
+}
+@media (max-width: 1000px) {
+  body .Structure-area {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  body .Structure-area div {
+    width: 100%;
+    align-items: center;
+  }
+  body .Structure-area div h2 {
+    line-height: 6rem;
+  }
+  body .Structure-area div p {
+    width: 80%;
+    font-size: 1.3rem;
+  }
 }
 body .gallery {
   /* 타이틀 */
@@ -211,7 +294,7 @@ body .gallery {
   /* 그리드 구성박스 변경주기 */
 }
 body .gallery h2 {
-  margin-bottom: 2vh;
+  margin-bottom: 10vh;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -222,7 +305,6 @@ body .gallery .grid {
   /* 박스중앙위치 및 최대크기설정 */
   max-width: 1300px;
   margin: 0 auto;
-  outline: 2px dashed lightcoral;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: min(1.5vw, 15px) min(1vw, 10px);
 }
@@ -233,6 +315,15 @@ body .gallery .grid > div {
 }
 body .gallery .grid > div:nth-child(2) {
   grid-area: 1/2/2/4;
+  aspect-ratio: 2/1;
+}
+body .gallery .grid > div:nth-child(3) {
+  grid-area: 2/1/2/3;
+  aspect-ratio: 2/1;
+}
+body .gallery .grid > div:nth-child(6) {
+  grid-area: 4/2/3/4;
+  aspect-ratio: 2/1;
 }
 body .gallery .grid > div img {
   width: 100%;
@@ -253,4 +344,42 @@ body .gallery .grid > div img {
 body .gallery .second {
   grid-column: 1/1;
   grid-row: 1/1;
+}
+body .gallery-smenu {
+  position: fixed;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6352941176);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 0;
+}
+body .gallery-smenu > button {
+  position: fixed;
+  top: 11vh;
+  right: 14vh;
+  border-radius: 50%;
+}
+body .gallery-smenu .smenu-contbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .gallery-smenu .img-flex {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+body .gallery-smenu .img-flex .smenu-imgbox {
+  display: flex;
+  overflow: hidden;
+  width: 70%;
+  justify-content: center;
+}
+body .gallery-smenu .img-flex .smenu-imgbox > img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=sub.css.map */
