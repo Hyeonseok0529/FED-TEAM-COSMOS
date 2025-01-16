@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* 보그 PJ 리셋 CSS - _reset.scss */
+/* 요소의 초기화 */
+/* 루트 글자크기 */
+html {
+  font-size: 10px;
+}
+
+/* 1. 마진,패딩 없애기 */
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dt, dd, p, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* 가로스크롤 생김 방지!(특히 모바일) */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 2. a요소 리셋 */
+a {
+  color: #000;
+  /* 글자색 */
+  text-decoration: none;
+  /* 밑줄없앰 */
+}
+
+/* 3. ul,ol 리셋 */
+ul, ol {
+  list-style: none;
+  /* 블릿/숫자 제거 */
+}
+
+/* 4. h요소 글자크기 리셋 */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  /* html의 기본글자크기(16px)와 일치 초기화 */
+}
+
+/* 5. 이미지 리셋 */
+img {
+  border: none;
+  /* 이미지 링크시 서버에서 볼때 파란색 자동보더 없애기 */
+  vertical-align: bottom;
+  /* 박스 이미지 하단간극 없애기(약4px)
+  값으로 top, middle등 도 효과있음! */
+}
+
+@media (min-width: 1160px) {
+  #header {
+    background-color: #000;
+  }
+  #header .top-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  #header .top-area .logo img {
+    width: 200px;
+  }
+  #header .top-area .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .top-area .header-nav ul li {
+    padding: 30px;
+  }
+  #header .top-area .header-nav ul li a {
+    color: #fff;
+    font-size: 17px;
+  }
+  #header .top-area .util-wrap {
+    width: 150px;
+  }
+  #header .top-area .util-wrap ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+  #header .top-area .util-wrap ul li img {
+    width: 30px;
+  }
+  #footer {
+    height: 100%;
+    background-color: #000;
+  }
+  #footer .bottom-area {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .top-con {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .bottom-logo img {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li {
+    width: 47px;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li img {
+    width: 100%;
+  }
+  #footer .bottom-area .bottom-nav {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  #footer .bottom-area .bottom-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .bottom-nav ul li a {
+    color: #589fe2;
+    font-size: 14px;
+  }
+  #footer .bottom-area .info {
+    padding-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: #9f9f9f;
+  }
+}
+.main-section {
+  height: 100vw;
+  width: 100vw;
+  border: 1px dotted #000;
+  background-color: #808080;
+}/*# sourceMappingURL=main.css.map */

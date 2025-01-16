@@ -1,0 +1,10 @@
+@import "./common/reset";
+@import "./common/core";
+@import "./common/inc";
+
+.main-section{
+    height: 100vw;
+    width: 100vw;
+    border: 1px dotted #000;
+    background-color: #808080;
+}
