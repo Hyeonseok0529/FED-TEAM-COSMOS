@@ -1,9 +1,18 @@
 @import "./common/reset";
 @import "./common/core";
 @import "./common/inc";
+@import "./common/t-inc";
+@import "./common/m-inc";
 
-.main-section{
-    height: 100vh;
-    // border: 1px dotted #ffffff;
-    background-color: #6e6e6e;
+.main-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #060408;
+  img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1600px;
+  }
 }
