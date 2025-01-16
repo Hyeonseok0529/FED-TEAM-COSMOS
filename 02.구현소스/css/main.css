@@ -46,9 +46,13 @@ img {
   값으로 top, middle등 도 효과있음! */
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1150px) {
   #header {
-    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(66, 66, 66, 0.5) 100%);
+    transition: 0.5s;
   }
   #header .top-area {
     display: flex;
@@ -60,17 +64,30 @@ img {
   #header .top-area .logo img {
     width: 200px;
   }
+  #header .top-area .header-nav {
+    position: relative;
+    display: flex;
+  }
   #header .top-area .header-nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   #header .top-area .header-nav ul li {
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 30px;
   }
   #header .top-area .header-nav ul li a {
     color: #fff;
     font-size: 17px;
+  }
+  #header .top-area .header-nav ul li:hover {
+    background-color: #fff;
+  }
+  #header .top-area .header-nav ul li:hover a {
+    color: #10244c !important;
   }
   #header .top-area .util-wrap {
     width: 150px;
@@ -84,9 +101,20 @@ img {
   #header .top-area .util-wrap ul li img {
     width: 30px;
   }
+  #header:hover {
+    background: none;
+    background-color: #10244c;
+  }
+  #header:hover a {
+    color: #ebebeb !important;
+  }
+  #header.active {
+    transform: translateY(-100%);
+  }
   #footer {
     height: 100%;
     background-color: #000;
+    border-top: 1px solid #a8a8a8;
   }
   #footer .bottom-area {
     max-width: 1000px;
@@ -143,8 +171,6 @@ img {
   }
 }
 .main-section {
-  height: 100vw;
-  width: 100vw;
-  border: 1px dotted #000;
-  background-color: #808080;
+  height: 100vh;
+  background-color: #6e6e6e;
 }/*# sourceMappingURL=main.css.map */

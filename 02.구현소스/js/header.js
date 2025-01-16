@@ -1,22 +1,18 @@
-// // 상단 네비 스크롤 시
-// const header = document.getElementById("header");
+const head = document.getElementById("header");
 
-// let pos = { y: 0, y2: 0, status: true };
-// window.addEventListener("scroll", function () {
-//   pos.y = window.pageYOffset;
+let pos = { y: 0, y2: 0, status: true };
 
-//   //삼항연산자
-//   pos.status = pos.y > pos.y2 ? true : false;
+window.addEventListener("scroll", function () {
+  pos.y = window.pageYOffset;
 
-//   pos.y2 = pos.y;
+  //삼항연산자
+  pos.status = pos.y > pos.y2 ? true : false;
 
-//   if (pos.status) {
-//     header.classList.add("active");
-//     header.classList.add("active2");
-//   } else {
-//     header.classList.remove("active");
-//     if (pos.y === 0) {
-//       header.classList.remove("active2");
-//     }
-//   }
-// });
+  pos.y2 = pos.y;
+
+  if (pos.status) {
+    head.classList.add("active");
+  } else {
+    head.classList.remove("active");
+  }
+});
