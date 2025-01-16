@@ -1,7 +1,8 @@
-// 헤더, 푸터 //
-@import "./inc";
 // 리셋 //
 @import "./common/reset";
+@import "./common/core";
+// 헤더, 푸터 //
+@import "./common/inc";
 // 폰트 //
 @import "./variables";
 @import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
