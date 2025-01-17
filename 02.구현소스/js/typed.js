@@ -108,7 +108,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    /**
 	     * Stop typing / backspacing and enable cursor blinking
 	     * @public
-	     */
+	     */^100
 	  }, {
 	    key: 'stop',
 	    value: function stop() {

@@ -38,7 +38,11 @@
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h1>MERCURY</h1>
+            <h1>
+              <span id="typed2" style="white-space: pre"></span>
+              <!-- MERCURY -->
+            </h1>
+            
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
@@ -54,28 +58,7 @@
             </p>
           </div>
         </div>
-        <script>
-          function setTyped(sName, sCont, spVal) {
-            new Typed(sName, {
-              strings: sCont,
-              // ^숫자 - 대기시간(1/1000초), \n - 줄바꿈
-              // 타이핑스피드
-              typeSpeed: spVal,
-              // 지우기스피드
-              backSpeed: 0,
-              // 반복여부(true/false)
-              loop: false,
-              startDelay: 2000,
-            }); ////// typed /////////////
-          }
-          // typed 플러그인 적용하기!
-          setTyped("#typed1",[
-                `The smallest planet in our solar system and^1000\n nearest to the Sun,^1000\n Mercury is only slightly ^1000\nlarger than Earth's Moon.`,
-              ],60);
-          setTyped("#typed2",[
-                `gggggggg\n gggggggggggggggg`,
-              ],100);
-        </script>
+
       </section>
       <!--2. introduction 영역 -->
       <section class="introduction-area">

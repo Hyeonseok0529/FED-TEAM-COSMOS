@@ -481,7 +481,7 @@ body .first-area div p, body .Namesake-area div p, body .introduction-area div p
   }
   body .first-area div p, body .Namesake-area div p, body .introduction-area div p {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 }
 body .introduction-area div {
@@ -516,7 +516,7 @@ body .introduction-area div p {
   }
   body .introduction-area div p {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 }
 body .Namesake-area div {
@@ -552,7 +552,7 @@ body .Namesake-area div p {
   }
   body .Namesake-area div p {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 }
 body .potential-area {
@@ -596,7 +596,7 @@ body .potential-area div p {
   }
   body .potential-area div p {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 }
 body .Structure-area {
@@ -641,7 +641,7 @@ body .Structure-area div p {
   }
   body .Structure-area div p {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 }
 body .gallery {

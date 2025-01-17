@@ -26,3 +26,27 @@ $gallerySmenu.fadeIn(300);
 }) ///// click /////
 
 $closeBtn.click(()=>$gallerySmenu.fadeOut(300));
+
+function setTyped(sName, sCont, spVal) {
+  new Typed(sName, {
+    strings: sCont,
+    // ^숫자 - 대기시간(1/1000초), \n - 줄바꿈
+    // 타이핑스피드
+    typeSpeed: spVal,
+    // 지우기스피드
+    backSpeed: 0,
+    // 반복여부(true/false)
+    loop: false,
+    startDelay: 2000,
+  }); ////// typed /////////////
+}
+// typed 플러그인 적용하기!
+setTyped("#typed1",[
+      `^1000The smallest planet in our solar system and^100\n nearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.`,
+    ],8);
+setTyped("#typed2",[
+    `Mercury`
+    ],40);
+// setTyped("#typed2",[
+//       `gggggggg\n gggggggggggggggg`,
+//     ],100);
