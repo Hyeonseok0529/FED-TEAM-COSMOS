@@ -60,6 +60,33 @@ setTyped(
   ],
   8
 );
+// 3. Namesake 파트
+setTyped("#typed5", [`Namesake`], 40);
+setTyped(
+  "#typed6",
+  [
+    `^1000named for the swiftest of the ancient Roman gods.`,
+  ],
+  8
+);
+// 4. Potential for Life 파트
+setTyped("#typed7", [`Potential for Life`], 40);
+setTyped(
+  "#typed8",
+  [
+    `^1000Mercury's environment is not conducive to life as we know it. \nThe temperatures and solar radiation that characterize this planet\nare most likely too extreme for organisms to adapt to.`,
+  ],
+  8
+);
+// 5. Structure 파트
+setTyped("#typed9", [`Structure`], 40);
+setTyped(
+  "#typed10",
+  [
+    `^1000Mercury is the second densest planet, after Earth.\nIt has a large metallic core with a radius of about 1,289 miles (2,074 kilometers),\nabout 85% of the planet's radius. There is\nevidence that it is partly molten or liquid. \nMercury's outer shell, comparable to Earth's outer\nshell (called the mantle and crust), is only\nabout 400 kilometers (250 miles) thick.`,
+  ],
+  8
+);
 
 // setTyped("#typed2",[
 //       `gggggggg\n gggggggggggggggg`,

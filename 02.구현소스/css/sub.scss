@@ -221,6 +221,7 @@ body {
       /* 박스중앙위치 및 최대크기설정 */
       max-width: 1300px;
       margin: 0 auto;
+      margin-bottom: 10vh;
       // outline: 2px dashed lightcoral;
 
       grid-template-columns: repeat(3, 1fr);
@@ -322,4 +323,27 @@ body {
       }
     }
   }
+
+  // planet 영역 /////////////////////////////////////////////////////////////////////
+  
+  .planet-area {
+    @include common-box;
+    margin-bottom: 30rem;
+    height: 300vh;
+    div {
+      height: 100vh;
+      @include flex-set();
+      h2 {
+        font-size: 6vw;
+        text-transform: uppercase;
+        line-height: 6vw;
+      }
+      p {
+        width: 50vw;
+        font-size: 1.4vw;
+      }
+    }
+  }
+
+
 }

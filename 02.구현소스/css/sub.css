@@ -669,6 +669,7 @@ body .gallery .grid {
   /* 박스중앙위치 및 최대크기설정 */
   max-width: 1300px;
   margin: 0 auto;
+  margin-bottom: 10vh;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: min(1.5vw, 15px) min(1vw, 10px);
 }
@@ -756,4 +757,32 @@ body .gallery-smenu .img-flex .smenu-imgbox {
 body .gallery-smenu .img-flex .smenu-imgbox > img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+body .planet-area {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6vw;
+  color: #fff;
+  margin-bottom: 30rem;
+  height: 300vh;
+}
+body .planet-area div {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 55%;
+}
+body .planet-area div h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 6vw;
+}
+body .planet-area div p {
+  width: 50vw;
+  font-size: 1.4vw;
 }/*# sourceMappingURL=sub.css.map */
