@@ -11,21 +11,21 @@ const $closeBtn = $(".close");
 // 닫기버튼 셋팅
 // $(".close").click(() => $(".gallery-smenu").fadeOut());
 
-$('.gallery img').click(function(){
-// console.log("미리보기!")
+$(".gallery img").click(function () {
+  // console.log("미리보기!")
 
-// 1. 클릭된 박스의 이미지 읽어오기
-let currImg = $(this).attr("src");/* .find(''); */
-console.log(currImg)
+  // 1. 클릭된 박스의 이미지 읽어오기
+  let currImg = $(this).attr("src"); /* .find(''); */
+  console.log(currImg);
 
-// 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
-$smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
+  // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
+  $smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
 
-// 3. 상세이미지 보기 박스 보이기
-$gallerySmenu.fadeIn(300);
-}) ///// click /////
+  // 3. 상세이미지 보기 박스 보이기
+  $gallerySmenu.fadeIn(300);
+}); ///// click /////
 
-$closeBtn.click(()=>$gallerySmenu.fadeOut(300));
+$closeBtn.click(() => $gallerySmenu.fadeOut(300));
 
 function setTyped(sName, sCont, spVal) {
   new Typed(sName, {
@@ -41,12 +41,26 @@ function setTyped(sName, sCont, spVal) {
   }); ////// typed /////////////
 }
 // typed 플러그인 적용하기!
-setTyped("#typed1",[
-      `^1000The smallest planet in our solar system and^100\n nearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.`,
-    ],8);
-setTyped("#typed2",[
-    `Mercury`
-    ],40);
+// 1. 첫 등장 파트
+setTyped(
+  "#typed1",
+  [
+    `^1000The smallest planet in our solar system and^100\nnearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.`,
+  ],
+  8
+);
+setTyped("#typed2", [`Mercury`], 40);
+
+// 2. Introduction 파트
+setTyped("#typed3", [`introduction`], 40);
+setTyped(
+  "#typed4",
+  [
+    `^1000surface temperatures : 800°F(430°C) ~ -290°F(-180°C)^100\nthe fastest planet, zipping around the Sun every^100\n88 Earth days.`,
+  ],
+  8
+);
+
 // setTyped("#typed2",[
 //       `gggggggg\n gggggggggggggggg`,
 //     ],100);
