@@ -1,5 +1,11 @@
 // sub-js //
 
+// 부드러운 스크롤 함수 불러오기
+import startSS from "./smoothScroll23.js";
+
+// 부드러운 스크롤 함수호출
+startSS();
+
 // 갤러리 사진클릭시 원본보기//
 // 이벤트 대상 : .gallery > div
 // 변경대상: .smenu-contbox img
