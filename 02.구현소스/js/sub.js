@@ -138,7 +138,10 @@ function showEl() {
     // console.log("등장요소 바운딩 top값은?:",bcrVal,el.getBoundingClientRect());
 
     // 화면의 2/3위치에서 클래스 넣기(등장)
-    if (bcrVal < CRITERIA) el.classList.add()
+    if (bcrVal < CRITERIA) el.classList.add("on");
+    
+    // 기준값 전에는 다시 클래스 제거(원위치)
+    else el.classList.remove("on");
   })
 }
 
