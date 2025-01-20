@@ -49,16 +49,13 @@ function setTyped(sName, sCont, spVal) {
     startDelay: 2000,
   }); ////// typed /////////////
 }
-// typed 플러그인 적용하기!
-// 1. 첫 등장 파트
-setTyped(
-  "#typed1",
-  [
-    `^1000The smallest planet in our solar system and^100\nnearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.`,
-  ],
-  8
-);
-setTyped("#typed2", [`Mercury`], 40);
+
+
+
+
+
+
+
 
 // 2. Introduction 파트
 setTyped("#typed3", [`introduction`], 40);
@@ -126,22 +123,39 @@ myFn.addEvt(window, "scroll", showEl);
 const CRITERIA = (window.innerHeight / 3) * 2;
 // console.log("기준값:", CRITERIA);
 
+
+// 타이핑 애니메이션 한번만 적용하기 //
+let typing = false;
+// 타이핑 효과 시간상수
+const TIME_TYPING = 3000;
+
+
 // 3. 함수만들기 //
 // (1) 요소 등장 함수
 function showEl() {
-  // (1) 함수호출확인
+  // (1-1) 함수호출확인
   // console.log("나야나!!",window.scrollY);
 
+  // (1-2) 타이핑 애니 한번만 적용하기
+  if (typing) return;// 함수 나가기
+  typing = true;
   scrollAct.forEach((el) => {
     // 각 등장요소의 바운딩 top값
     let bcrVal = myFn.getBCR(el);
     // console.log("등장요소 바운딩 top값은?:",bcrVal,el.getBoundingClientRect());
 
     // 화면의 2/3위치에서 클래스 넣기(등장)
-    if (bcrVal < CRITERIA) el.classList.add("on");
-    
-    // 기준값 전에는 다시 클래스 제거(원위치)
-    else el.classList.remove("on");
+    if (bcrVal < CRITERIA) 
+    // typed 플러그인 적용하기!
+    // 1. 첫 등장 파트
+    setTyped(
+      "#typed1",
+      [
+        `^1000The smallest planet in our solar system and^100\nnearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.`,
+      ],
+      8
+    );
+    setTyped("#typed2", [`Mercury`], 40); 
   })
 }
 
