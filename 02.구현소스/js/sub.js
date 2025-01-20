@@ -145,7 +145,7 @@ function showEl() {
     // console.log("등장요소 바운딩 top값은?:",bcrVal,el.getBoundingClientRect());
 
     // 화면의 2/3위치에서 클래스 넣기(등장)
-    if (bcrVal < CRITERIA) 
+    if (bcrVal < CRITERIA){
     // typed 플러그인 적용하기!
     // 1. 첫 등장 파트
     setTyped(
@@ -155,7 +155,8 @@ function showEl() {
       ],
       8
     );
-    setTyped("#typed2", [`Mercury`], 40); 
-  })
-}
+    setTyped("#typed2", [`Mercury`], 40)}
+    else return;
+  }); ////// forEach /////
+} ////// showEl함수 //////
 
