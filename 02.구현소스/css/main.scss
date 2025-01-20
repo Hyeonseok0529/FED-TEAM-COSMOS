@@ -1,18 +1,29 @@
+//// inc _scss import ////
 @import "./common/reset";
 @import "./common/core";
+// 폰트 //
+@import "./variables";
+@import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
+
+// 헤더 푸터, 무조건 제일 마지막에 import //
 @import "./common/inc";
 @import "./common/t-inc";
 @import "./common/m-inc";
 
+
 .main-section {
-  position: relative;
+  background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
   height: 100vh;
   overflow: hidden;
-  background: #060408;
-  img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1600px;
+  .planet-area{
+    .planet-list{    
+      li{
+        
+        height: 500px;
+        img{
+          height: 100%;
+        }
+      }
+    }
   }
 }

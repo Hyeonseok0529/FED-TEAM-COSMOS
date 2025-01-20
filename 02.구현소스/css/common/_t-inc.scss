@@ -37,7 +37,7 @@
               &:hover {
                 background-color: #fff;
                 a {
-                  color: #10244c !important;
+                  color: $color-navy !important;
                 }
               }
             }
@@ -59,7 +59,7 @@
       }
       &:hover {
         background: none;
-        background-color: #10244c;
+        background-color: $color-navy;
   
         a {
           color: #ebebeb !important;
