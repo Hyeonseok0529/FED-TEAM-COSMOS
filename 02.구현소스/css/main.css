@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* 보그 PJ 리셋 CSS - _reset.scss */
 /* 요소의 초기화 */
 /* 루트 글자크기 */
+@import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
 html {
   font-size: 10px;
 }
@@ -46,8 +46,10 @@ img {
   값으로 top, middle등 도 효과있음! */
 }
 
+/* 폰트체 */
 @media (min-width: 1150px) {
   #header {
+    font-family: "Orbitron", serif;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -77,11 +79,11 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 25px 20px;
   }
   #header .top-area .header-nav ul li a {
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
   }
   #header .top-area .header-nav ul li:hover {
     background-color: #fff;
@@ -419,14 +421,13 @@ img {
   }
 }
 .main-section {
-  position: relative;
+  background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
   height: 100vh;
   overflow: hidden;
-  background: #060408;
 }
-.main-section img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1600px;
+.main-section .planet-area .planet-list li {
+  height: 500px;
+}
+.main-section .planet-area .planet-list li img {
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */

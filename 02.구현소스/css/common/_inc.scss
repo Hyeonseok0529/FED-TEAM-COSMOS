@@ -1,6 +1,7 @@
 @media (min-width: 1150px) {
   /////////////////// header ///////////////////
   #header {
+    font-family: $font-set;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -29,15 +30,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 25px;
+            padding: 25px 20px;
             a {
               color: #fff;
-              font-size: 17px;
+              font-size: 15px;
             }
             &:hover {
               background-color: #fff;
               a {
-                color: #10244c !important;
+                color: $color-navy !important;
               }
             }
           }
@@ -59,7 +60,7 @@
     }
     &:hover {
       background: none;
-      background-color: #10244c;
+      background-color: $color-navy;
 
       a {
         color: #ebebeb !important;
