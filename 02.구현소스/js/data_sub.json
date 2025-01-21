@@ -1,6 +1,9 @@
 {
   "mercury": {
-    "first": "The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.",
+    "first": "^1000The smallest planet in our solar system and^100\nnearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.",
+
+
+
     "introduction": "surface temperatures :800°F(430°C) ~ -290°F(-180°C)the fastest planet, zipping around the Sun every 88 Earth days.",
     "Namesake": "named for the swiftest of the ancient Roman gods.",
     "Potential for Life": "Mercury's environment is not conducive to life as we know it. The temperatures and solar radiation that characterize this planet are most likely too extreme for organisms to adapt to.",
