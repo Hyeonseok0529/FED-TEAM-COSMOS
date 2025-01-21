@@ -1,10 +1,13 @@
 // 리셋 //
 @import "./common/reset";
 @import "./common/core";
+
 // 헤더, 푸터 //
-// @import "./common/inc"; sub.scss 와 연결할 경우 오류가 나는 현상이 있음. /////////////////////////////////////////
-@import "./common/t-inc";
-@import "./common/m-inc";
+// @import "./common/inc"; // sub.scss 와 연결할 경우 오류가 나는 현상이 있어 잠깐 주석 /////////////////////////////////////////
+// @import "./common/t-inc";
+// @import "./common/m-inc";
+
+
 // 폰트 //
 @import "./variables";
 @import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
@@ -128,8 +131,10 @@ body {
       height: 35vh;
       @include flex-set();
       h2 {
+        span{
         font-size: 6vw;
         text-transform: uppercase;
+        }
       }
       p {
         width: 50vw;

@@ -11,7 +11,7 @@ console.log(planetData);
 
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
-let planetKey = 'mars';
+let planetKey = 'mercury';
 const selData = planetData[planetKey];
 console.log(selData);
 
@@ -57,7 +57,7 @@ function setTyped(sName, sCont, spVal) {
     backSpeed: 0,
     // 반복여부(true/false)
     loop: false,
-    startDelay: 2000,
+    startDelay: 500,
 
     onComplete: (self) => {
       console.log(7777, self.el.id);
@@ -77,20 +77,22 @@ const startLetterFn = {
         selData.first
         // `^1000The smallest planet in our solar system and^100\nnearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.`,
       ],
-      8
+      4
     );
     setTyped("#typed2", [
       planetKey
       // `Mercury`
-    ], 40);
+    ], 30);
   },
   "introduction-area": () => {
     // 2. Introduction 파트
-    setTyped("#typed3", [`introduction`], 40);
+    setTyped(
+      "#typed3",[`introduction`], 40);
     setTyped(
       "#typed4",
       [
-        `^1000surface temperatures : 800°F(430°C) ~ -290°F(-180°C)^100\nthe fastest planet, zipping around the Sun every^100\n88 Earth days.`,
+        selData.introduction
+        // `^1000surface temperatures : 800°F(430°C) ~ -290°F(-180°C)^100\nthe fastest planet, zipping around the Sun every^100\n88 Earth days.`,
       ],
       8
     );
