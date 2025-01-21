@@ -46,130 +46,6 @@ img {
   값으로 top, middle등 도 효과있음! */
 }
 
-@media (min-width: 1150px) {
-  #header {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(66, 66, 66, 0.5) 100%);
-    transition: 0.5s;
-  }
-  #header .top-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  #header .top-area .logo img {
-    width: 200px;
-  }
-  #header .top-area .header-nav {
-    position: relative;
-    display: flex;
-  }
-  #header .top-area .header-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #header .top-area .header-nav ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-  }
-  #header .top-area .header-nav ul li a {
-    color: #fff;
-    font-size: 17px;
-  }
-  #header .top-area .header-nav ul li:hover {
-    background-color: #fff;
-  }
-  #header .top-area .header-nav ul li:hover a {
-    color: #10244c !important;
-  }
-  #header .top-area .util-wrap {
-    width: 150px;
-  }
-  #header .top-area .util-wrap ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-  }
-  #header .top-area .util-wrap ul li img {
-    width: 30px;
-  }
-  #header:hover {
-    background: none;
-    background-color: #10244c;
-  }
-  #header:hover a {
-    color: #ebebeb !important;
-  }
-  #header.active {
-    transform: translateY(-100%);
-  }
-  #footer {
-    height: 100%;
-    background-color: #000;
-    border-top: 1px solid #a8a8a8;
-  }
-  #footer .bottom-area {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  #footer .bottom-area .top-con {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #footer .bottom-area .top-con .bottom-logo img {
-    height: 60px;
-  }
-  #footer .bottom-area .top-con .sns-wrap {
-    height: 60px;
-  }
-  #footer .bottom-area .top-con .sns-wrap p {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-  }
-  #footer .bottom-area .top-con .sns-wrap ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #footer .bottom-area .top-con .sns-wrap ul li {
-    width: 47px;
-  }
-  #footer .bottom-area .top-con .sns-wrap ul li img {
-    width: 100%;
-  }
-  #footer .bottom-area .bottom-nav {
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-  #footer .bottom-area .bottom-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-  #footer .bottom-area .bottom-nav ul li a {
-    color: #589fe2;
-    font-size: 14px;
-  }
-  #footer .bottom-area .info {
-    padding-bottom: 30px;
-    font-size: 13px;
-    text-align: center;
-    color: #9f9f9f;
-  }
-}
 @media (min-width: 481px) and (max-width: 1149px) {
   #header {
     position: fixed;
@@ -437,14 +313,14 @@ body .spin-box span {
   width: 50%;
   justify-content: center;
 }
-body .first-area, body .Namesake-area, body .introduction-area {
+body .first-area, body .namesake-area, body .introduction-area {
   color: #fff;
   display: flex;
   height: 100vh;
   justify-content: flex-end;
   align-items: center;
 }
-body .first-area div, body .Namesake-area div, body .introduction-area div {
+body .first-area div, body .namesake-area div, body .introduction-area div {
   height: 35vh;
   /* 믹스인 사용으로 인한 주석 */
   display: flex;
@@ -454,10 +330,10 @@ body .first-area div, body .Namesake-area div, body .introduction-area div {
   justify-content: flex-start;
   width: 55%;
 }
-body .first-area div h1, body .Namesake-area div h1, body .introduction-area div h1 {
+body .first-area div h1, body .namesake-area div h1, body .introduction-area div h1 {
   font-size: 6vw;
 }
-body .first-area div p, body .Namesake-area div p, body .introduction-area div p {
+body .first-area div p, body .namesake-area div p, body .introduction-area div p {
   width: 50vw;
   font-size: 1.7vw;
 }
@@ -466,19 +342,19 @@ body .first-area div p, body .Namesake-area div p, body .introduction-area div p
     justify-content: center;
     top: -10rem;
   }
-  body .first-area, body .Namesake-area, body .introduction-area {
+  body .first-area, body .namesake-area, body .introduction-area {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
   }
-  body .first-area div, body .Namesake-area div, body .introduction-area div {
+  body .first-area div, body .namesake-area div, body .introduction-area div {
     width: 100%;
     align-items: center;
   }
-  body .first-area div h2, body .Namesake-area div h2, body .introduction-area div h2 {
+  body .first-area div h2, body .namesake-area div h2, body .introduction-area div h2 {
     line-height: 6rem;
   }
-  body .first-area div p, body .Namesake-area div p, body .introduction-area div p {
+  body .first-area div p, body .namesake-area div p, body .introduction-area div p {
     width: 80%;
     font-size: 2.3rem;
   }
@@ -518,7 +394,7 @@ body .introduction-area div p {
     font-size: 2.3rem;
   }
 }
-body .Namesake-area div {
+body .namesake-area div {
   height: 35vh;
   display: flex;
   align-items: flex-start;
@@ -527,29 +403,29 @@ body .Namesake-area div {
   justify-content: flex-start;
   width: 55%;
 }
-body .Namesake-area div h2 {
+body .namesake-area div h2 {
   font-size: 6vw;
   text-transform: uppercase;
 }
-body .Namesake-area div p {
+body .namesake-area div p {
   width: 50vw;
   font-size: 1.7vw;
 }
 @media (max-width: 1000px) {
-  body .Namesake-area {
+  body .namesake-area {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
     text-align: center;
   }
-  body .Namesake-area div {
+  body .namesake-area div {
     width: 100%;
     align-items: center;
   }
-  body .Namesake-area div h2 {
+  body .namesake-area div h2 {
     line-height: 6rem;
   }
-  body .Namesake-area div p {
+  body .namesake-area div p {
     width: 80%;
     font-size: 2.3rem;
   }

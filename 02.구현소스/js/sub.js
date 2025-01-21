@@ -95,9 +95,9 @@ const startLetterFn = {
       8
     );
   },
-  "Namesake-area": () => {
-    // 3. Namesake 파트
-    setTyped("#typed5", [`Namesake`], 40);
+  "namesake-area": () => {
+    // 3. namesake 파트
+    setTyped("#typed5", [`namesake`], 40);
     setTyped(
       "#typed6",
       [`^1000named for the swiftest of the ancient Roman gods.`],

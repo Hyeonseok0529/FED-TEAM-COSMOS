@@ -2,7 +2,7 @@
 @import "./common/reset";
 @import "./common/core";
 // 헤더, 푸터 //
-@import "./common/inc";
+// @import "./common/inc";
 @import "./common/t-inc";
 @import "./common/m-inc";
 // 폰트 //
@@ -58,7 +58,7 @@ body {
       }
     }
   }
-
+ 
   // 첫 컨텐츠 영역 ////////////////////////////////////////////////////////////////////////
   .first-area {
     color: #fff;
@@ -121,8 +121,8 @@ body {
     }
   }
 
-  // Namesake 영역 //////////////////////////////////////////////////////////////
-  .Namesake-area {
+  // namesake 영역 //////////////////////////////////////////////////////////////
+  .namesake-area {
     @extend .first-area;
     div {
       height: 35vh;
@@ -137,9 +137,9 @@ body {
       }
     }
   }
-  // Namesake 영역 미디어쿼리 //
+  // namesake 영역 미디어쿼리 //
   @include tablet-medium {
-    .Namesake-area {
+    .namesake-area {
       @include query-set();
       text-align: center;
     }
