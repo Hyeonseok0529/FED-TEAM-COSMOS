@@ -11,7 +11,7 @@ console.log(planetData);
 
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
-let planetKey = 'mercury';
+let planetKey = 'Jupiter';
 const selData = planetData[planetKey];
 console.log(selData);
 
@@ -57,7 +57,7 @@ function setTyped(sName, sCont, spVal) {
     backSpeed: 0,
     // 반복여부(true/false)
     loop: false,
-    startDelay: 500,
+    startDelay: 300,
 
     onComplete: (self) => {
       console.log(7777, self.el.id);
@@ -87,51 +87,51 @@ const startLetterFn = {
   "introduction-area": () => {
     // 2. Introduction 파트
     setTyped(
-      "#typed3",[`introduction`], 40);
+      "#typed3",[`introduction`], 30);
     setTyped(
       "#typed4",
       [
         selData.introduction
         // `^1000surface temperatures : 800°F(430°C) ~ -290°F(-180°C)^100\nthe fastest planet, zipping around the Sun every^100\n88 Earth days.`,
       ],
-      8
+      4
     );
   },
   "namesake-area": () => {
     // 3. namesake 파트
-    setTyped("#typed5", [`namesake`], 40);
+    setTyped("#typed5", [`namesake`], 30);
     setTyped(
       "#typed6",
       [
         selData.namesake
         // `^1000named for the swiftest of the ancient Roman gods.`
       ],
-      8
+      4
     );
   },
   "potential-area": () => {
     // 4. Potential for Life 파트
-    setTyped("#typed7", [`Potential for Life`], 40);
+    setTyped("#typed7", [`Potential for Life`], 30);
     setTyped(
       "#typed8",
       [
         selData.potential
         // `^1000Mercury's environment is not conducive to life as we know it. \nThe temperatures and solar radiation that characterize this planet\nare most likely too extreme for organisms to adapt to.`,
       ],
-      8
+      4
     );
   },
 };
 
 // 5. Structure 파트
-setTyped("#typed9", [`Structure`], 40);
+setTyped("#typed9", [`Structure`], 30);
 setTyped(
   "#typed10",
   [
     selData.structure
     // `^1000Mercury is the second densest planet, after Earth.\nIt has a large metallic core with a radius of about 1,289 miles (2,074 kilometers),\nabout 85% of the planet's radius. There is\nevidence that it is partly molten or liquid. \nMercury's outer shell, comparable to Earth's outer\nshell (called the mantle and crust), is only\nabout 400 kilometers (250 miles) thick.`,
   ],
-  8
+  4
 );
 
 // 타이핑 스크롤 액션 //////////////////////////////////////////
