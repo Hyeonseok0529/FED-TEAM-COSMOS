@@ -81,6 +81,7 @@ body .first-area div, body .namesake-area div, body .introduction-area div {
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
+  gap: 3vw;
 }
 body .first-area div h1, body .namesake-area div h1, body .introduction-area div h1 {
   font-size: 6vw;
@@ -113,13 +114,14 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
   }
 }
 body .introduction-area div {
-  height: 35vh;
+  height: 11vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
+  gap: 3vw;
 }
 body .introduction-area div h2 {
   font-size: 6vw;
@@ -149,13 +151,14 @@ body .introduction-area div p {
   }
 }
 body .namesake-area div {
-  height: 35vh;
+  height: 27vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
+  gap: 3vw;
 }
 body .namesake-area div h2 span {
   font-size: 6vw;
@@ -171,6 +174,7 @@ body .namesake-area div p {
     justify-content: center;
     align-items: flex-end;
     text-align: center;
+    gap: 3vw;
   }
   body .namesake-area div {
     width: 100%;
@@ -195,6 +199,7 @@ body .potential-area {
 }
 body .potential-area div {
   height: 45vh;
+  gap: 3vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -237,10 +242,11 @@ body .Structure-area {
   align-items: center;
   margin-left: 6vw;
   color: #fff;
-  margin-bottom: 30rem;
+  margin-bottom: 60vw;
 }
 body .Structure-area div {
-  height: 40vh;
+  gap: 5vw;
+  height: 7vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -398,7 +404,7 @@ body .planet-area {
   margin-left: 6vw;
   color: #fff;
   margin-bottom: 30rem;
-  height: 300vh;
+  margin-left: 0;
 }
 body .planet-area div {
   height: 100vh;
