@@ -2,7 +2,7 @@
 @import "./common/reset";
 @import "./common/core";
 // 헤더, 푸터 //
-// @import "./common/inc";
+// @import "./common/inc"; sub.scss 와 연결할 경우 오류가 나는 현상이 있음. /////////////////////////////////////////
 @import "./common/t-inc";
 @import "./common/m-inc";
 // 폰트 //
