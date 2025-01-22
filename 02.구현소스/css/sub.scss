@@ -172,7 +172,7 @@ body {
       gap: 3vw;
       @include flex-set();
       h2 {
-        font-size: 6vw;
+        font-size: 4.5vw;
         text-transform: uppercase;
         line-height: 6vw;
       }
@@ -190,7 +190,7 @@ body {
   }
 
   // Structure 영역 ////////////////////////////////////////////////////////////////
-  .Structure-area {
+  .structure-area {
     @include common-box;
     margin-bottom: 60vw;;
     div {
@@ -211,7 +211,7 @@ body {
 
   // Structure 영역 미디어쿼리 //
   @include tablet-medium {
-    .Structure-area {
+    .structure-area {
       @include query-set();
       div{
         height: 80vh;

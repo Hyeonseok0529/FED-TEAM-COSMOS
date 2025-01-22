@@ -581,7 +581,7 @@ body .potential-area div {
   width: 55%;
 }
 body .potential-area div h2 {
-  font-size: 6vw;
+  font-size: 4.5vw;
   text-transform: uppercase;
   line-height: 6vw;
 }
@@ -608,7 +608,7 @@ body .potential-area div p {
     font-size: 2.3rem;
   }
 }
-body .Structure-area {
+body .structure-area {
   display: flex;
   height: 100vh;
   justify-content: flex-start;
@@ -617,7 +617,7 @@ body .Structure-area {
   color: #fff;
   margin-bottom: 60vw;
 }
-body .Structure-area div {
+body .structure-area div {
   gap: 5vw;
   height: 7vh;
   display: flex;
@@ -627,34 +627,34 @@ body .Structure-area div {
   justify-content: flex-start;
   width: 55%;
 }
-body .Structure-area div h2 {
+body .structure-area div h2 {
   font-size: 6vw;
   text-transform: uppercase;
   line-height: 6vw;
 }
-body .Structure-area div p {
+body .structure-area div p {
   width: 50vw;
   font-size: 1.4vw;
 }
 @media (max-width: 1000px) {
-  body .Structure-area {
+  body .structure-area {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
   }
-  body .Structure-area div {
+  body .structure-area div {
     width: 100%;
     align-items: center;
     text-align: left;
   }
-  body .Structure-area div h2 {
+  body .structure-area div h2 {
     line-height: 6rem;
   }
-  body .Structure-area div p {
+  body .structure-area div p {
     width: 80%;
     font-size: 2.3rem;
   }
-  body .Structure-area div {
+  body .structure-area div {
     height: 80vh;
   }
 }

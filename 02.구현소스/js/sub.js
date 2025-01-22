@@ -7,13 +7,13 @@ import myFn from "./my_function.js";
 import startSS from "./smoothScroll23.js";
 
 import planetData from "./data_sub.json" with{type:'json'};
-console.log(planetData);
+// console.log(planetData);
 
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
-let planetKey = 'NEPTUNE';
-const selData = planetData[planetKey];
-console.log(selData);
+let planetKey = 'MERCURY';
+const selData = planetData [planetKey];
+// console.log(selData);
 
 // 부드러운 스크롤 함수호출
 startSS();
@@ -57,14 +57,14 @@ function setTyped(sName, sCont, spVal) {
     backSpeed: 0,
     // 반복여부(true/false)
     loop: false,
-    startDelay: 300,
+    startDelay: 600,
 
     onComplete: (self) => {
-      console.log(7777, self.el.id);
+      // console.log(7777, self.el.id);
       if (rangeId.includes(self.el.id)) {
         self.cursor.style.display = "none";
-      }
-    },
+      } // if //
+    }, // onComplete //
   }); ////// typed /////////////
 }
 
@@ -80,8 +80,8 @@ const startLetterFn = {
       4
     );
     setTyped("#typed2", [
-      planetKey
-      // `Mercury`
+      // planetKey
+      `Mercury`
     ], 30);
   },
   "introduction-area": () => {
@@ -121,9 +121,8 @@ const startLetterFn = {
       4
     );
   },
-};
-
-// 5. Structure 파트
+  "structure-area": () => {
+    // 5. Structure 파트
 setTyped("#typed9", [`Structure`], 30);
 setTyped(
   "#typed10",
@@ -133,6 +132,10 @@ setTyped(
   ],
   4
 );
+  }
+};
+
+
 
 // 위치에 따른 타이핑 스크롤 액션 //////////////////////////////////////////
 
@@ -193,6 +196,35 @@ function showEl() {
 
       // typed 플러그인 적용하기!
       // 1. 첫 등장 파트
-    }
+    } // if //
   }); ////// forEach /////
 } ////// showEl함수 //////
+
+
+// 행성 이미지 이동 함수 /////////////////////////////////////////////////////
+
+// 1. 대상선정 :
+// (1) 이벤트 대상 : potential-area
+const potentialArea = myFn.qsa(".potential-area");
+// (2) 변경대상 : .spin-box
+const movePlanet = myFn.qs(".spin-box");
+// console.log("너가 움직일 거야",movePlanet);
+// 변경대상에 트랜지션
+movePlanet.style.transition = ".4s ease-in-out";
+
+// 이벤트 대상 위치값 담기
+const moveEl = [];
+potentialArea.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
+console.log("위치값!:",moveEl);
+
+// 2. 이벤트 설정하기 //
+// (1) 스크롤시 요소등장 함수호출
+myFn.addEvt(window, "scroll", movingEl);
+
+// 3. 함수 만들기 //
+// (1) 요소 등장 함수 //
+function movingEl(){
+  // (1) 함수호출확인
+  console.log("움직여보자",movingEl)
+}
+
