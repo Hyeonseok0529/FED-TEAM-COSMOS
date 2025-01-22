@@ -2,15 +2,15 @@
 @import "./common/reset";
 @import "./common/core";
 
-// 헤더, 푸터 //
-// @import "./common/inc"; // sub.scss 와 연결할 경우 오류가 나는 현상이 있어 잠깐 주석 /////////////////////////////////////////
-// @import "./common/t-inc";
-// @import "./common/m-inc";
-
-
 // 폰트 //
 @import "./variables";
 @import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
+
+// 헤더, 푸터 //
+@import "./common/inc"; // sub.scss 와 연결할 경우 오류가 나는 현상이 있어 잠깐 주석 /////////////////////////////////////////
+@import "./common/t-inc";
+@import "./common/m-inc";
+
 // 쿼리 //
 @import "./sub-query";
 
@@ -213,6 +213,9 @@ body {
   @include tablet-medium {
     .Structure-area {
       @include query-set();
+      div{
+        height: 80vh;
+      }
     }
   }
 

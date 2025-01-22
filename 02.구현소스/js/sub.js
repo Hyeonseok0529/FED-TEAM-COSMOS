@@ -11,7 +11,7 @@ console.log(planetData);
 
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
-let planetKey = 'Jupiter';
+let planetKey = 'NEPTUNE';
 const selData = planetData[planetKey];
 console.log(selData);
 
@@ -134,13 +134,12 @@ setTyped(
   4
 );
 
-// 타이핑 스크롤 액션 //////////////////////////////////////////
+// 위치에 따른 타이핑 스크롤 액션 //////////////////////////////////////////
 
 // 1. 대상선정:
 // (1) 이벤트 대상 : window
 // (2) 변경 대상 : .scroll-act
 const scrollAct = myFn.qsa(".scroll-act");
-// 요소에 트랜지션
 
 // console.log("대상:", scrollAct)
 
