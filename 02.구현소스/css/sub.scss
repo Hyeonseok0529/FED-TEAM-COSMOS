@@ -28,6 +28,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     z-index: -1;
+    transition: 4s ease-in-out;
     span {
       display: flex;
       width: 50%;
