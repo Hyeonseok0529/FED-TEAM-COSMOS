@@ -172,7 +172,7 @@ body {
 
   // potential for life 영역 //////////////////////////////////////////////////////////////
   .potential-area {
-    margin-top: 50rem; // 임시로 마진탑 //
+    margin-top: 50rem;
     @include common-box;
     div {
       height: 45vh;
@@ -199,7 +199,6 @@ body {
   // Structure 영역 ////////////////////////////////////////////////////////////////
   .structure-area {
     @include common-box;
-    margin-bottom: 60vw;;
     div {
       gap: 5vw;
       height: 7vh;
