@@ -222,7 +222,7 @@ move.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
 function moving(){
   // 스크롤 위치값
   let scY = window.scrollY;
-  console.log("스크롤 위치값:",scY);
+  // console.log("스크롤 위치값:",scY);
 
   if (scY > moveEl[2])
     movePlanet.style.justifyContent="center";

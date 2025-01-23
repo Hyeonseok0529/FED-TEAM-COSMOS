@@ -435,8 +435,14 @@ body .spin-box {
 }
 body .spin-box span {
   display: flex;
-  width: 50%;
   justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+body .spin-box span img {
+  position: fixed;
+  transition: 4s ease-in-out;
 }
 body .first-area, body .namesake-area, body .introduction-area {
   color: #fff;
