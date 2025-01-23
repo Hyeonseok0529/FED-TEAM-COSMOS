@@ -1,0 +1,9 @@
+  "행성이름": {
+    "name": 행성이름
+    "first": 첫 컨텐츠 내용
+    "introduction": 내용
+    "namesake": 내용
+    "potential": 내용
+    "structure": 내용
+    "subGallery" : 갤러리 서브메뉴 제목
+  }
