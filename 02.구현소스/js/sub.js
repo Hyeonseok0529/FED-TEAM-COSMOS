@@ -13,7 +13,7 @@ import planetData from "./data_sub.json" with{type:'json'};
 // let planetKey = location.search.split('=')[1];
 let planetKey = 'MERCURY';
 const selData = planetData [planetKey];
-// console.log(selData);
+console.log(selData);
 
 // 부드러운 스크롤 함수호출
 startSS();
@@ -45,7 +45,7 @@ $(".gallery img").click(function () {
 
 $closeBtn.click(() => $gallerySmenu.fadeOut(300));
 
-const rangeId = ["typed2", "typed3", "typed5", "typed7", "typed9"];
+const rangeId = ["typed2", "typed3", "typed4", "typed5","typed6", "typed7","typed8", "typed9"];
 
 function setTyped(sName, sCont, spVal) {
   new Typed(sName, {
@@ -87,50 +87,50 @@ const startLetterFn = {
   "introduction-area": () => {
     // 2. Introduction 파트
     setTyped(
-      "#typed3",[`introduction`], 30);
+      "#typed3",[`introduction`], 1);
     setTyped(
       "#typed4",
       [
         selData.introduction
         // `^1000surface temperatures : 800°F(430°C) ~ -290°F(-180°C)^100\nthe fastest planet, zipping around the Sun every^100\n88 Earth days.`,
       ],
-      4
+      1
     );
   },
   "namesake-area": () => {
     // 3. namesake 파트
-    setTyped("#typed5", [`namesake`], 30);
+    setTyped("#typed5", [`namesake`], 1);
     setTyped(
       "#typed6",
       [
         selData.namesake
         // `^1000named for the swiftest of the ancient Roman gods.`
       ],
-      4
+      1
     );
   },
   "potential-area": () => {
     // 4. Potential for Life 파트
-    setTyped("#typed7", [`Potential for Life`], 30);
+    setTyped("#typed7", [`Potential for Life`], 1);
     setTyped(
       "#typed8",
       [
         selData.potential
         // `^1000Mercury's environment is not conducive to life as we know it. \nThe temperatures and solar radiation that characterize this planet\nare most likely too extreme for organisms to adapt to.`,
       ],
-      4
+      1
     );
   },
   "structure-area": () => {
     // 5. Structure 파트
-setTyped("#typed9", [`Structure`], 30);
+setTyped("#typed9", [`Structure`], 1);
 setTyped(
   "#typed10",
   [
     selData.structure
     // `^1000Mercury is the second densest planet, after Earth.\nIt has a large metallic core with a radius of about 1,289 miles (2,074 kilometers),\nabout 85% of the planet's radius. There is\nevidence that it is partly molten or liquid. \nMercury's outer shell, comparable to Earth's outer\nshell (called the mantle and crust), is only\nabout 400 kilometers (250 miles) thick.`,
   ],
-  4
+  1
 );
   }
 };
@@ -162,7 +162,8 @@ myFn.addEvt(window, "scroll", showEl);
 myFn.addEvt(window, "scroll", moving);
 
 // 기준값 만들기 : 화면 높이값을 사용(화면의 2/3)
-const CRITERIA = (window.innerHeight / 3) * 2;
+// -> 함수를 바로 호출할 수 있도록 수정
+const CRITERIA = 0;
 // console.log("기준값:", CRITERIA);
 
 // 타이핑 애니메이션 한번만 적용하기 //
@@ -183,14 +184,14 @@ function showEl() {
   // typing = true;
   scrollAct.forEach((el) => {
     // 각 등장요소의 바운딩 top값
-    let bcrVal = myFn.getBCR(el);
+    /* let bcrVal = myFn.getBCR(el); */
     // console.log("등장요소 바운딩 top값은?:",bcrVal,el.getBoundingClientRect());
 
     // 화면의 2/3위치에서 클래스 넣기(등장)
-    if (bcrVal < CRITERIA) {
+    /* if (bcrVal < CRITERIA)  */{
       if (beforeId.includes(el.id)) return;
       beforeId.push(el.id);
-      console.log(el.id);
+      // console.log(el.id);
 
       startLetterFn[el.id]();
 
