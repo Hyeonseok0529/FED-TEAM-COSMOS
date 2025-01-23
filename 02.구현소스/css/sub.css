@@ -442,7 +442,7 @@ body .spin-box span {
 }
 body .spin-box span img {
   position: fixed;
-  transition: 4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 body .first-area, body .namesake-area, body .introduction-area {
   color: #fff;
@@ -569,6 +569,7 @@ body .namesake-area div p {
   }
 }
 body .potential-area {
+  margin-top: 50rem;
   display: flex;
   height: 100vh;
   justify-content: flex-start;

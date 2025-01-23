@@ -36,7 +36,7 @@ body {
       height: 50%;
       img{
         position: fixed;
-        transition: 4s ease-in-out;
+        transition: .4s ease-in-out;
       }
     }
   }
@@ -172,6 +172,7 @@ body {
 
   // potential for life 영역 //////////////////////////////////////////////////////////////
   .potential-area {
+    margin-top: 50rem; // 임시로 마진탑 //
     @include common-box;
     div {
       height: 45vh;

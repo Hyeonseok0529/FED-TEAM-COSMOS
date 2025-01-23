@@ -207,29 +207,27 @@ function showEl() {
 // (1) 이벤트 대상 : #typed5 , .gallery
 const move = myFn.qsa(".move");
 // (2) 변경대상 : .spin-box
-const movePlanet = myFn.qs(".spin-box");
-// console.log("너가 움직일 거야",movePlanet);
-// 변경대상에 트랜지션
-movePlanet.style.transition = ".4s ease-in-out";
+const movePlanet = myFn.qs(".planetImg");
+console.log("변경대상",movePlanet);
 
 // 이벤트 대상 위치값 담기
 const moveEl = [];
 move.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
-// console.log("위치값!:",moveEl);
+console.log("위치값!:",moveEl);
 
 // 2. 이벤트 설정하기 //
 // (1) 스크롤시 행성 움직이는 함수호출
 function moving(){
   // 스크롤 위치값
   let scY = window.scrollY;
-  // console.log("스크롤 위치값:",scY);
+  // console.log("스크롤 위치값:",scY,movePlanet);
 
   if (scY > moveEl[2])
-    movePlanet.style.justifyContent="center";
+    movePlanet.style.left="37%"; // 37% 맞나? 다시 잡아야 할 듯 
   else if (scY < moveEl[1])
-    movePlanet.style.justifyContent="flex-start";
+    movePlanet.style.left="10%";
   else if (scY > moveEl[0])
-    movePlanet.style.justifyContent="flex-end";
+    movePlanet.style.left="60%";
 }
 
 ///// showEl함수 /////
