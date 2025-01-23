@@ -1,5 +1,6 @@
 {
   "MERCURY": {
+    "name": "mercury",
     "first": "^800The smallest planet in our solar system and^100\nnearest to the Sun, Mercury is only slightly ^100\nlarger than Earth's Moon.",
     "introduction": "^800surface temperatures :800°F(430°C) ~ -290°F(-180°C)^100\nthe fastest planet, zipping around the Sun every ^100\n88 Earth days.",
     "namesake": "^800named for the swiftest of the ancient Roman gods.",
@@ -7,14 +8,23 @@
     "structure": "^800Mercury is the second densest planet, after Earth.^100\nIt has a large metallic core with a radius of about 1,289 miles^100\n(2,074 kilometers), about 85% of the planet's radius. There is^100\nevidence that it is partly molten or liquid. Mercury's outer shell,^100\ncomparable to Earth's outer shell(called the mantle and crust),^100\nis only about 400 kilometers (250 miles) thick."
   },
   "VENUS": {
+    "name": "venus",
     "first": "^800the second planet from the Sun, and the sixth^100\nlargest planet. It’s the hottest planet^100\nin our solar system.",
     "introduction": "^800the second planet from the Sun, and Earth's^100\nclosest planetary neighbor. Venus is the third brightest object^100\nin the sky after the Sun and Moon. Venus spins slowly in^100\nthe opposite direction from most planets.",
     "namesake": "^800named for the ancient Roman goddess of love and beauty,^100\nwho was known as Aphrodite to the ancient Greeks. Most features^100\non Venus are named for women. It’s the only planet^100\nnamed after a female god.",
-
     "potential": "^1000Thirty miles up (about 50 kilometers) from the^100\nsurface of Venus temperatures range from 86 to 158 Fahrenheit^100\n(30 to 70 Celsius). This temperature range could accommodate Earthly life,^100\nsuch as “extremophile” microbes. And atmospheric pressure at that^100\nheight is similar to what we find on Earth’s surface.^100\n\nAt the tops of Venus’ clouds,^100\nwhipped around the planet by winds measured as high as 224 mph (360 kph),^100\nwe find another transformation. Persistent, dark streaks appear. Scientists^100\nare so far unable to explain why these streaks remain stubbornly intact,^100\neven amid hurricane-force winds. They also have the odd habit^100\nof absorbing ultraviolet radiation",
     "structure": "^800If we could slice Venus and Earth in half, pole to pole,^100\nand place them side by side, they would look remarkably^100\nsimilar. Each planet has an iron core enveloped by a hot-rock mantle;^100\nthe thinnest of skins forms a rocky, exterior crust. On both planets,^100\nthis thin skin changes form and sometimes erupts into volcanoes^100\nin response to the ebb and flow of heat and^100\npressure deep beneath."
   },
+  "EARTH": {
+    "name": "earth",
+    "first": "our home planet – is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things.",
+    "introduction": "While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.",
+    "namesake": "Earth is the only planet in the solar system whose English name does not come from Greek or Roman mythology. The name was taken from Old English and Germanic. It simply means 'the ground.' There are, of course, many names for our planet in the thousands of languages spoken by the people of the third planet from the Sun.",
+    "potential": "Earth has a very hospitable temperature and mix of chemicals that have made life abundant here. Most notably, Earth is unique in that most of our planet is covered in liquid water, since the temperature allows liquid water to exist for extended periods of time. Earth's vast oceans provided a convenient place for life to begin about 3.8 billion years ago.",
+    "structure": "Earth is composed of four main layers, starting with an inner core at the planet's center, enveloped by the outer core, mantle, and crust."
+  },
   "MARS": {
+    "name": "mars",
     "first": "^800the fourth planet from the Sun, and the seventh largest.^100\nIt’s the only planet we know of inhabited entirely by robots.",
     "introduction": "^800Mars is one of the most explored bodies in our solar system,^100\nand it's the only planet where we've sent rovers to^100\nroam the alien landscape. NASA missions have found^100\nlots of evidencethat Mars was much wetter and warmer,^100\nwith a thicker atmosphere,billions of years ago.",
     "namesake": "^800Mars was named by the ancient Romans for their god of war^100\nbecause its reddish color was reminiscent of blood.^100\nOther civilizations also named the planet for this attribute^100\n– for example, the Egyptians called it Her Desher, meaning^100\nthe red one.Even today, it is frequently called the Red Planet^100\nbecause iron minerals in the Martian dirt oxidize, or rust,^100\ncausing the surface to look red.",
@@ -22,6 +32,7 @@
     "structure": "^800Mars has a dense core at its center between^100\n930 and 1,300 miles (1,500 to 2,100 kilometers) in radius.^100\nIt's made of iron, nickel, and sulfur. Surrounding the core^100\nis a rockymantle between 770 and 1,170 miles^100\n (1,240 to 1,880 kilometers)thick, andabove that, a crust^100\nmade of iron, magnesium, aluminum, calcium,and^100\npotassium.This crust is between 6 and 30 miles^100\n(10 to 50 kilometers) deep."
   },
   "JUPITER": {
+    "name": "jupiter",
     "first": "^800the fifth planet from the Sun, and the largest in the solar^100\nsystem more than twice as massive as the other planets^100\ncombined.",
     "introduction": "^800Jupiter's signature stripes and swirls are actually cold,^100\nwindy clouds of ammonia and water, floating in an^100\natmosphere of hydrogen and helium. The dark orange^100\nstripes are called belts, while the bands are called^100\nzones, and they flow east and west in opposite directions.^100\nJupiter’s iconic Great Red Spot is a giant storm bigger^100\nthan Earth that has for hundreds of years.",
     "namesake": "^800Jupiter, being the biggest, gets its name from the king^100\nof the ancient Roman gods",
@@ -29,6 +40,7 @@
     "structure": "^800The composition of Jupiter is similar to that of the Sun^100\n– mostly hydrogen and helium. Deep in the atmosphere,^100\npressure and temperature increase, compressing^100\nthe hydrogen gas into a liquid.gives Jupiter the largest ocean^100\nin the solar system –an ocean made ofinstead of water.^100\n\nScientists think that, at depths  perhaps halfway to planet's^100\ncenter, the pressure becomes so great that electrons^100\nare squeezed the hydrogen atoms, making the liquid electrically^100\nconducting like metal.Jupiter's fast rotation is thought to drive^100\nelectrical currents in this region, the spinning of the liquid^100\nmetallic hydrogen acting like a dynamo, generatingplanet's^100\nowerful magnetic field.^100\n\nDeeper down, Jupiter's central core had longamystery. ^100\nScientiststheorized Jupiter was a mostly homogeneous^100\n mix ofhydrogen and helium gases, surrounding^100\na small,solid core ofheavierelements^100\n– rock, and metal formed from debris and small^100\nobjects swirling aroundthat area of the ^100\nembryonicsolar system 4 billion years ago."
   },
   "SATURN": {
+    "name": "saturn",
     "first": "^800the sixth planet from the Sun, and the second largest in the^100\nsolar system. It’s surrounded by beautiful rings.",
     "introduction": "^800Like fellow gas giant Jupiter, Saturn is a massive ball^100\nmade mostly of hydrogen and helium. Saturn is not the only^100\nplanet to have rings, but none are as spectacular or as complex^100\nas Saturn's. Saturn also has dozens of moons. From the jets of ^100\nwater thatspray from Saturn's moon Enceladus to the^100\nmethane lakes on smoggy Titan,the Saturn system is a rich^100\nsource of scientific discovery and still holds many mysteries.",
     "namesake": "^800The farthest planet from Earth discovered by the unaided^100\nhuman eye, Saturn has been known since ancient times. The planet is named^100\nfor the Roman god of agriculture and wealth, who was^100\nalso the father of Jupiter.",
@@ -36,6 +48,7 @@
     "structure": "^800Like Jupiter, Saturnis made mostly of hydrogen and helium.^100\nAt Saturn's center is a dense core of metals like iron^100\nand nickel surrounded by rocky material and other compounds^100\nsolidified by intense pressure and heat. It is enveloped by liquid^100\nmetallic hydrogen inside a layer of liquid hydrogen –similar to ^100\nJupiter's core but considerably smaller.^100\n\nIt's hard to imagine, but Saturn is the only planet in our solar^100\nsystem with an average density that is less than water. ^100\nThe giant gas planet could float in a bathtub if such a colossal^100\nthing existed."
   },
   "URANUS": {
+    "name": "uranus",
     "first": "^800the seventh planet from the Sun, and the third largest planet^100\nin our solar system. It appears to spin sideways.",
     "introduction": "^800Uranus is a very cold and windy world. The ice giant is surrounded^100\nby 13 faint rings and 28 small moons. Uranus rotates at a nearly ^100\n90-degree angle from the plane of its orbit. This unique tilt makes^100\nUranus appear to spin sideways, orbiting the Sun like a rolling ball.^100\nUranus was the first planet found with the aid of a telescope.^100\n\nIt was discovered in 1781 by astronomer William Herschel, although^100\nhe originally thought it was either a comet or a star. It was two^100\nyears later that the object was universally accepted as a new^100\nplanet, in part because of observations by astronomer Johann^100\nElert Bode.",
     "namesake": "^800William Herschel tried unsuccessfully to name his discovery^100\nGeorgium Sidus after King George III. Instead, the planet was^100\nnamed for Uranus, the Greek god of the sky, as suggested^100\nby Johann Bode.",
@@ -43,6 +56,7 @@
     "structure": "^800Uranus is one of two ice giants in the outer solar system^100\n(the other is Neptune). Most (80% or more) of the planet's^100\nmass is made up of a hot dense fluid of icy materials – water,^100\nmethane, and ammonia – above a small rocky core. Near the core,^100\n it heats up to 9,000 degreesFahrenheit (4,982 degrees Celsius).^100\n\nUranus is slightly larger in diameter than its neighbor Neptune,^100\nyet smaller in mass. It is the second least dense planet; Saturn is^100\nthe least dense of all. Uranus gets its blue-green color from^100\nmethane  gas in the atmosphere. Sunlight passes through the^100\natmosphere and is reflected back out by Uranus' cloud tops.^100\nMethane gas absorbs the red portion of the light, resulting in a blue-green color."
   },
   "NEPTUNE": {
+    "name": "neptune",
     "first": "^800the eighth, and most distant planet from the Sun.^100\nIt’s the fourth-largest, and the first planet discovered^100\nwith math.",
     "introduction": "^800Dark, cold, and whipped by supersonic winds,^100\nice giant Neptune is more than 30 times as far from the Sun as^100\n Earth. Neptune is the only planet in our solar system not visible to the^100\nnaked eye. In 2011 Neptune completed its first 165-year orbit since its ^100\ndiscovery in 1846.Neptune is so far from the Sun that high noon on the big blue planet^100\nwould seem like dim twilight to us. The warm light we see here on our home ^100\nplanet is roughly 900 times as bright as sunlight on Neptune.",
     "namesake": "^800The ice giant Neptune was the first planet located^100\nthrough mathematical calculations. Using predictions made by Urbain^100\nLe Verrier, Johann Galle discovered the planet in 1846. The planet is named^100\nafter the Roman god of the sea, as suggested by Le Verrier.",
