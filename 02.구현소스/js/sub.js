@@ -159,7 +159,7 @@ scrollAct.forEach((el, idx) => (posEl[idx] = el.offsetTop));
 myFn.addEvt(window, "scroll", showEl);
 
 // (2) 섹션에 따라 행성 이동 함수 호출 --> 추후 추가
-// myFn.addEvt(window, "scroll", movePlanet);
+myFn.addEvt(window, "scroll", moving);
 
 // 기준값 만들기 : 화면 높이값을 사용(화면의 2/3)
 const CRITERIA = (window.innerHeight / 3) * 2;
@@ -204,8 +204,8 @@ function showEl() {
 // 행성 이미지 이동 함수 /////////////////////////////////////////////////////
 
 // 1. 대상선정 :
-// (1) 이벤트 대상 : potential-area
-const potentialArea = myFn.qsa(".potential-area");
+// (1) 이벤트 대상 : #typed5 , .gallery
+const move = myFn.qsa(".move");
 // (2) 변경대상 : .spin-box
 const movePlanet = myFn.qs(".spin-box");
 // console.log("너가 움직일 거야",movePlanet);
@@ -214,17 +214,23 @@ movePlanet.style.transition = ".4s ease-in-out";
 
 // 이벤트 대상 위치값 담기
 const moveEl = [];
-potentialArea.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
-console.log("위치값!:",moveEl);
+move.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
+// console.log("위치값!:",moveEl);
 
 // 2. 이벤트 설정하기 //
-// (1) 스크롤시 요소등장 함수호출
-myFn.addEvt(window, "scroll", movingEl);
+// (1) 스크롤시 행성 움직이는 함수호출
+function moving(){
+  // 스크롤 위치값
+  let scY = window.scrollY;
+  console.log("스크롤 위치값:",scY);
 
-// 3. 함수 만들기 //
-// (1) 요소 등장 함수 //
-function movingEl(){
-  // (1) 함수호출확인
-  console.log("움직여보자",movingEl)
+  if (scY > moveEl[2])
+    movePlanet.style.justifyContent="center";
+  else if (scY < moveEl[1])
+    movePlanet.style.justifyContent="flex-start";
+  else if (scY > moveEl[0])
+    movePlanet.style.justifyContent="flex-end";
 }
+
+///// showEl함수 /////
 
