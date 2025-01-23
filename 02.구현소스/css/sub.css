@@ -780,6 +780,7 @@ body .gallery-smenu .img-flex .smenu-imgbox > img {
      object-fit: cover;
 }
 body .planet-area {
+  margin-top: 50rem;
   display: flex;
   height: 100vh;
   justify-content: flex-start;
