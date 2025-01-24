@@ -443,6 +443,7 @@ body .spin-box span {
 body .spin-box span img {
   position: fixed;
   transition: 0.4s ease-in-out;
+  left: 10%;
 }
 body .first-area, body .namesake-area, body .introduction-area {
   color: #fff;
@@ -452,7 +453,6 @@ body .first-area, body .namesake-area, body .introduction-area {
   align-items: center;
 }
 body .first-area div, body .namesake-area div, body .introduction-area div {
-  height: 35vh;
   /* 믹스인 사용으로 인한 주석 */
   display: flex;
   align-items: flex-start;
@@ -460,7 +460,7 @@ body .first-area div, body .namesake-area div, body .introduction-area div {
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
-  gap: 3vw;
+  height: 15rem;
 }
 body .first-area div h1, body .namesake-area div h1, body .introduction-area div h1 {
   font-size: 6vw;
@@ -492,15 +492,19 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
     font-size: 2.3rem;
   }
 }
+body .introduction-area {
+  height: 50vh;
+}
 body .introduction-area div {
-  height: 11vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
-  gap: 3vw;
+  height: 15rem;
+  justify-content: center;
+  align-items: normal;
 }
 body .introduction-area div h2 {
   font-size: 6vw;
@@ -529,17 +533,20 @@ body .introduction-area div p {
     font-size: 2.3rem;
   }
 }
+body .namesake-area {
+  height: 50vh;
+  margin-bottom: 50rem;
+}
 body .namesake-area div {
-  height: 27vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
-  gap: 3vw;
+  height: 15rem;
 }
-body .namesake-area div h2 span {
+body .namesake-area div h2 {
   font-size: 6vw;
   text-transform: uppercase;
 }
@@ -553,7 +560,6 @@ body .namesake-area div p {
     justify-content: center;
     align-items: flex-end;
     text-align: center;
-    gap: 3vw;
   }
   body .namesake-area div {
     width: 100%;
@@ -569,26 +575,27 @@ body .namesake-area div p {
   }
 }
 body .potential-area {
-  margin-top: 50rem;
   display: flex;
-  height: 100vh;
+  height: 50vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
   color: #fff;
 }
 body .potential-area div {
-  height: 45vh;
-  gap: 3vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
+  height: 15rem;
+  justify-content: center;
+  align-items: normal;
+  width: 90%;
 }
 body .potential-area div h2 {
-  font-size: 4.5vw;
+  font-size: 6vw;
   text-transform: uppercase;
   line-height: 6vw;
 }
@@ -617,21 +624,22 @@ body .potential-area div p {
 }
 body .structure-area {
   display: flex;
-  height: 100vh;
+  height: 50vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
   color: #fff;
 }
 body .structure-area div {
-  gap: 5vw;
-  height: 7vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
+  height: 15rem;
+  justify-content: center;
+  align-items: normal;
 }
 body .structure-area div h2 {
   font-size: 6vw;
@@ -779,14 +787,12 @@ body .gallery-smenu .img-flex .smenu-imgbox > img {
      object-fit: cover;
 }
 body .planet-area {
-  margin-top: 50rem;
   display: flex;
-  height: 100vh;
+  height: 50vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
   color: #fff;
-  margin-bottom: 30rem;
   margin-left: 0;
 }
 body .planet-area div {

@@ -78,7 +78,6 @@ body {
     justify-content: flex-end;
     align-items: center;
     div {
-      height: 35vh;
       /* 믹스인 사용으로 인한 주석 */
       // display: flex;
       // width: 55%;
@@ -88,7 +87,7 @@ body {
       // justify-content: flex-start;
 
       @include flex-set();
-      gap: 3vw;
+      height: 15rem;
       h1 {
         font-size: 6vw;
       }
@@ -113,10 +112,12 @@ body {
   // introduction 영역 //////////////////////////////////////////////////////////////
   .introduction-area {
     @extend .first-area;
+    height: 50vh;
     div {
-      height: 11vh;
       @include flex-set();
-      gap: 3vw;
+      height: 15rem;
+      justify-content: center;
+      align-items: normal;
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -137,15 +138,14 @@ body {
   // namesake 영역 //////////////////////////////////////////////////////////////
   .namesake-area {
     @extend .first-area;
+    height: 50vh;
+    margin-bottom: 50rem;
     div {
-      height: 27vh;
       @include flex-set();
-      gap: 3vw;
+      height: 15rem;
       h2 {
-        span{
         font-size: 6vw;
         text-transform: uppercase;
-        }
       }
       p {
         width: 50vw;
@@ -158,13 +158,12 @@ body {
     .namesake-area {
       @include query-set();
       text-align: center;
-      gap: 3vw;
     }
   }
 
   @mixin common-box {
     display: flex;
-    height: 100vh;
+    height: 50vh;
     justify-content: flex-start;
     align-items: center;
     margin-left: 6vw;
@@ -175,11 +174,13 @@ body {
   .potential-area {
     @include common-box;
     div {
-      height: 45vh;
-      gap: 3vw;
       @include flex-set();
+      height: 15rem;
+      justify-content: center;
+      align-items: normal;
+      width: 90%;
       h2 {
-        font-size: 4.5vw;
+        font-size: 6vw;
         text-transform: uppercase;
         line-height: 6vw;
       }
@@ -200,9 +201,10 @@ body {
   .structure-area {
     @include common-box;
     div {
-      gap: 5vw;
-      height: 7vh;
       @include flex-set();
+      height: 15rem;
+      justify-content: center;
+      align-items: normal;
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
