@@ -9,21 +9,10 @@
 @import "./common/inc";
 @import "./common/t-inc";
 @import "./common/m-inc";
+body {
+  background: url(../images/sub/background_1.jpg) no-repeat top / cover;
 
-
-.main-section {
-  background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
-  height: 100vh;
-  overflow: hidden;
-  .planet-area{
-    .planet-list{    
-      li{
-        
-        height: 500px;
-        img{
-          height: 100%;
-        }
-      }
-    }
+  .main-section {
+    height: 100vh;
   }
 }
