@@ -7,7 +7,7 @@
 @import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
 
 // 헤더, 푸터 //
-@import "./common/inc"; // sub.scss 와 연결할 경우 오류가 나는 현상이 있어 잠깐 주석 /////////////////////////////////////////
+@import "./common/inc"; 
 @import "./common/t-inc";
 @import "./common/m-inc";
 
@@ -173,7 +173,6 @@ body {
 
   // potential for life 영역 //////////////////////////////////////////////////////////////
   .potential-area {
-    margin-top: 50rem;
     @include common-box;
     div {
       height: 45vh;
@@ -349,9 +348,7 @@ body {
   // planet 영역 /////////////////////////////////////////////////////////////////////
 
   .planet-area {
-    margin-top: 50rem;
     @include common-box;
-    margin-bottom: 30rem;
     margin-left: 0;
     div {
       height: 100vh;
