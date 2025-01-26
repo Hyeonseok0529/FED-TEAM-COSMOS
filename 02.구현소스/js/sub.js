@@ -108,22 +108,46 @@ const movePlanet = myFn.qs(".planetImg");
 // 이벤트 대상 위치값 담기
 const moveEl = [];
 move.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
-console.log("위치값!:",moveEl);
+// console.log("위치값!:",moveEl);
 
 // 2. 이벤트 설정하기 //
 // (1) 스크롤시 행성 움직이는 함수호출
 function moving(){
+  let screenWidth = window.innerWidth;
+
+  if(screenWidth < 1000) {
+    movePlanet.style.left = "50%"; // 화면 중앙
+    movePlanet.style.transform = "translateX(-50%)"; // 요소 중심 보정
+    return; // 이동중단
+
+  }
+
   // 스크롤 위치값
   let scY = window.scrollY;
   // console.log("스크롤 위치값:",scY,movePlanet);
 
   if (scY > moveEl[2])
-    movePlanet.style.left="37%"; // 37% 맞나? 다시 잡아야 할 듯 
+    movePlanet.style.left="37%";
   else if (scY < moveEl[1])
     movePlanet.style.left="10%";
   else if (scY > moveEl[0])
     movePlanet.style.left="60%";
+}///// showEl함수 /////
+
+function setInitialPosition(){
+  let screenWidth = window.innerWidth;
+
+  if (screenWidth < 1000) {
+    movePlanet.style.left = "50%";
+    movePlanet.style.transform = "translateX(-50%)"; // 중심 보정
+  }
+  else {
+    movePlanet.style.left = "10%";
+    movePlanet.style.transform = "translateX(0)"; // 보정 해제
+  }
 }
 
-///// showEl함수 /////
+// moving 이벤트함수 호출하기
 
+window.addEventListener("resize", setInitialPosition);
+window.addEventListener("scroll", moving);

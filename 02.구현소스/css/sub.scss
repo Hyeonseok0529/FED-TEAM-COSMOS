@@ -36,7 +36,7 @@ body {
       height: 50%;
       img{
         position: fixed;
-        transition: .4s ease-in-out;
+        transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
         left: 10%;
       }
     }
@@ -94,6 +94,7 @@ body {
       p {
         width: 50vw;
         font-size: 1.7vw;
+        font-size: 3.2vh;
       }
     }
   }
@@ -106,6 +107,13 @@ body {
     }
     .first-area {
       @include query-set();
+      height: 90vh;
+      margin-bottom: 10rem;
+      div{
+        p{
+          text-align: center;
+        }
+      }
     }
   }
 
@@ -125,6 +133,7 @@ body {
       p {
         width: 50vw;
         font-size: 1.7vw;
+        text-align: start;
       }
     }
   }
@@ -132,6 +141,13 @@ body {
   @include tablet-medium {
     .introduction-area {
       @include query-set();
+      flex-wrap: wrap;
+      align-items: center;
+      div{
+        p{
+          text-align: center;
+        }
+      }
     }
   }
 
@@ -139,7 +155,6 @@ body {
   .namesake-area {
     @extend .first-area;
     height: 50vh;
-    margin-bottom: 50rem;
     div {
       @include flex-set();
       height: 15rem;
@@ -150,6 +165,7 @@ body {
       p {
         width: 50vw;
         font-size: 1.7vw;
+        text-align: start;
       }
     }
   }
@@ -158,12 +174,19 @@ body {
     .namesake-area {
       @include query-set();
       text-align: center;
+      flex-wrap: wrap;
+      align-items: center;
+      div{
+        p{
+          font-size: 3.2rem;
+          text-align: center;
+        }
+      }
     }
   }
 
   @mixin common-box {
     display: flex;
-    height: 50vh;
     justify-content: flex-start;
     align-items: center;
     margin-left: 6vw;
@@ -173,6 +196,8 @@ body {
   // potential for life 영역 //////////////////////////////////////////////////////////////
   .potential-area {
     @include common-box;
+    height: 50vh;
+    margin-top: 50rem;
     div {
       @include flex-set();
       height: 15rem;
@@ -180,7 +205,7 @@ body {
       align-items: normal;
       width: 90%;
       h2 {
-        font-size: 6vw;
+        font-size: 5vw;
         text-transform: uppercase;
         line-height: 6vw;
       }
@@ -194,12 +219,22 @@ body {
   @include tablet-medium {
     .potential-area {
       @include query-set();
+      margin-top: 0;
+      flex-wrap: wrap;
+      align-items: center;
+      div{
+        p{
+          text-align: center;
+        }
+      }
     }
   }
 
   // Structure 영역 ////////////////////////////////////////////////////////////////
   .structure-area {
     @include common-box;
+    height: 50vh;
+    margin-bottom: 50rem;
     div {
       @include flex-set();
       height: 15rem;
@@ -222,13 +257,17 @@ body {
     .structure-area {
       @include query-set();
       div{
-        height: 80vh;
+        gap: 3rem;
+        p{
+          text-align: center;
+        }
       }
     }
   }
 
   // gallery 영역 //////////////////////////////////////////
   .gallery {
+    margin-bottom: 100rem;
     /* 타이틀 */
     h2 {
       margin-bottom: 10vh;
