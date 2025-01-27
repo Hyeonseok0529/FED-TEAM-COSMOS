@@ -443,7 +443,6 @@ body .spin-box span {
 body .spin-box span img {
   position: fixed;
   transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  left: 10%;
   scale: 0.6;
 }
 body .first-area {
@@ -463,12 +462,11 @@ body .first-area div {
   width: 55%;
 }
 body .first-area div h1 {
-  font-size: 6vw;
+  font-size: 5vw;
 }
 body .first-area div p {
   width: 50vw;
-  font-size: 1.7vw;
-  font-size: 3.2vh;
+  font-size: 1.4vw;
 }
 @media (max-width: 1000px) {
   body .spin-box {
@@ -494,9 +492,6 @@ body .first-area div p {
     width: 80%;
     font-size: 2.3rem;
   }
-  body .first-area div p {
-    text-align: center;
-  }
 }
 body #footer {
   display: none;
@@ -504,9 +499,10 @@ body #footer {
 
 /* 퀵메뉴바 스타일 */
 .quick-menu {
+  z-index: 1;
   position: fixed;
   top: 50%;
-  right: 0;
+  left: 0;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -536,4 +532,19 @@ body #footer {
 .quick-menu ul li a:hover {
   background-color: #ff5733;
   border-radius: 3px;
+}
+
+/* 텍스트 전환을 위한 기본 스타일 */
+.desc-tit h1,
+.desc-desc p {
+  opacity: 1;
+  transform: translateY(20px); /* Y축으로 약간 이동 */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* 트랜지션 효과 */
+}
+
+/* 퀵메뉴 활성화시 */
+.desc-tit h1.show,
+.desc-desc p.show {
+  opacity: 1;
+  transform: translateY(0); /* 원위치로 이동 */
 }/*# sourceMappingURL=sub-v,e,m,j.css.map */

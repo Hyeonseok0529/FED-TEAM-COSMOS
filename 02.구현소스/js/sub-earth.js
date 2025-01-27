@@ -9,19 +9,15 @@ console.log(planetData);
 
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
-
-// 키값 Venus // 
-let planetKey = 'VENUS';
+let planetKey = "EARTH"
 const selData = planetData [planetKey];
 console.log(selData);
 
-// Default 상태 출력 //
 if (selData) {
   document.querySelector(".desc-tit h1").textContent = selData.name.toUpperCase();
   document.querySelector(".desc-desc p").textContent = selData.first;
 }
 
-// 퀵메뉴 a 태그 변수 //
 const quickMenuItems = document.querySelectorAll('.quick-menu a');
 // console.log(quickMenuItems);
 
