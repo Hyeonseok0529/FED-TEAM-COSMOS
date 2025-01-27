@@ -1,0 +1,132 @@
+// 리셋 //
+@import "./common/reset";
+@import "./common/core";
+
+// 폰트 //
+@import "./variables";
+@import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
+
+// 헤더, 푸터 //
+@import "./common/inc";
+@import "./common/t-inc";
+@import "./common/m-inc";
+
+// 쿼리 //
+@import "./sub-query";
+
+// 메인영역 //
+////// 포지션 fixed 구역시작 ///////
+body {
+  background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
+  font-family: $font-set;
+
+  .spin-box {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: -1;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 50%;
+      img {
+        position: fixed;
+        transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+        left: 10%;
+        scale: .6;
+      }
+    }
+  }
+  ////// 포지션 fixed 구역끝 ///////
+
+  @mixin flex-set {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    width: 55%;
+  }
+
+  @mixin query-set {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+    div {
+      width: 100%;
+      align-items: center;
+      text-align: left;
+      h2 {
+        line-height: 6rem;
+      }
+      p {
+        width: 80%;
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  // 첫 컨텐츠 영역 ////////////////////////////////////////////////////////////////////////
+  .first-area {
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+    div {
+      /* 믹스인 사용으로 인한 주석 */
+      // display: flex;
+      // width: 55%;
+      // align-items: flex-start;
+      // flex-direction: column;
+      // justify-content: center;
+      // justify-content: flex-start;
+
+      @include flex-set();
+      height: 15rem;
+      h1 {
+        font-size: 6vw;
+      }
+      p {
+        width: 50vw;
+        font-size: 1.7vw;
+        font-size: 3.2vh;
+      }
+    }
+  }
+
+  // 첫 컨텐츠 영역 미디어쿼리 //
+  @include tablet-medium {
+    .spin-box {
+      justify-content: center;
+      top: -10rem;
+    }
+    .first-area {
+      @include query-set();
+      height: 90vh;
+      margin-bottom: 10rem;
+      div {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @mixin common-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6vw;
+    color: #fff;
+  }
+
+  #footer {
+    display: none;
+  }
+}

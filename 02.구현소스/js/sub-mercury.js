@@ -1,4 +1,4 @@
-// sub-js //
+// sub-mercury.js //
 
 // 나의 함수 불러오기
 import myFn from "./my_function.js";
