@@ -14,6 +14,11 @@ console.log(planetData);
 let planetKey = 'VENUS';
 const selData = planetData [planetKey];
 console.log(selData);
+// 행성 이미지 변수 //
+let planetImg = myFn.qs(".planetImg");
+if(planetImg){
+  planetImg.src=`./images/sub/${planetKey}/${planetKey}.png`;
+}
 
 // Default 상태 출력 //
 if (selData) {
