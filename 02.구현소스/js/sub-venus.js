@@ -10,15 +10,24 @@ console.log(planetData);
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
 
+// 현재 URL의 쿼리 문자열에서 planet 값 추출
+let urlParams = new URLSearchParams(window.location.search);
+let planetKey = urlParams.get("planet") || "VENUS"; // 기본값은 venus
 // 키값 Venus // 
-let planetKey = 'VENUS';
+// let planetKey = 'VENUS';
 const selData = planetData [planetKey];
 console.log(selData);
-// 행성 이미지 변수 //
+
+// 행성 키값에 따라 이미지 변경 //
 let planetImg = myFn.qs(".planetImg");
 if(planetImg){
   planetImg.src=`./images/sub/${planetKey}/${planetKey}.png`;
-}
+} // if //
+
+// 지구, 화성인 경우 scale 1로 설정
+if (planetKey === "EARTH" || planetKey === "MARS") {
+  planetImg.style.scale = "1"; // scale 1로 설정
+} // if //
 
 // Default 상태 출력 //
 if (selData) {
