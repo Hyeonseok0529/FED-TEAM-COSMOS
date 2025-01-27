@@ -477,7 +477,7 @@ body .first-area div p {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
-    height: 90vh;
+    height: 89vh;
     margin-bottom: 10rem;
   }
   body .first-area div {
@@ -538,15 +538,23 @@ body #footer {
 }
 
 .quick-menu ul li a:hover {
-  background-color: #ff5733;
+  background-color: #425e97;
   border-radius: 3px;
+}
+
+/* 클릭된 상태 (활성화된 메뉴) */
+.quick-menu a.active {
+  color: #fff;
+  border-radius: 3px;
+  background-color: #425e97; /* 활성화된 메뉴 배경색 */
 }
 
 /* 텍스트 전환을 위한 기본 스타일 */
 .desc-tit h1,
 .desc-desc p {
   opacity: 1;
-  transform: translateY(20px); /* Y축으로 약간 이동 */
+  border-radius: 3px;
+  transform: translateY(30px); /* Y축으로 약간 이동 */
   transition: opacity 0.5s ease, transform 0.5s ease; /* 트랜지션 효과 */
 }
 
@@ -554,5 +562,6 @@ body #footer {
 .desc-tit h1.show,
 .desc-desc p.show {
   opacity: 1;
+  border-radius: 3px;
   transform: translateY(0); /* 원위치로 이동 */
 }/*# sourceMappingURL=sub-v,e,m,j.css.map */

@@ -13,10 +13,7 @@ console.log(planetData);
 // 현재 URL의 쿼리 문자열에서 planet 값 추출
 let urlParams = new URLSearchParams(window.location.search);
 let planetKey = urlParams.get("planet") || "VENUS"; // 기본값은 venus
-// 키값 Venus // 
-// let planetKey = 'VENUS';
 const selData = planetData [planetKey];
-console.log(selData);
 
 // 행성 키값에 따라 이미지 변경 //
 let planetImg = myFn.qs(".planetImg");
@@ -37,11 +34,16 @@ if (selData) {
 
 // 퀵메뉴 a 태그 변수 //
 const quickMenuItems = document.querySelectorAll('.quick-menu a');
-// console.log(quickMenuItems);
 
 quickMenuItems.forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault(); //기본동작 방지 (스크롤이동)
+
+    // 모든 메뉴에서 active 클래스 제거
+    quickMenuItems.forEach(menu => menu.classList.remove('active'));
+
+    // 클릭한 메뉴에 active 클래스 추가
+    item.classList.add('active');
 
     // 클릭된 메뉴의 id를 가져옴
     const sectionId = e.target.getAttribute('href').substring(1);

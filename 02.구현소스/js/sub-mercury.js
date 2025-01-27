@@ -31,7 +31,6 @@ potential.textContent = selData.potential
 structure.textContent = selData.structure
 
 
-
 // 갤러리 사진클릭시 원본보기//
 // 이벤트 대상 : .gallery > div
 // 변경대상: .smenu-contbox img
@@ -151,3 +150,28 @@ function setInitialPosition(){
 
 window.addEventListener("resize", setInitialPosition);
 window.addEventListener("scroll", moving);
+
+// 퀵 메뉴 a태그 변수
+const quickMenuItems = myFn.qsa('.quick-menu a');
+// console.log(quickMenuItems);
+
+// 각 메뉴 항목에 클릭 이벤트 추가
+quickMenuItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault(); // 기본동작 방지 (스크롤 이동 방지)
+
+    // 클릭된 메뉴의 href에서 id값을 가져옴
+    const sectionId = e.target.getAttribute('href').substring(1);
+
+    // 해당 id를 가진 요소를 찾음
+    const targetSection = document.getElementById(sectionId);
+
+    if(targetSection){
+      //해당 섹션으로 부드럽게 스크롤
+      targetSection.scrollIntoView({
+        behavior:'smooth', // 부드러운 스크롤
+        block: 'start' // 섹션의 시작 부분으로 스크롤
+      });
+    }
+  });
+});
