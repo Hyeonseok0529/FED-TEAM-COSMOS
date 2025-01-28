@@ -133,6 +133,7 @@ function moving(){
     movePlanet.style.left="60%";
 }///// showEl함수 /////
 
+// 행성중앙 보정함수
 function setInitialPosition(){
   let screenWidth = window.innerWidth;
 
@@ -150,17 +151,6 @@ function setInitialPosition(){
 
 window.addEventListener("resize", setInitialPosition);
 window.addEventListener("scroll", moving);
-
-
-// 이징 함수 (easeInOutCubic)
-function easeInOutCubic(t){
-  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-}
-
-// 부드러운 스크롤 함수
-
-
-
 
 // 퀵 메뉴 a태그 변수
 const quickMenuItems = myFn.qsa('.quick-menu a');
