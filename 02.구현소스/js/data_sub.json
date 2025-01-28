@@ -5,7 +5,29 @@
     "introduction": "surface temperatures :800°F(430°C) ~ -290°F(-180°C)\nthe fastest planet, zipping around the Sun every \n88 Earth days.",
     "namesake": "named for the swiftest of the ancient Roman gods.",
     "potential": "Mercury's environment is not conducive to life \nas we know it. The temperatures and solar radiation that\ncharacterize this planet are most likely too extreme for\norganisms to adapt to.",
-    "structure": "Mercury is the second densest planet, after Earth.\nIt has a large metallic core with a radius of about 1,289 miles\n(2,074 kilometers), about 85% of the planet's radius. There is\nevidence that it is partly molten or liquid. Mercury's outer shell,\ncomparable to Earth's outer shell(called the mantle and crust),\nis only about 400 kilometers (250 miles) thick."
+    "structure": "Mercury is the second densest planet, after Earth.\nIt has a large metallic core with a radius of about 1,289 miles\n(2,074 kilometers), about 85% of the planet's radius. There is\nevidence that it is partly molten or liquid. Mercury's outer shell,\ncomparable to Earth's outer shell(called the mantle and crust),\nis only about 400 kilometers (250 miles) thick.",
+    "gallery":[
+      "MESSENGER",
+      "Mercury’s Strange Hollows",
+      "Mercury - NASA Science",
+      "Mercury Resources - NASA Science",
+      "90 Years of Our Changing Views of Earth - NASA",
+      "Mercury 3D Model - NASA Science",
+      "Hollows on Mercury - NASA Science",
+      "Mercury Poster - Version B - NASA Science",
+      "Mercury Poster - Version C - NASA Science",
+      "Mercury Poster - Version A - NASA Science",
+      "What Is the Plane of the Ecliptic? - NASA",
+      "Unmasking the Secrets of Mercury - NASA Science",
+      "‘Great Valley’ Found on Mercury",
+      "Lunar Eclipse From Mercury - NASA Science",
+      "BepiColombo",
+      "45 Years Ago: Mariner 10 First to Explore Mercury - NASA",
+      "Leaders in Lidar: Take the Next Steps | NASA+",
+      "Mercury: Facts - NASA Science",
+      "Mercury Stories - NASA Science",
+      "Mercury-Redstone Launch Vehicle - NASA"
+  ]
   },
   "VENUS": {
     "name": "venus",
@@ -13,7 +35,29 @@
     "introduction": "the second planet from the Sun, and Earth's\nclosest planetary neighbor. Venus is the third brightest object\nin the sky after the Sun and Moon. Venus spins slowly in\nthe opposite direction from most planets.",
     "namesake": "named for the ancient Roman goddess of love and beauty,\nwho was known as Aphrodite to the ancient Greeks. Most features\non Venus are named for women. It’s the only planet\nnamed after a female god.",
     "potential": "Thirty miles up (about 50 kilometers) from the\nsurface of Venus temperatures range from 86 to 158 Fahrenheit\n(30 to 70 Celsius). This temperature range could accommodate Earthly life,\nsuch as “extremophile” microbes. And atmospheric pressure at that\nheight is similar to what we find on Earth’s surface.",
-    "structure": "If we could slice Venus and Earth in half, pole to pole,\nand place them side by side, they would look remarkably\nsimilar. Each planet has an iron core enveloped by a hot-rock mantle;\nthe thinnest of skins forms a rocky, exterior crust. On both planets,\nthis thin skin changes form and sometimes erupts into volcanoes\nin response to the ebb and flow of heat and\npressure deep beneath."
+    "structure": "If we could slice Venus and Earth in half, pole to pole,\nand place them side by side, they would look remarkably\nsimilar. Each planet has an iron core enveloped by a hot-rock mantle;\nthe thinnest of skins forms a rocky, exterior crust. On both planets,\nthis thin skin changes form and sometimes erupts into volcanoes\nin response to the ebb and flow of heat and\npressure deep beneath.",
+    "gallery":[
+      "Venus Express",
+      "Pioneer Venus 1",
+      "Pioneer Venus 2",
+      "Galileo's Observations of the Moon, Jupiter, Venus and the Sun",
+      "90 Years of Our Changing Views of Earth - NASA",
+      "Pioneer Venus Orbiter Map of Venus - NASA Science",
+      "Venus - NASA Science",
+      "Venus - NASA Science",
+      "Venus Express - NASA Science",
+      "Venus Resources - NASA Science",
+      "Pioneer Venus 1 - NASA Science",
+      "Venus - Magellan - NASA Science",
+      "Venus 3D Model - NASA Science",
+      "Venus' South Pole - NASA Science",
+      "Wheatley Crater, Venus - NASA Science",
+      "Venus: Facts - NASA Science",
+      "Pioneer Venus 2 - NASA Science",
+      "Venus Landsailing Rover - NASA",
+      "Venus Poster - Version B - NASA Science",
+      "Venus Surface 3D Model - NASA Science"
+  ]
   },
   "EARTH": {
     "name": "earth",
@@ -21,7 +65,29 @@
     "introduction": "While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.",
     "namesake": "Earth is the only planet in the solar system whose English name does not come from Greek or Roman mythology. The name was taken from Old English and Germanic. It simply means 'the ground.' There are, of course, many names for our planet in the thousands of languages spoken by the people of the third planet from the Sun.",
     "potential": "Earth has a very hospitable temperature and mix of chemicals that have made life abundant here. Most notably, Earth is unique in that most of our planet is covered in liquid water, since the temperature allows liquid water to exist for extended periods of time. Earth's vast oceans provided a convenient place for life to begin about 3.8 billion years ago.",
-    "structure": "Earth is composed of four main layers, starting with an inner core at the planet's center, enveloped by the outer core, mantle, and crust."
+    "structure": "Earth is composed of four main layers, starting with an inner core at the planet's center, enveloped by the outer core, mantle, and crust.",
+    "gallery":[
+      "90 Years of Our Changing Views of Earth - NASA",
+      "What is a Supermoon?",
+      "Seven Ways Astronauts Improve Sleep May Help You Snooze Better on Earth - NASA",
+      "Asteroids",
+      "NASA Seeks Innovators for Lunar Waste Competition - NASA",
+      "Near-Earth Asteroids as of August 31, 2023",
+      "What Is the Greenhouse Effect? | NASA+",
+      "Ocean Worlds: Water in the Solar System and Beyond",
+      "The Benefits of Semiconductor Manufacturing in Low Earth Orbit (LEO) for Terrestrial Use - NASA",
+      "How is the Weather on Mars?",
+      "Hayabusa2",
+      "Psyche - NASA Science",
+      "NASA Earth Science and Education Update: Introducing the Science Activation Program - NASA Science",
+      "Hubble Uses Earth as a Proxy for Identifying Oxygen on Potentially Habitable Planets Around Other Stars - NASA Science",
+      "The Earth Observer Editor’s Corner: Summer 2024 - NASA Science",
+      "Space Nuclear Propulsion - NASA",
+      "How Much Water Is on Earth? | NASA+",
+      "Europa Clipper",
+      "Earth From Mars, Mars From Earth - NASA Science",
+      "Galaxy of Horrors - NASA Science"
+  ]
   },
   "MARS": {
     "name": "mars",
@@ -29,7 +95,29 @@
     "introduction": "Mars is one of the most explored bodies in our solar system,\nand it's the only planet where we've sent rovers to\nroam the alien landscape. NASA missions have found\nlots of evidencethat Mars was much wetter and warmer,\nwith a thicker atmosphere,billions of years ago.",
     "namesake": "Mars was named by the ancient Romans for their god of war\nbecause its reddish color was reminiscent of blood.\nOther civilizations also named the planet for this attribute\n– for example, the Egyptians called it Her Desher, meaning\nthe red one.Even today, it is frequently called the Red Planet\nbecause iron minerals in the Martian dirt oxidize, or rust,\ncausing the surface to look red.",
     "potential": "Scientists don't expect to find living things currently\nthriving on Mars. Instead, they're looking for signs of life\nthat existed long ago, when Mars was warmer and covered\nwith water.",
-    "structure": "Mars has a dense core at its center between\n930 and 1,300 miles (1,500 to 2,100 kilometers) in radius.\nIt's made of iron, nickel, and sulfur. Surrounding the core\nis a rockymantle between 770 and 1,170 miles\n (1,240 to 1,880 kilometers)thick, andabove that, a crust\nmade of iron, magnesium, aluminum, calcium,and\npotassium.This crust is between 6 and 30 miles\n(10 to 50 kilometers) deep."
+    "structure": "Mars has a dense core at its center between\n930 and 1,300 miles (1,500 to 2,100 kilometers) in radius.\nIt's made of iron, nickel, and sulfur. Surrounding the core\nis a rockymantle between 770 and 1,170 miles\n (1,240 to 1,880 kilometers)thick, andabove that, a crust\nmade of iron, magnesium, aluminum, calcium,and\npotassium.This crust is between 6 and 30 miles\n(10 to 50 kilometers) deep.",
+    "gallery":[
+      "How is the Weather on Mars?",
+      "Asteroids",
+      "Mars Pathfinder",
+      "Mars – or Arrakis?",
+      "Space Nuclear Propulsion - NASA",
+      "Psyche - NASA Science",
+      "Mars Express",
+      "Crew Returns from Simulated Trip to Mars—Take a Peek Inside Their Journey - NASA",
+      "NASA's Perseverance Mars Rover Gets Balanced - NASA",
+      "Sols 1339-1340: Two Mars Years!",
+      "Drilling into Mars with Lasers",
+      "Mars in a Minute: Are There Quakes on Mars? | NASA+",
+      "Mars Observer",
+      "Mars Polar Lander / Deep Space 2",
+      "Mars Reconnaissance Orbiter",
+      "Searching for Buried Treasure on Mars With RIMFAX",
+      "Mars Sample Return",
+      "Laser Marking on Mars",
+      "Viking 1",
+      "Was There Life on Mars?"
+  ]
   },
   "JUPITER": {
     "name": "jupiter",
@@ -37,7 +125,29 @@
     "introduction": "Jupiter's signature stripes and swirls are actually cold,\nwindy clouds of ammonia and water, floating in an\natmosphere of hydrogen and helium. The dark orange\nstripes are called belts, while the bands are called\nzones, and they flow east and west in opposite directions.\nJupiter’s iconic Great Red Spot is a giant storm bigger\nthan Earth that has for hundreds of years.",
     "namesake": "Jupiter, being the biggest, gets its name from the king\nof the ancient Roman gods",
     "potential": "Jupiter’s environment is  probably not conducive to life\nas we know it. The temperatures, pressures, and\nmaterials that characterize this planet are most likely\n too extreme and volatilefor organisms to adapt to. While\n planet Jupiter is an unlikely place forliving things to\n take hold, the same is not true of some of its many moons.",
-    "structure": "The composition of Jupiter is similar to that of the Sun\n– mostly hydrogen and helium. Deep in the atmosphere,\npressure and temperature increase, compressing\nthe hydrogen gas into a liquid.gives Jupiter the largest ocean\nin the solar system –an ocean made ofinstead of water."
+    "structure": "The composition of Jupiter is similar to that of the Sun\n– mostly hydrogen and helium. Deep in the atmosphere,\npressure and temperature increase, compressing\nthe hydrogen gas into a liquid.gives Jupiter the largest ocean\nin the solar system –an ocean made ofinstead of water.",
+    "gallery":[
+      "Asteroids",
+      "Psyche - NASA Science",
+      "JUICE",
+      "Pioneer 10",
+      "35 Years Ago: Voyager 2 Explores Uranus - NASA",
+      "Europa Clipper",
+      "Galileo's Observations of the Moon, Jupiter, Venus and the Sun",
+      "90 Years of Our Changing Views of Earth - NASA",
+      "Psyche",
+      "Galileo",
+      "Galaxy of Horrors - NASA Science",
+      "Jupiter Flyby - NASA Science",
+      "Jupiter - NASA Science",
+      "60 Years Ago: Explorer 1 Becomes America’s First Satellite - NASA",
+      "Jupiter-Io Montage - NASA Science",
+      "Jupiter Resources - NASA Science",
+      "Jupiter Magnetosphere - NASA Science",
+      "Jupiter: Facts - NASA Science",
+      "Jupiter and Io - NASA Science",
+      "Jupiter Moon Transit - NASA Science"
+  ]
   },
   "SATURN": {
     "name": "saturn",
@@ -45,7 +155,29 @@
     "introduction": "Like fellow gas giant Jupiter, Saturn is a massive ball\nmade mostly of hydrogen and helium. Saturn is not the only\nplanet to have rings, but none are as spectacular or as complex\nas Saturn's. Saturn also has dozens of moons. From the jets of \nwater thatspray from Saturn's moon Enceladus to the\nmethane lakes on smoggy Titan,the Saturn system is a rich\nsource of scientific discovery and still holds many mysteries.",
     "namesake": "The farthest planet from Earth discovered by the unaided\nhuman eye, Saturn has been known since ancient times. The planet is named\nfor the Roman god of agriculture and wealth, who was\nalso the father of Jupiter.",
     "potential": "Saturn's environment is\nnot conducive to life as we know it. The temperatures, pressures, and materials\nthat characterize this planet are most likely too extreme and volatile for\norganisms to adapt to.",
-    "structure": "Like Jupiter, Saturnis made mostly of hydrogen and helium.\nAt Saturn's center is a dense core of metals like iron\nand nickel surrounded by rocky material and other compounds\nsolidified by intense pressure and heat. It is enveloped by liquid\nmetallic hydrogen inside a layer of liquid hydrogen –similar to \nJupiter's core but considerably smaller."
+    "structure": "Like Jupiter, Saturnis made mostly of hydrogen and helium.\nAt Saturn's center is a dense core of metals like iron\nand nickel surrounded by rocky material and other compounds\nsolidified by intense pressure and heat. It is enveloped by liquid\nmetallic hydrogen inside a layer of liquid hydrogen –similar to \nJupiter's core but considerably smaller.",
+    "gallery":[
+      "35 Years Ago: Voyager 2 Explores Uranus - NASA",
+      "40 Years Ago: Voyager 1 Explores Saturn - NASA",
+      "90 Years of Our Changing Views of Earth - NASA",
+      "Saturn - NASA Science",
+      "What Is the Plane of the Ecliptic? - NASA",
+      "Saturn Poster - NASA Science",
+      "Saturn Looms - NASA Science",
+      "Methane Saturn - NASA Science",
+      "Serene Saturn - NASA Science",
+      "Arrival at Saturn - NASA Science",
+      "Saturn Askew - NASA Science",
+      "Splendid Saturn - NASA Science",
+      "Saturn Poster - Version B - NASA Science",
+      "Cassini-Huygens",
+      "Saturn 3D Model - NASA Science",
+      "Sunrise on Saturn - NASA Science",
+      "Greetings from Saturn - NASA Science",
+      "Departing Saturn - NASA Science",
+      "Staring at Saturn - NASA Science",
+      "Saturn and Titan Resources - NASA Science"
+  ]
   },
   "URANUS": {
     "name": "uranus",
@@ -53,7 +185,29 @@
     "introduction": "Uranus is a very cold and windy world. The ice giant is surrounded\nby 13 faint rings and 28 small moons. Uranus rotates at a nearly \n90-degree angle from the plane of its orbit. This unique tilt makes\nUranus appear to spin sideways, orbiting the Sun like a rolling ball.\nUranus was the first planet found with the aid of a telescope.",
     "namesake": "William Herschel tried unsuccessfully to name his discovery\nGeorgium Sidus after King George III. Instead, the planet was\nnamed for Uranus, the Greek god of the sky, as suggested\nby Johann Bode.",
     "potential": "Uranus' environment is not conducive to life as we know it.\nThe temperatures, pressures, and materials that characterize\nthis planet are most likely too extreme and volatile for\norganisms to adapt to.",
-    "structure": "Uranus is one of two ice giants in the outer solar system\n(the other is Neptune). Most (80% or more) of the planet's\nmass is made up of a hot dense fluid of icy materials – water,\nmethane, and ammonia – above a small rocky core. Near the core,\n it heats up to 9,000 degreesFahrenheit (4,982 degrees Celsius)."
+    "structure": "Uranus is one of two ice giants in the outer solar system\n(the other is Neptune). Most (80% or more) of the planet's\nmass is made up of a hot dense fluid of icy materials – water,\nmethane, and ammonia – above a small rocky core. Near the core,\n it heats up to 9,000 degreesFahrenheit (4,982 degrees Celsius).",
+    "gallery":[
+      "35 Years Ago: Voyager 2 Explores Uranus - NASA",
+      "Uranus Stories - NASA Science",
+      "Uranus - NASA Science",
+      "Uranus - NASA Science",
+      "Uranus' Atmosphere - NASA Science",
+      "Uranus 3D Model - NASA Science",
+      "Uranus: Facts - NASA Science",
+      "Uranus Poster - Version C - NASA Science",
+      "Uranus Poster - Version B - NASA Science",
+      "Color Voyager 2 Image Showing Crescent Uranus - NASA Science",
+      "Hubble's Uranus - NASA Science",
+      "Uranus in Detail - NASA Science",
+      "New Uranus Moon Discovered - NASA Science",
+      "Uranus Poster - Version A - NASA Science",
+      "Uranus - Final Image - NASA Science",
+      "Dancing Uranus | NASA+",
+      "Keck Telescope Views of Uranus - NASA Science",
+      "A New Look at Uranus - NASA Science",
+      "Chandra Studies Uranus in X-rays - NASA Science",
+      "Hubble Spots Northern Hemispheric Clouds on Uranus - NASA Science"
+  ]
   },
   "NEPTUNE": {
     "name": "neptune",
@@ -61,6 +215,28 @@
     "introduction": "Dark, cold, and whipped by supersonic winds,\nice giant Neptune is more than 30 times as far from the Sun as\n Earth. Neptune is the only planet in our solar system not visible to the\nnaked eye. In 2011 Neptune completed its first 165-year orbit since its \ndiscovery in 1846.Neptune is so far from the Sun that high noon on the big blue planet\nwould seem like dim twilight to us. ",
     "namesake": "The ice giant Neptune was the first planet located\nthrough mathematical calculations. Using predictions made by Urbain\nLe Verrier, Johann Galle discovered the planet in 1846. The planet is named\nafter the Roman god of the sea, as suggested by Le Verrier.",
     "potential": "Neptune's environment is not conducive to life as we know it.\nThe temperatures, pressures, and materials that characterize\nthis planet are most likely too extreme, and volatile for organisms\nto adapt to.",
-    "structure": "Neptune is one of two ice giants in the outer solar system\n(the other is Uranus). Most (80% or more) of the planet's mass\nis made up of a hot dense fluid of icy materials – water, methane, and\nammonia – above a small, rocky core. Of the giant planets, Neptune is the densest.\nScientists think there might be an ocean of super hot water under Neptune's cold\nclouds. "
+    "structure": "Neptune is one of two ice giants in the outer solar system\n(the other is Uranus). Most (80% or more) of the planet's mass\nis made up of a hot dense fluid of icy materials – water, methane, and\nammonia – above a small, rocky core. Of the giant planets, Neptune is the densest.\nScientists think there might be an ocean of super hot water under Neptune's cold\nclouds. ",
+    "gallery":[
+      "Neptune at Opposition - NASA Science",
+      "35 Years Ago: Voyager 2 Explores Uranus - NASA",
+      "Pluto",
+      "Hypothetical Planet X",
+      "Neptune: Facts - NASA Science",
+      "Neptune - NASA Science",
+      "Neptune Moons - NASA Science",
+      "Neptune Moons: Facts - NASA Science",
+      "Neptune Poster - Version B - NASA Science",
+      "Neptune at Opposition - NASA Science",
+      "Neptune 3D Model - NASA Science",
+      "Neptune and Triton - NASA Science",
+      "Neptune Poster - Version A - NASA Science",
+      "Crescents of Neptune and Triton - NASA Science",
+      "Crescents of Neptune and Triton - NASA Science",
+      "Hubble's View of Neptune - NASA Science",
+      "Voyager at Neptune - NASA Science",
+      "Neptune: Ring Arcs - NASA Science",
+      "Neptune: Exploration - NASA Science",
+      "Neptune Full Disk View - NASA Science"
+  ]
   }
 }
