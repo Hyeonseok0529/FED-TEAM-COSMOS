@@ -864,7 +864,7 @@ body .planet-area div p {
 
 /* 퀵메뉴바 스타일 */
 .quick-menu {
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   top: 50%;
   left: 0;

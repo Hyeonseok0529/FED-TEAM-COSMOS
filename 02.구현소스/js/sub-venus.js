@@ -15,6 +15,9 @@ let urlParams = new URLSearchParams(window.location.search);
 let planetKey = urlParams.get("planet") || "VENUS"; // 기본값은 venus
 const selData = planetData [planetKey];
 
+//행성 키값 : 페이지 타이틀 //
+document.title = planetKey
+
 // 행성 키값에 따라 이미지 변경 //
 let planetImg = myFn.qs(".planetImg");
 if(planetImg){
@@ -25,6 +28,9 @@ if(planetImg){
 if (planetKey === "EARTH" || planetKey === "MARS") {
   planetImg.style.scale = "1"; // scale 1로 설정
 } // if //
+if (planetKey === "JUPITER"){
+  planetImg.style.scale = ".5"; // scale .7로 설정
+}
 
 // Default 상태 출력 //
 if (selData) {
