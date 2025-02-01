@@ -10,9 +10,90 @@
 @import "./common/t-inc";
 @import "./common/m-inc";
 body {
-  background: url(../images/sub/background_1.jpg) no-repeat top / cover;
+  background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
+  font-family: $font-set;
 
   .main-section {
     height: 100vh;
+    position: relative;
+
+    .tbox-top {
+      z-index: 1;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      .tit {
+        font-size: 100px;
+        text-align: center;
+        letter-spacing: 10px;
+      }
+    }
+    .planet-area {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 500px;
+      .click-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        display: none;
+        a{
+          color: #ffffffc1;
+        }
+      }
+      img {
+        height: 100%;
+      }
+      &:hover {
+        .click-btn{
+          display: block;
+        }
+      }
+    }
+    .tbox-bottom {
+      z-index: 1;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      .con-wrap {
+        @include flex(space-between, center);
+        .planet-info {
+          margin: 0 30px;
+          .tit {
+            font-size: 30px;
+          }
+          .info {
+            margin-top: 10px;
+            font-size: 17px;
+          }
+        }
+      }
+      .link-btn {
+        a {
+          margin-top: 30px;
+          float: right;
+          width: 100px;
+          height: 40px;
+          background-color: #589fe2;
+          color: white;
+          text-align: center;
+          line-height: 38px;
+          font-size: 13px;
+          border-radius: 25px;
+          transition: 0.3s;
+          &:hover {
+            background-color: #4583c6;
+          }
+        }
+      }
+    }
   }
 }

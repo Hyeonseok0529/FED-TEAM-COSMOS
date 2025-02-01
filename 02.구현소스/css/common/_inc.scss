@@ -14,9 +14,10 @@
     .top-area {
       @include flex(space-between, center);
       max-width: 1400px;
+      padding: 0 17px;
       margin: 0 auto;
       .logo {
-        img { 
+        img {
           width: 200px;
         }
       }
@@ -25,7 +26,6 @@
         display: flex;
         ul {
           @include flex(space-between, center);
-
           li {
             display: flex;
             flex-direction: column;
@@ -51,11 +51,19 @@
             gap: 15px;
           }
           li {
+            &:nth-of-type(1) {
+              img {
+                width: 30px;
+              }
+            }
             img {
-              width: 30px;
+              width: 20px;
             }
           }
         }
+      }
+      .hambtn {
+        display: none;
       }
     }
     &:hover {
@@ -69,12 +77,12 @@
   }
   #header.active {
     transform: translateY(-100%);
-}
+  }
 
   /////////////////// footer ///////////////////
   #footer {
     height: 100%;
-    background-color: #000;
+    background-color: #000000;
     border-top: 1px solid #a8a8a8;
     .bottom-area {
       max-width: 1000px;
@@ -97,6 +105,7 @@
           ul {
             @include flex(space-between, center);
             li {
+              margin-top: 5px;
               width: 47px;
               img {
                 width: 100%;
@@ -110,12 +119,12 @@
         padding-bottom: 30px;
         ul {
           @include flex(space-between, center);
-          width: 80%;
+          width: 100%;
           margin: 0 auto;
           li {
             a {
               color: #589fe2;
-              font-size: 14px;
+              font-size: 12px;
             }
           }
         }
