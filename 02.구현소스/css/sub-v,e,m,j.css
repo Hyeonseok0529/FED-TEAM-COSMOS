@@ -391,10 +391,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 17px;
+    padding: 0 15px;
     margin: auto;
     position: relative;
-    height: 60px;
+    height: 50px;
   }
   #header .top-area .logo {
     position: absolute;
@@ -581,6 +581,7 @@ img {
 body {
   background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
   font-family: "Orbitron", serif;
+  letter-spacing: 2px;
 }
 body .spin-box {
   position: fixed;
@@ -624,7 +625,7 @@ body .first-area div h1 {
 }
 body .first-area div p {
   width: 50vw;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 @media (max-width: 1000px) {
   body .spin-box {
@@ -648,14 +649,11 @@ body .first-area div p {
   }
   body .first-area div p {
     width: 80%;
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   body .first-area div h1 {
     font-size: 9rem;
   }
-}
-body #footer {
-  display: none;
 }
 
 .gallery-smenu {
@@ -770,4 +768,26 @@ body #footer {
   opacity: 1;
   border-radius: 3px;
   transform: translateY(0); /* 원위치로 이동 */
+}
+.desc-tit h1.show p.show,
+.desc-desc p.show p.show {
+  font-size: 1.2vw;
+}
+
+/* -webkit- 밴더사명(크롬,사파리) 접두어 */
+/* 클래스명 scbar */
+.scbar::-webkit-scrollbar {
+  /* 전체 스크롤바 크기변경 */
+  width: 7px;
+}
+
+.scbar::-webkit-scrollbar-thumb {
+  /* 스크롤바 */
+  background-color: #c5bcbc;
+  border-radius: 5px;
+}
+
+.scbar::-webkit-scrollbar-track {
+  /* 스크롤바 트랙 */
+  background-color: rgb(38, 36, 41);
 }/*# sourceMappingURL=sub-v,e,m,j.css.map */

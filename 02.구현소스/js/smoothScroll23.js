@@ -7,7 +7,7 @@
 // startSS()함수를 호출하여 사용
 export default function startSS() {
   // 전체 스크롤 대상일때 document를 보냄
-  new SmoothScroll(document, 30, 30);
+  new SmoothScroll(document, 30, 10);
   // 특정박스일 경우 document.querySelector(선택요소)를 씀!
   // new SmoothScroll(document.querySelector('.wrap'), 60, 12)
 }
@@ -68,17 +68,17 @@ function SmoothScroll(scrollTarget, speed, smooth) {
           (e.wheelDelta / e.detail / 40) * (e.detail > 0 ? 1 : -1)
         ); // Opera
       else return -e.detail / 3; // Firefox
-    } else return e.wheelDelta / 20; // IE,Safari,Chrome
+    } else return e.wheelDelta / 45; // IE,Safari,Chrome
   }
 
   function update() {
     moving = true;
 
-    let delta = (scrollPos - scrollTarget.scrollTop) / smooth;
+    let delta = (scrollPos - scrollTarget.scrollTop) / (smooth * 1.5);
 
     scrollTarget.scrollTop += delta;
 
-    if (Math.abs(delta) > 0.5) requestFrame(update);
+    if (Math.abs(delta) > 0.2) requestFrame(update);
     else moving = false;
   }
 

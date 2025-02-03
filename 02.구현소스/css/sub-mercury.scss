@@ -19,6 +19,7 @@
 body {
   background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
   font-family: $font-set;
+  letter-spacing: 2px;
 
   .spin-box {
     position: fixed;
@@ -93,8 +94,7 @@ body {
       }
       p {
         width: 50vw;
-        font-size: 1.7vw;
-        font-size: 3.2vh;
+        font-size: 2.4rem;
       }
     }
   }
@@ -132,7 +132,7 @@ body {
       }
       p {
         width: 50vw;
-        font-size: 1.7vw;
+        font-size: 2.3rem;
         text-align: start;
       }
     }
@@ -164,7 +164,7 @@ body {
       }
       p {
         width: 50vw;
-        font-size: 1.7vw;
+        font-size: 2.3rem;
         text-align: start;
       }
     }
@@ -211,7 +211,7 @@ body {
       }
       p {
         width: 50vw;
-        font-size: 1.7vw;
+        font-size: 2.3rem;
       }
     }
   }
@@ -240,6 +240,7 @@ body {
       height: 15rem;
       justify-content: center;
       align-items: normal;
+      gap: 3rem;
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -247,7 +248,7 @@ body {
       }
       p {
         width: 50vw;
-        font-size: 1.4vw;
+        font-size: 1.8rem;
       }
     }
   }

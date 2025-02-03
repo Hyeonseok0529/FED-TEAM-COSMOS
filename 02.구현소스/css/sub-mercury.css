@@ -581,6 +581,7 @@ img {
 body {
   background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
   font-family: "Orbitron", serif;
+  letter-spacing: 2px;
 }
 body .spin-box {
   position: fixed;
@@ -625,8 +626,7 @@ body .first-area div h1, body .namesake-area div h1, body .introduction-area div
 }
 body .first-area div p, body .namesake-area div p, body .introduction-area div p {
   width: 50vw;
-  font-size: 1.7vw;
-  font-size: 3.2vh;
+  font-size: 2.4rem;
 }
 @media (max-width: 1000px) {
   body .spin-box {
@@ -676,7 +676,7 @@ body .introduction-area div h2 {
 }
 body .introduction-area div p {
   width: 50vw;
-  font-size: 1.7vw;
+  font-size: 2.3rem;
   text-align: start;
 }
 @media (max-width: 1000px) {
@@ -721,7 +721,7 @@ body .namesake-area div h2 {
 }
 body .namesake-area div p {
   width: 50vw;
-  font-size: 1.7vw;
+  font-size: 2.3rem;
   text-align: start;
 }
 @media (max-width: 1000px) {
@@ -778,7 +778,7 @@ body .potential-area div h2 {
 }
 body .potential-area div p {
   width: 50vw;
-  font-size: 1.7vw;
+  font-size: 2.3rem;
 }
 @media (max-width: 1000px) {
   body .potential-area {
@@ -824,6 +824,7 @@ body .structure-area div {
   height: 15rem;
   justify-content: center;
   align-items: normal;
+  gap: 3rem;
 }
 body .structure-area div h2 {
   font-size: 6vw;
@@ -832,7 +833,7 @@ body .structure-area div h2 {
 }
 body .structure-area div p {
   width: 50vw;
-  font-size: 1.4vw;
+  font-size: 1.8rem;
 }
 @media (max-width: 1000px) {
   body .structure-area {
