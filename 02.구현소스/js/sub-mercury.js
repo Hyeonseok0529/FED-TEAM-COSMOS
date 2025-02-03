@@ -162,9 +162,6 @@ quickMenuItems.forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault(); // 기본동작 방지 (스크롤 이동 방지)
 
-    // 클릭된 메뉴의 href에서 id값을 가져옴
-    const sectionId = e.target.getAttribute('href').substring(1);
-
     // 해당 id를 가진 요소를 찾음
     // const targetSection = document.getElementById(sectionId);
     const targetSection = $(e.currentTarget).attr('href');

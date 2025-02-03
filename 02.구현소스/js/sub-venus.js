@@ -122,12 +122,9 @@ myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
   const galleryTitle = myFn.qs(".gallery-tit");
   // console.log(galleryTitle)
 
-  if (galleryTitle){
-    galleryTitle.scrollIntoView({
-      behavior:"smooth", // 부드러운 스크롤
-      block:"center" // 화면 중앙
-    }) // scrollIntoView //
-  } // if //
+  $('html,body').animate({
+    scrollTop: $(galleryTitle).offset().top + "px"
+  },400)
 }); // click //
 
 
