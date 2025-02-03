@@ -1,0 +1,567 @@
+@charset "UTF-8";
+/* 요소의 초기화 */
+/* 루트 글자크기 */
+@import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
+html {
+  font-size: 10px;
+}
+
+/* 1. 마진,패딩 없애기 */
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dt, dd, p, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* 가로스크롤 생김 방지!(특히 모바일) */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 2. a요소 리셋 */
+a {
+  color: #000;
+  /* 글자색 */
+  text-decoration: none;
+  /* 밑줄없앰 */
+}
+
+/* 3. ul,ol 리셋 */
+ul, ol {
+  list-style: none;
+  /* 블릿/숫자 제거 */
+}
+
+/* 4. h요소 글자크기 리셋 */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  /* html의 기본글자크기(16px)와 일치 초기화 */
+}
+
+/* 5. 이미지 리셋 */
+img {
+  border: none;
+  /* 이미지 링크시 서버에서 볼때 파란색 자동보더 없애기 */
+  vertical-align: bottom;
+  /* 박스 이미지 하단간극 없애기(약4px)
+  값으로 top, middle등 도 효과있음! */
+}
+
+/* 폰트체 */
+@media (min-width: 1150px) {
+  #header {
+    font-family: "Orbitron", serif;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(66, 66, 66, 0.5) 100%);
+    transition: 0.5s;
+  }
+  #header .top-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  #header .top-area .logo img {
+    width: 200px;
+  }
+  #header .top-area .header-nav {
+    position: relative;
+    display: flex;
+  }
+  #header .top-area .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .top-area .header-nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+  }
+  #header .top-area .header-nav ul li a {
+    color: #fff;
+    font-size: 15px;
+  }
+  #header .top-area .header-nav ul li:hover {
+    background-color: #fff;
+  }
+  #header .top-area .header-nav ul li:hover a {
+    color: #10244c !important;
+  }
+  #header .top-area .util-wrap {
+    width: 150px;
+  }
+  #header .top-area .util-wrap ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+  #header .top-area .util-wrap ul li img {
+    width: 30px;
+  }
+  #header:hover {
+    background: none;
+    background-color: #10244c;
+  }
+  #header:hover a {
+    color: #ebebeb !important;
+  }
+  #header.active {
+    transform: translateY(-100%);
+  }
+  #footer {
+    height: 100%;
+    background-color: #000;
+    border-top: 1px solid #a8a8a8;
+  }
+  #footer .bottom-area {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .top-con {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .bottom-logo img {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li {
+    width: 47px;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li img {
+    width: 100%;
+  }
+  #footer .bottom-area .bottom-nav {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  #footer .bottom-area .bottom-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .bottom-nav ul li a {
+    color: #589fe2;
+    font-size: 14px;
+  }
+  #footer .bottom-area .info {
+    padding-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: #9f9f9f;
+  }
+}
+@media (min-width: 481px) and (max-width: 1149px) {
+  #header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(66, 66, 66, 0.5) 100%);
+    transition: 0.5s;
+  }
+  #header .top-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  #header .top-area .logo img {
+    width: 200px;
+  }
+  #header .top-area .header-nav {
+    position: relative;
+    display: flex;
+  }
+  #header .top-area .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .top-area .header-nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+  #header .top-area .header-nav ul li a {
+    color: #fff;
+    font-size: 17px;
+  }
+  #header .top-area .header-nav ul li:hover {
+    background-color: #fff;
+  }
+  #header .top-area .header-nav ul li:hover a {
+    color: #10244c !important;
+  }
+  #header .top-area .util-wrap {
+    width: 150px;
+  }
+  #header .top-area .util-wrap ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+  #header .top-area .util-wrap ul li img {
+    width: 30px;
+  }
+  #header:hover {
+    background: none;
+    background-color: #10244c;
+  }
+  #header:hover a {
+    color: #ebebeb !important;
+  }
+  #header.active {
+    transform: translateY(-100%);
+  }
+  #footer {
+    height: 100%;
+    background-color: #000;
+    border-top: 1px solid #a8a8a8;
+  }
+  #footer .bottom-area {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .top-con {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .bottom-logo img {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li {
+    width: 47px;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li img {
+    width: 100%;
+  }
+  #footer .bottom-area .bottom-nav {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  #footer .bottom-area .bottom-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .bottom-nav ul li a {
+    color: #589fe2;
+    font-size: 14px;
+  }
+  #footer .bottom-area .info {
+    padding-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: #9f9f9f;
+  }
+}
+@media (max-width: 480px) {
+  #header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(66, 66, 66, 0.5) 100%);
+    transition: 0.5s;
+  }
+  #header .top-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  #header .top-area .logo img {
+    width: 200px;
+  }
+  #header .top-area .header-nav {
+    position: relative;
+    display: flex;
+  }
+  #header .top-area .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .top-area .header-nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+  #header .top-area .header-nav ul li a {
+    color: #fff;
+    font-size: 17px;
+  }
+  #header .top-area .header-nav ul li:hover {
+    background-color: #fff;
+  }
+  #header .top-area .header-nav ul li:hover a {
+    color: #10244c !important;
+  }
+  #header .top-area .util-wrap {
+    width: 150px;
+  }
+  #header .top-area .util-wrap ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+  #header .top-area .util-wrap ul li img {
+    width: 30px;
+  }
+  #header:hover {
+    background: none;
+    background-color: #10244c;
+  }
+  #header:hover a {
+    color: #ebebeb !important;
+  }
+  #header.active {
+    transform: translateY(-100%);
+  }
+  #footer {
+    height: 100%;
+    background-color: #000;
+    border-top: 1px solid #a8a8a8;
+  }
+  #footer .bottom-area {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .top-con {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .bottom-logo img {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap {
+    height: 60px;
+  }
+  #footer .bottom-area .top-con .sns-wrap p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li {
+    width: 47px;
+  }
+  #footer .bottom-area .top-con .sns-wrap ul li img {
+    width: 100%;
+  }
+  #footer .bottom-area .bottom-nav {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  #footer .bottom-area .bottom-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #footer .bottom-area .bottom-nav ul li a {
+    color: #589fe2;
+    font-size: 14px;
+  }
+  #footer .bottom-area .info {
+    padding-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: #9f9f9f;
+  }
+}
+body {
+  background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
+  font-family: "Orbitron", serif;
+}
+body .spin-box {
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: -1;
+}
+body .spin-box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+body .spin-box span img {
+  position: fixed;
+  transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  scale: 0.6;
+}
+body .first-area {
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .first-area div {
+  /* 믹스인 사용으로 인한 주석 */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 55%;
+}
+body .first-area div h1 {
+  font-size: 5vw;
+}
+body .first-area div p {
+  width: 50vw;
+  font-size: 1.4vw;
+}
+@media (max-width: 1000px) {
+  body .spin-box {
+    justify-content: center;
+    top: -10rem;
+  }
+  body .first-area {
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+    height: 89vh;
+    margin-bottom: 10rem;
+  }
+  body .first-area div {
+    width: 100%;
+    align-items: center;
+    text-align: left;
+  }
+  body .first-area div h2 {
+    line-height: 6rem;
+  }
+  body .first-area div p {
+    width: 80%;
+    font-size: 2.3rem;
+  }
+  body .first-area div h1 {
+    font-size: 9rem;
+  }
+}
+body #footer {
+  display: none;
+}
+
+/* 퀵메뉴바 스타일 */
+.quick-menu {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .quick-menu {
+    top: 30%;
+  }
+}
+.quick-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-menu ul li {
+  margin: 10px 0;
+}
+
+.quick-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.quick-menu ul li a:hover {
+  background-color: #425e97;
+  border-radius: 3px;
+}
+
+/* 클릭된 상태 (활성화된 메뉴) */
+.quick-menu a.active {
+  color: #fff;
+  border-radius: 3px;
+  background-color: #425e97; /* 활성화된 메뉴 배경색 */
+}
+
+/* 텍스트 전환을 위한 기본 스타일 */
+.desc-tit h1,
+.desc-desc p {
+  opacity: 1;
+  border-radius: 3px;
+  transform: translateY(30px); /* Y축으로 약간 이동 */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* 트랜지션 효과 */
+}
+
+/* 퀵메뉴 활성화시 */
+.desc-tit h1.show,
+.desc-desc p.show {
+  opacity: 1;
+  border-radius: 3px;
+  transform: translateY(0); /* 원위치로 이동 */
+}/*# sourceMappingURL=sub-v,e,m,j.css.map */

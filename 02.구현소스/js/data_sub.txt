@@ -5,5 +5,5 @@
     "namesake": 내용
     "potential": 내용
     "structure": 내용
-    "subGallery" : 갤러리 서브메뉴 제목
+    "gallery" : 갤러리 서브메뉴 이미지별 제목
   }

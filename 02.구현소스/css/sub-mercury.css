@@ -600,7 +600,8 @@ body .spin-box span {
 }
 body .spin-box span img {
   position: fixed;
-  transition: 0.4s ease-in-out;
+  transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  left: 10%;
 }
 body .first-area, body .namesake-area, body .introduction-area {
   color: #fff;
@@ -610,7 +611,6 @@ body .first-area, body .namesake-area, body .introduction-area {
   align-items: center;
 }
 body .first-area div, body .namesake-area div, body .introduction-area div {
-  height: 35vh;
   /* 믹스인 사용으로 인한 주석 */
   display: flex;
   align-items: flex-start;
@@ -618,7 +618,7 @@ body .first-area div, body .namesake-area div, body .introduction-area div {
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
-  gap: 3vw;
+  height: 15rem;
 }
 body .first-area div h1, body .namesake-area div h1, body .introduction-area div h1 {
   font-size: 6vw;
@@ -626,6 +626,7 @@ body .first-area div h1, body .namesake-area div h1, body .introduction-area div
 body .first-area div p, body .namesake-area div p, body .introduction-area div p {
   width: 50vw;
   font-size: 1.7vw;
+  font-size: 3.2vh;
 }
 @media (max-width: 1000px) {
   body .spin-box {
@@ -636,6 +637,8 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
+    height: 90vh;
+    margin-bottom: 10rem;
   }
   body .first-area div, body .namesake-area div, body .introduction-area div {
     width: 100%;
@@ -649,16 +652,23 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
     width: 80%;
     font-size: 2.3rem;
   }
+  body .first-area div p, body .namesake-area div p, body .introduction-area div p {
+    text-align: center;
+  }
+}
+body .introduction-area {
+  height: 50vh;
 }
 body .introduction-area div {
-  height: 11vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
-  gap: 3vw;
+  height: 15rem;
+  justify-content: center;
+  align-items: normal;
 }
 body .introduction-area div h2 {
   font-size: 6vw;
@@ -667,12 +677,15 @@ body .introduction-area div h2 {
 body .introduction-area div p {
   width: 50vw;
   font-size: 1.7vw;
+  text-align: start;
 }
 @media (max-width: 1000px) {
   body .introduction-area {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
   }
   body .introduction-area div {
     width: 100%;
@@ -686,24 +699,30 @@ body .introduction-area div p {
     width: 80%;
     font-size: 2.3rem;
   }
+  body .introduction-area div p {
+    text-align: center;
+  }
+}
+body .namesake-area {
+  height: 50vh;
 }
 body .namesake-area div {
-  height: 27vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
-  gap: 3vw;
+  height: 15rem;
 }
-body .namesake-area div h2 span {
+body .namesake-area div h2 {
   font-size: 6vw;
   text-transform: uppercase;
 }
 body .namesake-area div p {
   width: 50vw;
   font-size: 1.7vw;
+  text-align: start;
 }
 @media (max-width: 1000px) {
   body .namesake-area {
@@ -711,7 +730,8 @@ body .namesake-area div p {
     justify-content: center;
     align-items: flex-end;
     text-align: center;
-    gap: 3vw;
+    flex-wrap: wrap;
+    align-items: center;
   }
   body .namesake-area div {
     width: 100%;
@@ -725,28 +745,34 @@ body .namesake-area div p {
     width: 80%;
     font-size: 2.3rem;
   }
+  body .namesake-area div p {
+    font-size: 3.2rem;
+    text-align: center;
+  }
 }
 body .potential-area {
-  margin-top: 50rem;
   display: flex;
-  height: 100vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
   color: #fff;
+  height: 50vh;
+  margin-top: 50rem;
 }
 body .potential-area div {
-  height: 45vh;
-  gap: 3vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
+  height: 15rem;
+  justify-content: center;
+  align-items: normal;
+  width: 90%;
 }
 body .potential-area div h2 {
-  font-size: 4.5vw;
+  font-size: 5vw;
   text-transform: uppercase;
   line-height: 6vw;
 }
@@ -759,6 +785,9 @@ body .potential-area div p {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
+    margin-top: 0;
+    flex-wrap: wrap;
+    align-items: center;
   }
   body .potential-area div {
     width: 100%;
@@ -772,24 +801,29 @@ body .potential-area div p {
     width: 80%;
     font-size: 2.3rem;
   }
+  body .potential-area div p {
+    text-align: center;
+  }
 }
 body .structure-area {
   display: flex;
-  height: 100vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
   color: #fff;
+  height: 50vh;
+  margin-bottom: 50rem;
 }
 body .structure-area div {
-  gap: 5vw;
-  height: 7vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   width: 55%;
+  height: 15rem;
+  justify-content: center;
+  align-items: normal;
 }
 body .structure-area div h2 {
   font-size: 6vw;
@@ -819,10 +853,14 @@ body .structure-area div p {
     font-size: 2.3rem;
   }
   body .structure-area div {
-    height: 80vh;
+    gap: 3rem;
+  }
+  body .structure-area div p {
+    text-align: center;
   }
 }
 body .gallery {
+  margin-bottom: 100rem;
   /* 타이틀 */
   /* 그리드박스 */
   /* 그리드 각 박스 공통 */
@@ -925,6 +963,9 @@ body .gallery-smenu .img-flex {
   height: 70%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 body .gallery-smenu .img-flex .smenu-imgbox {
   display: flex;
@@ -932,19 +973,21 @@ body .gallery-smenu .img-flex .smenu-imgbox {
   width: 70%;
   justify-content: center;
 }
-body .gallery-smenu .img-flex .smenu-imgbox > img {
-  -o-object-fit: cover;
-     object-fit: cover;
+body .gallery-smenu .img-flex .smenu-imgbox img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+body .gallery-smenu .img-flex figcaption {
+  font-size: 14px;
+  color: #fff;
 }
 body .planet-area {
-  margin-top: 50rem;
   display: flex;
-  height: 100vh;
   justify-content: flex-start;
   align-items: center;
   margin-left: 6vw;
   color: #fff;
-  margin-bottom: 30rem;
   margin-left: 0;
 }
 body .planet-area div {
@@ -983,4 +1026,71 @@ body .planet-area div p {
 .scbar::-webkit-scrollbar-track {
   /* 스크롤바 트랙 */
   background-color: rgb(38, 36, 41);
-}/*# sourceMappingURL=sub.css.map */
+}
+
+/* 퀵메뉴바 스타일 */
+.quick-menu {
+  z-index: 99;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .quick-menu {
+    top: 70%;
+    z-index: 99;
+  }
+}
+.quick-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-menu ul li {
+  margin: 10px 0;
+}
+
+.quick-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.quick-menu ul li a:hover {
+  background-color: #425e97;
+  border-radius: 3px;
+}
+
+/* 클릭된 상태 (활성화된 메뉴) */
+.quick-menu a.active {
+  color: #fff;
+  border-radius: 3px;
+  background-color: #425e97; /* 활성화된 메뉴 배경색 */
+}
+
+/* 텍스트 전환을 위한 기본 스타일 */
+.desc-tit h1,
+.desc-desc p {
+  opacity: 1;
+  border-radius: 3px;
+  transform: translateY(30px); /* Y축으로 약간 이동 */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* 트랜지션 효과 */
+}
+
+/* 퀵메뉴 활성화시 */
+.desc-tit h1.show,
+.desc-desc p.show {
+  opacity: 1;
+  border-radius: 3px;
+  transform: translateY(0); /* 원위치로 이동 */
+}/*# sourceMappingURL=sub-mercury.css.map */

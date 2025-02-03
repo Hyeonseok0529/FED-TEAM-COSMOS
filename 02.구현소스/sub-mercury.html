@@ -7,7 +7,7 @@
     <title>Mercury</title>
 
     <!-- 서브 SCSS -->
-    <link rel="stylesheet" href="./css/sub.css" />
+    <link rel="stylesheet" href="./css/sub-mercury.css" />
 
     <!-- 제이쿼리 라이브러리 -->
     <script src="./js/jquery-3.7.1.min.js"></script>
@@ -18,12 +18,24 @@
     <script src="./js/typed.js"></script>
 
     <!-- 메인 JS 불러오기 -->
-    <script type="module" src="./js/sub.js"></script>
+    <script type="module" src="./js/sub-mercury.js"></script>
 
     <!-- include(header ,footer) -->
     <script defer src="./js/inc.js"></script>
   </head>
   <body class="scbar">
+       <!-- 퀵메뉴바 -->
+       <div class="quick-menu">
+        <ul>
+          <li><a href="#first-area">Main</a></li>
+          <li><a href="#introduction-area">Introduction</a></li>
+          <li><a href="#namesake-area">Namesake</a></li>
+          <li><a href="#potential-area">Potential</a></li>
+          <li><a href="#structure-area">Structure</a></li>
+          <li><a href="#gallery-area">gallery</a></li>
+        </ul>
+      </div>
+  
     <!-- [ 메인영역 ] -->
     <main class="s-main-area">
       <!-- 행성 -->
@@ -47,84 +59,86 @@
           <div class="desc-desc">
             <p>
               <span id="typed1" style="white-space: pre"></span>
-              <!-- The smallest planet in our solar system and nearest to the Sun,
-              Mercury is only slightly larger than Earth's Moon. -->
             </p>
             <p>
               <span id="typed2" style="white-space: pre" ></span>
-              <!-- The smallest planet in our solar system and nearest to the Sun,
-              Mercury is only slightly larger than Earth's Moon. -->
             </p>
           </div>
         </div>
       </section>
       <!--2. introduction 영역 -->
-      <section id="introduction-area" class="introduction-area scroll-act">
+      <section id="introduction-area" class="introduction-area move">
         <!-- 1) 행성 정보 -->
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
             <h2>
-              <span id="typed3" style="white-space: pre"></span>
+                    INTRODUCTION
             </h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
             <p>
-              <span id="typed4" style="white-space: pre"></span>
+              <span id="introduction-data"></span>
             </p>
           </div>
         </div>
       </section>
       <!--3. namesake 영역 -->
-      <section id="namesake-area" class="namesake-area scroll-act">
+      <section id="namesake-area" class="namesake-area move">
         <!-- 1) 행성 정보 -->
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h2><span id="typed5" style="white-space: pre" class="move"></span></h2>
+            <h2>
+              NAMESAKE
+            </h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
-            <p><span id="typed6" style="white-space: pre"></span></p>
+            <p><span id="namesake-data"></span></p>
           </div>
         </div>
       </section>
       <!--4. Potential for Life 영역 -->
-      <section id="potential-area" class="potential-area scroll-act move">
+      <section id="potential-area" class="potential-area">
         <!-- 1) 행성 정보 -->
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h2><span id="typed7" style="white-space: pre"></span></h2>
+            <h2>
+                POTENTIAL FOR LIFE
+            </h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
             <p>
-              <span id="typed8" style="white-space: pre"></span>
+              <span id="potential-data"></span>
             </p>
           </div>
         </div>
       </section>
       <!--5. Structure 영역 -->
-      <section id="structure-area" class="structure-area scroll-act">
+      <section id="structure-area" class="structure-area">
         <!-- 1) 행성 정보 -->
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h2><span id="typed9" style="white-space: pre"></span></h2>
+            <h2>
+              STRUCTURE
+            </h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
             <p>
-              <span id="typed10" style="white-space: pre"></span>
+              <span id="structure-data"></span>
             </p>
           </div>
         </div>
       </section>
       <!-- 갤러리 영역 -->
       <section class="gallery">
-        <h2 class="gallery-tit">gellery of mercury</h2>
+        <h2 class="gallery-tit move" >gellery of mercury</h2>
         <!-- 그리드 레이아웃박스 -->
         <div class="grid"></div>
         <script>
@@ -144,7 +158,7 @@
 
       <section>
         <!-- 갤러리 서브메뉴 -->
-        <div class="gallery-smenu">
+        <div class="gallery-smenu" id="gallery-area">
           <button class="close">X</button>
           <!-- 서브메뉴 컨텐츠박스 -->
           <div class="smenu-contbox">
@@ -157,19 +171,6 @@
               <!-- 사진하단 요약 제목 -->
               <figcaption></figcaption>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!--6. Planet 영역 -->
-      <section class="planet-area move">
-        <!-- 1) 박스 -->
-        <div class="planet-box">
-          <!-- 1-1) 타이틀 -->
-          <div class="planet-tit"></div>
-          <!-- 1-2) 컨텐츠박스 -->
-          <div class="planet-inbox">
-            <p></p>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@
 @import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
 
 // 헤더, 푸터 //
-@import "./common/inc"; // sub.scss 와 연결할 경우 오류가 나는 현상이 있어 잠깐 주석 /////////////////////////////////////////
+@import "./common/inc";
 @import "./common/t-inc";
 @import "./common/m-inc";
 
@@ -34,9 +34,10 @@ body {
       align-items: center;
       width: 50%;
       height: 50%;
-      img{
+      img {
         position: fixed;
-        transition: .4s ease-in-out;
+        transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+        left: 10%;
       }
     }
   }
@@ -68,7 +69,7 @@ body {
       }
     }
   }
- 
+
   // 첫 컨텐츠 영역 ////////////////////////////////////////////////////////////////////////
   .first-area {
     color: #fff;
@@ -77,7 +78,6 @@ body {
     justify-content: flex-end;
     align-items: center;
     div {
-      height: 35vh;
       /* 믹스인 사용으로 인한 주석 */
       // display: flex;
       // width: 55%;
@@ -87,13 +87,14 @@ body {
       // justify-content: flex-start;
 
       @include flex-set();
-      gap: 3vw;
+      height: 15rem;
       h1 {
         font-size: 6vw;
       }
       p {
         width: 50vw;
         font-size: 1.7vw;
+        font-size: 3.2vh;
       }
     }
   }
@@ -106,16 +107,25 @@ body {
     }
     .first-area {
       @include query-set();
+      height: 90vh;
+      margin-bottom: 10rem;
+      div {
+        p {
+          text-align: center;
+        }
+      }
     }
   }
 
   // introduction 영역 //////////////////////////////////////////////////////////////
   .introduction-area {
     @extend .first-area;
+    height: 50vh;
     div {
-      height: 11vh;
       @include flex-set();
-      gap: 3vw;
+      height: 15rem;
+      justify-content: center;
+      align-items: normal;
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -123,6 +133,7 @@ body {
       p {
         width: 50vw;
         font-size: 1.7vw;
+        text-align: start;
       }
     }
   }
@@ -130,25 +141,31 @@ body {
   @include tablet-medium {
     .introduction-area {
       @include query-set();
+      flex-wrap: wrap;
+      align-items: center;
+      div {
+        p {
+          text-align: center;
+        }
+      }
     }
   }
 
   // namesake 영역 //////////////////////////////////////////////////////////////
   .namesake-area {
     @extend .first-area;
+    height: 50vh;
     div {
-      height: 27vh;
       @include flex-set();
-      gap: 3vw;
+      height: 15rem;
       h2 {
-        span{
         font-size: 6vw;
         text-transform: uppercase;
-        }
       }
       p {
         width: 50vw;
         font-size: 1.7vw;
+        text-align: start;
       }
     }
   }
@@ -157,13 +174,19 @@ body {
     .namesake-area {
       @include query-set();
       text-align: center;
-      gap: 3vw;
+      flex-wrap: wrap;
+      align-items: center;
+      div {
+        p {
+          font-size: 3.2rem;
+          text-align: center;
+        }
+      }
     }
   }
 
   @mixin common-box {
     display: flex;
-    height: 100vh;
     justify-content: flex-start;
     align-items: center;
     margin-left: 6vw;
@@ -172,14 +195,17 @@ body {
 
   // potential for life 영역 //////////////////////////////////////////////////////////////
   .potential-area {
-    margin-top: 50rem;
     @include common-box;
+    height: 50vh;
+    margin-top: 50rem;
     div {
-      height: 45vh;
-      gap: 3vw;
       @include flex-set();
+      height: 15rem;
+      justify-content: center;
+      align-items: normal;
+      width: 90%;
       h2 {
-        font-size: 4.5vw;
+        font-size: 5vw;
         text-transform: uppercase;
         line-height: 6vw;
       }
@@ -193,16 +219,27 @@ body {
   @include tablet-medium {
     .potential-area {
       @include query-set();
+      margin-top: 0;
+      flex-wrap: wrap;
+      align-items: center;
+      div {
+        p {
+          text-align: center;
+        }
+      }
     }
   }
 
   // Structure 영역 ////////////////////////////////////////////////////////////////
   .structure-area {
     @include common-box;
+    height: 50vh;
+    margin-bottom: 50rem;
     div {
-      gap: 5vw;
-      height: 7vh;
       @include flex-set();
+      height: 15rem;
+      justify-content: center;
+      align-items: normal;
       h2 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -219,14 +256,18 @@ body {
   @include tablet-medium {
     .structure-area {
       @include query-set();
-      div{
-        height: 80vh;
+      div {
+        gap: 3rem;
+        p {
+          text-align: center;
+        }
       }
     }
   }
 
   // gallery 영역 //////////////////////////////////////////
   .gallery {
+    margin-bottom: 100rem;
     /* 타이틀 */
     h2 {
       margin-bottom: 10vh;
@@ -333,14 +374,22 @@ body {
       height: 70%;
       display: flex;
       justify-content: center;
+      flex-direction: column;
+    align-items: center;
+    gap: 15px;
       .smenu-imgbox {
         display: flex;
         overflow: hidden;
         width: 70%;
         justify-content: center;
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
       }
-      .smenu-imgbox > img {
-        object-fit: cover;
+      figcaption{
+        font-size: 14px;
+        color: #fff;
       }
     }
   }
@@ -348,9 +397,7 @@ body {
   // planet 영역 /////////////////////////////////////////////////////////////////////
 
   .planet-area {
-    margin-top: 50rem;
     @include common-box;
-    margin-bottom: 30rem;
     margin-left: 0;
     div {
       height: 100vh;
@@ -384,4 +431,70 @@ body {
   /* 스크롤바 트랙 */
   background-color: rgb(38, 36, 41);
   // border-radius: 5px;
+}
+
+/* 퀵메뉴바 스타일 */
+.quick-menu {
+  z-index: 99;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+@include tablet-medium {
+  .quick-menu {
+    top: 70%;
+    z-index: 99;
+  }
+}
+
+.quick-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-menu ul li {
+  margin: 10px 0;
+}
+
+.quick-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.quick-menu ul li a:hover {
+  background-color: #425e97;
+  border-radius: 3px;
+}
+/* 클릭된 상태 (활성화된 메뉴) */
+.quick-menu a.active {
+  color: #fff;
+  border-radius: 3px;
+  background-color: #425e97; /* 활성화된 메뉴 배경색 */
+}
+
+/* 텍스트 전환을 위한 기본 스타일 */
+.desc-tit h1,
+.desc-desc p {
+  opacity: 1;
+  border-radius: 3px;
+  transform: translateY(30px); /* Y축으로 약간 이동 */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* 트랜지션 효과 */
+}
+
+/* 퀵메뉴 활성화시 */
+.desc-tit h1.show,
+.desc-desc p.show {
+  opacity: 1;
+  border-radius: 3px;
+  transform: translateY(0); /* 원위치로 이동 */
 }
