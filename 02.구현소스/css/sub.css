@@ -391,10 +391,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 17px;
+    padding: 0 15px;
     margin: auto;
     position: relative;
-    height: 60px;
+    height: 50px;
   }
   #header .top-area .logo {
     position: absolute;

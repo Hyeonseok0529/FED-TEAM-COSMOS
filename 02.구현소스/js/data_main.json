@@ -1,50 +1,65 @@
 {
-  "MERCURY": {
-    "name": "Mercury",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/mercury.png"
-  },
-  "VENUS": {
-    "name": "Venus",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/venus.png"
-  },
-  "EARTH": {
-    "name": "Earth",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/earth.png"
-  },
-  "MARS": {
-    "name": "Mars",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/mars.png"
-  },
-  "JUPITER": {
-    "name": "Jupiter",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/jupiter.png"
-  },
-  "SATURN": {
-    "name": "Saturn",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/saturn.png"
-  },
-  "URANUS": {
-    "name": "Uranus",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/uranus.png"
-  },
-  "NEPTUNE": {
-    "name": "Neptune",
-    "days": "365.25 days",
-    "type": "terrestrial",
-    "img": "./images/main/neptune.png"
-  }
+  "item": [
+    {
+      "name": "Mercury",
+      "days": "88 Earth days",
+      "type": "terrestrial",
+      "imgSrc": "./images/main/mercury.png",
+      "imgAlt": "mercury image",
+      "modeling": "./images/main/3D_modeling/mercury.glb"
+    },
+    {
+      "name": "Venus",
+      "days": "225 Earth days",
+      "type": "terrestrial",
+      "imgSrc": "./images/main/venus.png",
+      "imgAlt": "mercury image",
+      "modeling": "./images/main/3D_modeling/venus.glb"
+    },
+    {
+      "name": "Earth",
+      "days": "365.25 Earth days",
+      "type": "terrestrial",
+      "imgSrc": "./images/main/earth.png",
+      "imgAlt": "mercury image",
+      "modeling": "./images/main/3D_modeling/earth.glb"
+    },
+    {
+      "name": "Mars",
+      "days": "687 Earth days",
+      "type": "terrestrial",
+      "imgSrc": "./images/main/mars.png",
+      "imgAlt": "mercury image",
+      "modeling": "./images/main/3D_modeling/mars.glb"
+    },
+    {
+      "name": "Jupiter",
+      "days": "4,333 Earth days",
+      "type": "Gas Giant",
+      "imgSrc": "./images/main/jupiter.png",
+      "modeling": "./images/main/3D_modeling/jupiter.glb"
+    },
+    {
+      "name": "Saturn",
+      "days": "10,759 Earth days",
+      "type": "Gas Giant",
+      "imgSrc": "./images/main/saturn.png",
+      "modeling": "./images/main/3D_modeling/saturn.glb"
+    },
+    {
+      "name": "Uranus",
+      "days": "30,687 Earth days",
+      "type": "Ice Giant",
+      "imgSrc": "./images/main/uranus.png",
+      "modeling": "./images/main/3D_modeling/uranus.glb"
+    },
+    {
+      "name": "Neptune",
+      "days": "60,190 Earth days",
+      "type": "Ice Giant",
+      "imgSrc": "./images/main/neptune.png",
+      "imgAlt": "mercury image",
+      "modeling": "./images/main/3D_modeling/neptune.glb"
+    }
+  ]
 }
