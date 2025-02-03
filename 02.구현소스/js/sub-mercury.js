@@ -166,14 +166,20 @@ quickMenuItems.forEach(item => {
     const sectionId = e.target.getAttribute('href').substring(1);
 
     // 해당 id를 가진 요소를 찾음
-    const targetSection = document.getElementById(sectionId);
+    // const targetSection = document.getElementById(sectionId);
+    const targetSection = $(e.currentTarget).attr('href');
+    console.log(targetSection);
 
-    if(targetSection){
-      //해당 섹션으로 부드럽게 스크롤
-      targetSection.scrollIntoView({
-        behavior:'smooth', // 부드러운 스크롤
-        block: 'center' // 섹션의 시작 부분으로 스크롤
-      }); // scrollIntoView //
-    } //// if /////
+    $('html,body').animate({
+      scrollTop: $(targetSection).offset().top + "px"
+    },600)
+
+    // if(targetSection){
+    //   //해당 섹션으로 부드럽게 스크롤
+    //   targetSection.scrollIntoView({
+    //     behavior:'smooth', // 부드러운 스크롤
+    //     block: 'center' // 섹션의 시작 부분으로 스크롤
+    //   }); // scrollIntoView //
+    // } //// if /////
   }); // addEventListener // 
 });
