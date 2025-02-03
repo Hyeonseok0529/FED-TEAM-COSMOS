@@ -161,8 +161,6 @@ quickMenuItems.forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault(); // 기본동작 방지 (스크롤 이동 방지)
 
-    // 기존 스크롤 애니 중지
-    $('html, body').stop();
     // 클릭된 메뉴의 href에서 id값을 가져옴
     const sectionId = e.target.getAttribute('href').substring(1);
 
@@ -174,22 +172,7 @@ quickMenuItems.forEach(item => {
       targetSection.scrollIntoView({
         behavior:'smooth', // 부드러운 스크롤
         block: 'center' // 섹션의 시작 부분으로 스크롤
-      });
-
+      }); // scrollIntoView //
     } //// if /////
-  }); //
+  }); // addEventListener // 
 });
-
-$(document).ready(function(){
-  $(".quick-menu a[href='#gallery']").click(function (e) {
-    e.preventDefault();
-
-    let targetOffset = $(".gallery-tit.move").offset().top; // 대상 위치 가져오기
-
-    $("html,body").animate({
-      scrollTop: targetOffset - ($(window).height() / 2)+ ($("gallery-tit.move").outerHeight() /2),
-    }, 800, // 애니메이션 시간 800 ms
-    "easeOutExpo"  
-  ); /// animate ///
-  });  /// click ///
-}); //// ready ////
