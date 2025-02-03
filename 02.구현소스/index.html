@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Bon Voyage </title>
-  
-  <!-- CSS 연결 -->
-  <link rel="stylesheet" href="./css/main.css" />
-  
-   <!-- 제이쿼리 라이브러리 CDN -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bon Voyage</title>
 
-   <!-- 제이쿼리 UI CDN -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
-   <!-- JS 연결 -->
-   <script defer src="./js/inc.js"></script>
-   <script src="./js/main.js"></script>
-   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="./css/main.css" />
 
-</head>
-<body>
-  <main class="mian-area">
-    <section class="main-section">
-      <div class="tbox-top">
-        <span class="tit">Earth</span>
-      </div>
-    </div>
-    <div class="planet-area">
-      <img src="./images/main/earth.png" alt="">
-      <div class="click-btn"><a href="">Click</a></div>
+    <!-- 제이쿼리 라이브러리 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- 스와이퍼 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <!-- 제이쿼리 UI CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <!-- JS 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="./js/inc.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <main class="mian-area">
       
-    </div>
-    <div class="tbox-bottom">
-      <div class="con-wrap">
-        <div class="planet-info">
-          <div class="tit">Length of Year</div>
-          <div class="info">365.25 days</div>
+      <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+
         </div>
-        <div class="planet-info">
-          <div class="tit">Planet Type</div>
-          <div class="info">Terrestrial</div>
-        </div>
-      </div>
-      <div class="link-btn">
-        <a href="#">View More</a>
-      </div>
-    </div>
-    </section>
-  </main>
-  
-</body>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+    </main>
+  </body>
 </html>

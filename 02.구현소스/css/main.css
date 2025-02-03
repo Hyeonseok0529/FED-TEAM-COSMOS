@@ -391,10 +391,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 17px;
+    padding: 0 15px;
     margin: auto;
     position: relative;
-    height: 60px;
+    height: 50px;
   }
   #header .top-area .logo {
     position: absolute;
@@ -578,87 +578,301 @@ img {
     color: #9f9f9f;
   }
 }
-body {
-  background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
-  font-family: "Orbitron", serif;
+@media (min-width: 481px) and (max-width: 1149px) {
+  body {
+    background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
+    font-family: "Orbitron", serif;
+  }
+  body .swiper .swiper-wrapper .swiper-slide {
+    transition: transform 1s ease-in;
+  }
+  body .swiper .swiper-wrapper .main-section {
+    height: 100vh;
+    position: relative;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-top {
+    z-index: 1;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-top .tit {
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area .click-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    display: none;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area .click-btn span {
+    color: rgba(255, 255, 255, 0.7568627451);
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area img {
+    height: 100%;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn {
+    display: block;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom {
+    z-index: 1;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
+    margin: 0 30px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
+    font-size: 25px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
+    margin-top: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
+    margin-top: 30px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: #589fe2;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    font-size: 13px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
+    background-color: #4583c6;
+  }
+  body .swiper .swiper-button-next, body .swiper .swiper-button-prev {
+    color: white;
+  }
+  body .swiper .swiper-button-prev {
+    left: 5%;
+  }
+  body .swiper .swiper-button-next {
+    right: 5%;
+  }
 }
-body .main-section {
-  height: 100vh;
-  position: relative;
+@media (max-width: 480px) {
+  body {
+    background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
+    font-family: "Orbitron", serif;
+  }
+  body .swiper .swiper-wrapper .swiper-slide {
+    transition: transform 1s ease-in;
+  }
+  body .swiper .swiper-wrapper .main-section {
+    height: 100vh;
+    position: relative;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-top {
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-top .tit {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area .click-btn {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    display: none;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area .click-btn span {
+    color: rgba(255, 255, 255, 0.7568627451);
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area img {
+    height: 100%;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom {
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
+    margin: 0 5px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
+    font-size: 25px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
+    margin-top: 30px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: #589fe2;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    font-size: 13px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
+    background-color: #4583c6;
+  }
+  body .swiper .swiper-button-next,
+  body .swiper .swiper-button-prev {
+    color: white;
+  }
+  body .swiper .swiper-button-prev {
+    left: 5%;
+  }
+  body .swiper .swiper-button-next {
+    right: 5%;
+  }
 }
-body .main-section .tbox-top {
-  z-index: 1;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-}
-body .main-section .tbox-top .tit {
-  font-size: 100px;
-  text-align: center;
-  letter-spacing: 10px;
-}
-body .main-section .planet-area {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 500px;
-}
-body .main-section .planet-area .click-btn {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  display: none;
-}
-body .main-section .planet-area .click-btn a {
-  color: rgba(255, 255, 255, 0.7568627451);
-}
-body .main-section .planet-area img {
-  height: 100%;
-}
-body .main-section .planet-area:hover .click-btn {
-  display: block;
-}
-body .main-section .tbox-bottom {
-  z-index: 1;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-}
-body .main-section .tbox-bottom .con-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-body .main-section .tbox-bottom .con-wrap .planet-info {
-  margin: 0 30px;
-}
-body .main-section .tbox-bottom .con-wrap .planet-info .tit {
-  font-size: 30px;
-}
-body .main-section .tbox-bottom .con-wrap .planet-info .info {
-  margin-top: 10px;
-  font-size: 17px;
-}
-body .main-section .tbox-bottom .link-btn a {
-  margin-top: 30px;
-  float: right;
-  width: 100px;
-  height: 40px;
-  background-color: #589fe2;
-  color: white;
-  text-align: center;
-  line-height: 38px;
-  font-size: 13px;
-  border-radius: 25px;
-  transition: 0.3s;
-}
-body .main-section .tbox-bottom .link-btn a:hover {
-  background-color: #4583c6;
+@media (min-width: 1150px) {
+  body {
+    background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
+    font-family: "Orbitron", serif;
+  }
+  body .swiper .swiper-wrapper .swiper-slide {
+    transition: transform 1s ease-in;
+  }
+  body .swiper .swiper-wrapper .main-section {
+    height: 100vh;
+    position: relative;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-top {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-top .tit {
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area .click-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    display: none;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area .click-btn span {
+    color: rgba(255, 255, 255, 0.7568627451);
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area img {
+    height: 100%;
+  }
+  body .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn {
+    display: block;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom {
+    z-index: 1;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
+    margin: 0 30px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
+    font-size: 30px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit span {
+    white-space: pre-wrap; /* 공백과 줄바꿈을 그대로 유지 */
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
+    margin-top: 30px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: #589fe2;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    font-size: 13px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
+    background-color: #4583c6;
+  }
+  body .swiper .swiper-button-next,
+  body .swiper .swiper-button-prev {
+    color: white;
+  }
+  body .swiper .swiper-button-prev {
+    left: 5%;
+  }
+  body .swiper .swiper-button-next {
+    right: 5%;
+  }
 }/*# sourceMappingURL=main.css.map */

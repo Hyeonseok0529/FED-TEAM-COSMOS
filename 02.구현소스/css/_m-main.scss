@@ -1,17 +1,4 @@
-//// inc _scss import ////
-@import "./common/reset";
-@import "./common/core";
-// 폰트 //
-@import "./variables";
-@import "https://fonts.googleapis.com/css2?family=Orbitron&display=swap";
-
-// 헤더 푸터, 무조건 제일 마지막에 import //
-@import "./common/inc";
-@import "./common/t-inc";
-@import "./common/m-inc";
-@import "./t-main";
-@import "./m-main";
-@media (min-width: 1150px) {
+@media (max-width: 480px) {
   body {
     background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
     font-family: $font-set;
@@ -27,12 +14,12 @@
           .tbox-top {
             z-index: 1;
             position: absolute;
-            top: 10%;
+            top: 20%;
             left: 50%;
             transform: translateX(-50%);
             color: white;
             .tit {
-              font-size: 100px;
+              font-size: 60px;
               text-align: center;
               letter-spacing: 10px;
             }
@@ -42,8 +29,9 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            height: 500px;
+            height: 300px;
             .click-btn {
+              display: none;
               position: absolute;
               left: 50%;
               top: 50%;
@@ -57,32 +45,24 @@
             img {
               height: 100%;
             }
-            &:hover {
-              .click-btn {
-                display: block;
-              }
-            }
           }
           .tbox-bottom {
             z-index: 1;
             position: absolute;
-            bottom: 5%;
+            bottom: 10%;
             left: 50%;
             transform: translateX(-50%);
             color: white;
             .con-wrap {
               @include flex(space-between, center);
               .planet-info {
-                margin: 0 30px;
+                margin: 0 5px;
                 .tit {
-                  font-size: 30px;
-                  span {
-                    white-space: pre-wrap;  /* 공백과 줄바꿈을 그대로 유지 */
-                  }
+                  font-size: 25px;
                 }
                 .info {
                   margin-top: 10px;
-                  font-size: 17px;
+                  font-size: 15px;
                 }
               }
             }
