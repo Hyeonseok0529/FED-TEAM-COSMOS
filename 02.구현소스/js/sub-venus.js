@@ -58,6 +58,15 @@ quickMenuItems.forEach(item => {
 
     // 클릭된 메뉴의 id를 가져옴
     const sectionId = e.target.getAttribute('href').substring(1);
+
+    // 'gallery' 메뉴를 제외한 경우, 최상단으로 스크롤
+    if(sectionId !== 'gallery-area'){
+      // 최상단으로 스크롤 
+      window.scrollTo({
+        top: 0,
+        behavior:'smooth'
+      }) // scrollTo //
+    } // if // 
     
     // 각 영역에 맞는 데이터를 설정
     if (selData) {
@@ -105,6 +114,7 @@ quickMenuItems.forEach(item => {
 })
 
 
+// gallery 퀵 메뉴 클릭시 해당 섹션으로 이동 // 
 myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
   e.preventDefault(); // 기본 동작 방지
 
@@ -119,3 +129,46 @@ myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
     }) // scrollIntoView //
   } // if //
 }); // click //
+
+
+
+// 행성이름으로 grid img 출력 //
+const planetName = myFn.qs("h1").textContent.trim().toLowerCase();
+
+let hCode = "";
+for (let i = 1; i <= 6; i++) {
+  hCode += `
+          <div>
+            <img src="./images/sub/${planetName}/${i}.jpg" alt="${planetName}">
+          </div>
+        `;
+} ///// for //////
+
+// .grid에 요소출력
+document.querySelector(".grid").innerHTML = hCode;
+
+
+// 갤러리 사진클릭시 원본보기//
+// 이벤트 대상 : .gallery > div
+// 변경대상: .smenu-contbox img
+const $smenuImg = $(".smenu-contbox");
+const $smenuImgbox = $(".smenu-imgbox");
+const $gallerySmenu = $(".gallery-smenu");
+const $closeBtn = $(".close");
+
+$(".gallery img").click(function () {
+  // console.log("미리보기!")
+
+  // 1. 클릭된 박스의 이미지 읽어오기
+  let currImg = $(this).attr("src"); /* .find(''); */
+  console.log(currImg);
+
+  // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
+  $smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
+
+  // 3. 상세이미지 보기 박스 보이기
+  $gallerySmenu.fadeIn(300);
+}); ///// click /////
+
+// 닫기 버튼 활성화 //
+$closeBtn.click(() => $gallerySmenu.fadeOut(300));

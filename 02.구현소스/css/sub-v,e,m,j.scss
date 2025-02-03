@@ -38,7 +38,7 @@ body {
       img {
         position: fixed;
         transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-        scale: .6;
+        scale: 0.6;
       }
     }
   }
@@ -109,7 +109,7 @@ body {
       height: 89vh;
       margin-bottom: 10rem;
       div {
-        h1{
+        h1 {
           font-size: 9rem;
         }
         p {
@@ -125,10 +125,7 @@ body {
     margin-left: 6vw;
     color: #fff;
   }
-
 }
-
-
 
 /* 퀵메뉴바 스타일 */
 .quick-menu {
@@ -142,8 +139,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-@include tablet-medium{
-  .quick-menu{
+@include tablet-medium {
+  .quick-menu {
     top: 30%;
   }
 }
@@ -164,7 +161,7 @@ body {
   font-size: 16px;
   display: block;
   padding: 10px;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .quick-menu ul li a:hover {
@@ -184,7 +181,7 @@ body {
   opacity: 1;
   border-radius: 3px;
   transform: translateY(30px); /* Y축으로 약간 이동 */
-  transition: opacity .5s ease, transform .5s ease; /* 트랜지션 효과 */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* 트랜지션 효과 */
 }
 
 /* 퀵메뉴 활성화시 */
@@ -193,12 +190,12 @@ body {
   opacity: 1;
   border-radius: 3px;
   transform: translateY(0); /* 원위치로 이동 */
-  p.show{
-    font-size: 1.2vw;
+  p.show {
+    font-size: 1.1vw;
   }
 }
 
-// 스크롤바 디자인 // 
+// 스크롤바 디자인 //
 /* -webkit- 밴더사명(크롬,사파리) 접두어 */
 /* 클래스명 scbar */
 .scbar::-webkit-scrollbar {
@@ -216,8 +213,9 @@ body {
   // border-radius: 5px;
 }
 
- // gallery 영역 //////////////////////////////////////////
- .gallery {
+// gallery 영역 //////////////////////////////////////////
+.gallery {
+  scale: 0.9;
   /* 타이틀 */
   h2 {
     margin-bottom: 10vh;
@@ -294,5 +292,62 @@ body {
   .second {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
+  }
+}
+
+// gallery 서브메뉴 //
+.gallery-smenu {
+  position: fixed;
+  z-index: 9999;
+  background-color: #000000a2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  display: none;
+  > button {
+    position: fixed;
+    top: 11vh;
+    right: 14vh;
+    border-radius: 50%;
+  }
+  .smenu-contbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-flex {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    .smenu-imgbox {
+      display: flex;
+      overflow: hidden;
+      width: 70%;
+      justify-content: center;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    figcaption {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+}
+@include tablet-medium {
+  .quick-menu {
+    top: 27%;
+    width: 13vh;
+    ul li a{
+      font-size: 13px;
+    }
   }
 }

@@ -56,6 +56,7 @@ $(".gallery img").click(function () {
   $gallerySmenu.fadeIn(300);
 }); ///// click /////
 
+// 닫기 버튼 활성화 //
 $closeBtn.click(() => $gallerySmenu.fadeOut(300));
 
 const rangeId = ["typed2", "typed3", "typed4", "typed5","typed6", "typed7","typed8", "typed9"];

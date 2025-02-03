@@ -723,7 +723,7 @@ body .first-area div p {
 }
 .desc-tit h1.show p.show,
 .desc-desc p.show p.show {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 }
 
 /* -webkit- 밴더사명(크롬,사파리) 접두어 */
@@ -745,6 +745,7 @@ body .first-area div p {
 }
 
 .gallery {
+  scale: 0.9;
   /* 타이틀 */
   /* 그리드박스 */
   /* 그리드 각 박스 공통 */
@@ -819,4 +820,62 @@ body .first-area div p {
 .gallery .second {
   grid-column: 1/1;
   grid-row: 1/1;
+}
+
+.gallery-smenu {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6352941176);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  display: none;
+}
+.gallery-smenu > button {
+  position: fixed;
+  top: 11vh;
+  right: 14vh;
+  border-radius: 50%;
+}
+.gallery-smenu .smenu-contbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-smenu .img-flex {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.gallery-smenu .img-flex .smenu-imgbox {
+  display: flex;
+  overflow: hidden;
+  width: 70%;
+  justify-content: center;
+}
+.gallery-smenu .img-flex .smenu-imgbox img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.gallery-smenu .img-flex figcaption {
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .quick-menu {
+    top: 27%;
+    width: 13vh;
+  }
+  .quick-menu ul li a {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=sub-v,e,m,j.css.map */
