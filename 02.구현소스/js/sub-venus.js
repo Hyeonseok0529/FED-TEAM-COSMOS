@@ -104,3 +104,18 @@ quickMenuItems.forEach(item => {
   })
 })
 
+
+myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
+  e.preventDefault(); // 기본 동작 방지
+
+  // .gallery-tit 할당
+  const galleryTitle = myFn.qs(".gallery-tit");
+  // console.log(galleryTitle)
+
+  if (galleryTitle){
+    galleryTitle.scrollIntoView({
+      behavior:"smooth", // 부드러운 스크롤
+      block:"center" // 화면 중앙
+    }) // scrollIntoView //
+  } // if //
+}); // click //
