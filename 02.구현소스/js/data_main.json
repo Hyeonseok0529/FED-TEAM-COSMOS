@@ -1,0 +1,50 @@
+{
+  "MERCURY": {
+    "name": "Mercury",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/mercury.png"
+  },
+  "VENUS": {
+    "name": "Venus",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/venus.png"
+  },
+  "EARTH": {
+    "name": "Earth",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/earth.png"
+  },
+  "MARS": {
+    "name": "Mars",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/mars.png"
+  },
+  "JUPITER": {
+    "name": "Jupiter",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/jupiter.png"
+  },
+  "SATURN": {
+    "name": "Saturn",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/saturn.png"
+  },
+  "URANUS": {
+    "name": "Uranus",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/uranus.png"
+  },
+  "NEPTUNE": {
+    "name": "Neptune",
+    "days": "365.25 days",
+    "type": "terrestrial",
+    "img": "./images/main/neptune.png"
+  }
+}
