@@ -131,6 +131,55 @@ body {
 }
 
 
+  // gallery 서브메뉴 //
+  .gallery-smenu {
+    position: fixed;
+    z-index: 9999;
+    background-color: #000000a2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    display: none;
+    > button {
+      position: fixed;
+      top: 11vh;
+      right: 14vh;
+      border-radius: 50%;
+    }
+    .smenu-contbox {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-flex {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    align-items: center;
+    gap: 15px;
+      .smenu-imgbox {
+        display: flex;
+        overflow: hidden;
+        width: 70%;
+        justify-content: center;
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      figcaption{
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+
+
 /* 퀵메뉴바 스타일 */
 .quick-menu {
   z-index: 1;

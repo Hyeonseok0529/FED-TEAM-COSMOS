@@ -176,3 +176,17 @@ quickMenuItems.forEach(item => {
     }
   });
 });
+
+$(document).ready(function(){
+  $(".quick-menu a[href='#gallery']").click(function (e) {
+    e.preventDefault();
+
+    let targetOffset = $(".gallery-tit.move").offset().top; // 대상 위치 가져오기
+
+    $("html,body").animate({
+      scrollTop: targetOffset - ($(window).height() / 2)+ ($("gallery-tit.move").outerHeight() /2),
+    }, 800, // 애니메이션 시간 800 ms
+    "easeOutExpo"  
+  ); /// animate ///
+  });  /// click ///
+}); //// ready ////
