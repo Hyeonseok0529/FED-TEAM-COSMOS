@@ -172,7 +172,7 @@ quickMenuItems.forEach(item => {
 
     $('html,body').animate({
       scrollTop: $(targetSection).offset().top + "px"
-    },600)
+    },400)
 
     // if(targetSection){
     //   //해당 섹션으로 부드럽게 스크롤
