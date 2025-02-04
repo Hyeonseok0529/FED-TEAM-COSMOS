@@ -619,17 +619,16 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
+  }
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box .click-btn {
     display: none;
   }
-  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box span {
-    color: rgba(255, 255, 255, 0.7568627451);
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box .touch-btn {
+    color: rgba(255, 255, 255, 0.4784313725);
     cursor: pointer;
   }
   body .main-area .swiper .swiper-wrapper .main-section .planet-area img {
     height: 100%;
-  }
-  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box {
-    display: block;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
@@ -767,18 +766,17 @@ img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 30px;
+  }
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box .click-btn {
     display: none;
   }
-  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box span {
-    color: rgba(255, 255, 255, 0.7568627451);
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box .touch-btn {
+    color: rgba(255, 255, 255, 0.4784313725);
     cursor: pointer;
   }
   body .main-area .swiper .swiper-wrapper .main-section .planet-area img {
     height: 100%;
-  }
-  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box {
-    display: block;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
@@ -918,7 +916,7 @@ img {
     font-size: 50px;
     display: none;
   }
-  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box span {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box .click-btn {
     color: rgba(255, 255, 255, 0.7568627451);
     cursor: pointer;
   }
@@ -927,6 +925,9 @@ img {
   }
   body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box {
     display: block;
+  }
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box .touch-btn {
+    display: none;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
