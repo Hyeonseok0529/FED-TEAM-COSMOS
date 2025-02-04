@@ -899,11 +899,6 @@ body .gallery .grid > div {
   border-radius: 10px;
   /* 이미지 공통 셋팅 */
 }
-body .gallery .grid > div:hover {
-  box-shadow: 0 0 30px aqua;
-  translate: -1% -1%;
-  z-index: 9;
-}
 body .gallery .grid > div:nth-child(2) {
   grid-area: 1/2/2/4;
   aspect-ratio: 2/1;
@@ -948,8 +943,8 @@ body .gallery-smenu {
 }
 body .gallery-smenu > button {
   position: fixed;
-  top: 11vh;
-  right: 14vh;
+  top: 15rem;
+  right: 15rem;
   border-radius: 50%;
   scale: 2;
 }
@@ -981,7 +976,7 @@ body .gallery-smenu .img-flex .smenu-imgbox img {
   width: 100%;
 }
 body .gallery-smenu .img-flex figcaption {
-  font-size: 14px;
+  font-size: 2rem;
   color: #fff;
 }
 body .planet-area {

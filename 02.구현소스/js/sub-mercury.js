@@ -39,8 +39,8 @@ const $smenuImgbox = $(".smenu-imgbox");
 const $gallerySmenu = $(".gallery-smenu");
 const $closeBtn = $(".close");
 
-// 닫기버튼 셋팅
-// $(".close").click(() => $(".gallery-smenu").fadeOut());
+// 갤러리 데이터 가져오기
+const galleryData = selData.gallery;
 
 $(".gallery img").click(function () {
   // console.log("미리보기!")
@@ -49,26 +49,18 @@ $(".gallery img").click(function () {
   let currImg = $(this).attr("src"); /* .find(''); */
   console.log(currImg);
 
-  // 이미지 제목 배열 가져오기
-  let imgArray = selData.gallery;
+  // 이미지 파일명에서 숫자만 추출
+  let imgIndex = parseInt(currImg.match(/\/(\d+)\.jpg$/)[1]) -1;
 
-  // 이미지 배열에서 클릭된 이미지의 순서 찾기
-  let imgIndex = -1;
-  for (let i = 0; i < imgArray.length; i++){
-    if (currImg.includes(imgArray[i])){
-      imgIndex = i;
-      break;
-    }
-  }
   
-  // 이미지 설명 가져오기 ( 배열의 같은 인덱스 위치에 저장된 설명)
-  let imgCaption = imgIndex !== -1 ? selData.galleryDesc[imgIndex] : "No description available";
+  // 해당 인덱스의 요약제목 가져오기
+  let captionText = galleryData[imgIndex] || "No description";
+  console.log(captionText);
 
   // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
   $smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
+  $(".smenu-contbox figcaption").text(captionText);
 
-
-  // 3. figcaption에 행성 이미지 배열 데이터 찾아서 입력하기
 
   // 4. 상세이미지 보기 박스 보이기
   $gallerySmenu.fadeIn(300);

@@ -783,11 +783,6 @@ body .first-area div p {
   border-radius: 10px;
   /* 이미지 공통 셋팅 */
 }
-.gallery .grid > div:hover {
-  box-shadow: 0 0 30px aqua;
-  translate: -1% -1%;
-  z-index: 9;
-}
 .gallery .grid > div:nth-child(2) {
   grid-area: 1/2/2/4;
   aspect-ratio: 2/1;
@@ -833,8 +828,8 @@ body .first-area div p {
 }
 .gallery-smenu > button {
   position: fixed;
-  top: 11vh;
-  right: 14vh;
+  top: 15rem;
+  right: 15rem;
   border-radius: 50%;
   scale: 2;
 }

@@ -31,8 +31,11 @@ if(planetImg){
 if (planetKey === "EARTH" || planetKey === "MARS") {
   planetImg.style.scale = "1"; // scale 1로 설정
 } // if //
-if (planetKey === "JUPITER"){
+if (planetKey === "JUPITER" || planetKey === "VENUS"){
   planetImg.style.scale = ".5"; // scale .7로 설정
+}
+if (planetKey === "VENUS"){
+  planetImg.style.scale = ".6"; // scale .7로 설정
 }
 
 // Default 상태 출력 //
@@ -151,6 +154,9 @@ const $smenuImgbox = $(".smenu-imgbox");
 const $gallerySmenu = $(".gallery-smenu");
 const $closeBtn = $(".close");
 
+// 갤러리 데이터 가져오기
+const galleryData = selData.gallery;
+
 $(".gallery img").click(function () {
   // console.log("미리보기!")
 
@@ -158,8 +164,20 @@ $(".gallery img").click(function () {
   let currImg = $(this).attr("src"); /* .find(''); */
   console.log(currImg);
 
-  // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
+
+
+    // 이미지 파일명에서 숫자만 추출
+    let imgIndex = parseInt(currImg.match(/\/(\d+)\.jpg$/)[1]) -1;
+
+  
+    // 해당 인덱스의 요약제목 가져오기
+    let captionText = galleryData[imgIndex] || "No description";
+    console.log(captionText);
+
+      // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
   $smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
+  $(".smenu-contbox figcaption").text(captionText);
+
 
   // 3. 상세이미지 보기 박스 보이기
   $gallerySmenu.fadeIn(300);

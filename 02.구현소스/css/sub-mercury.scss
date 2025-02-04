@@ -299,11 +299,11 @@ body {
       transition: 0.3s;
       overflow: hidden;
       border-radius: 10px;
-      &:hover {
-        box-shadow: 0 0 30px aqua;
-        translate: -1% -1%;
-        z-index: 9;
-      }
+      // &:hover {
+      //   box-shadow: 0 0 30px aqua;
+      //   translate: -1% -1%;
+      //   z-index: 9;
+      // }
       &:nth-child(2) {
         grid-area: 1 / 2 / 2 / 4;
         aspect-ratio: 2 / 1;
@@ -359,8 +359,8 @@ body {
     display: none;
     > button {
       position: fixed;
-      top: 11vh;
-      right: 14vh;
+      top: 15rem;
+      right: 15rem;
       border-radius: 50%;
       scale: 2;
     }
@@ -377,8 +377,8 @@ body {
       display: flex;
       justify-content: center;
       flex-direction: column;
-    align-items: center;
-    gap: 15px;
+      align-items: center;
+      gap: 15px;
       .smenu-imgbox {
         display: flex;
         overflow: hidden;
@@ -389,8 +389,8 @@ body {
           width: 100%;
         }
       }
-      figcaption{
-        font-size: 14px;
+      figcaption {
+        font-size: 2rem;
         color: #fff;
       }
     }
