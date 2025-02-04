@@ -4,17 +4,21 @@
 // 부드러운 스크롤 2024.04 변수선언개정
 // arranged by Tom Brace Parker
 
+// 전역변수 스크롤 위치값
+let scrollPos;
+// -> 다른 코딩으로 스크롤 이동시 이 변수에 일치필요!!!
+
 // startSS()함수를 호출하여 사용
-export default function startSS() {
+function startSS() {
   // 전체 스크롤 대상일때 document를 보냄
-  new SmoothScroll(document, 30, 10);
+  new SmoothScroll(document, 20, 5);
   // 특정박스일 경우 document.querySelector(선택요소)를 씀!
   // new SmoothScroll(document.querySelector('.wrap'), 60, 12)
 }
 
-// 전역변수 스크롤 위치값
-let scrollPos;
-// -> 다른 코딩으로 스크롤 이동시 이 변수에 일치필요!!!
+function updatePos(x){
+  scrollPos = x;
+}
 
 function SmoothScroll(scrollTarget, speed, smooth) {
   // scrollTarget - 대상요소, speed - 스크롤애니속도, smooth - 부드러운정도
@@ -96,3 +100,6 @@ function SmoothScroll(scrollTarget, speed, smooth) {
     );
   })();
 }
+
+
+export { startSS, updatePos };

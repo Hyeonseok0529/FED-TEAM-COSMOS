@@ -4,7 +4,7 @@
 import myFn from "./my_function.js";
 
 // 부드러운 스크롤 함수 불러오기
-import startSS from "./smoothScroll23.js";
+import {startSS, updatePos} from "./smoothScroll23.js";
 
 import planetData from "./data_sub.json" with{type:'json'};
 // console.log(planetData);
@@ -107,7 +107,9 @@ const movePlanet = myFn.qs(".planetImg");
 
 // 이벤트 대상 위치값 담기
 const moveEl = [];
-move.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
+// 보정수치 - 화면 높이값의 2/3
+let winH = window.innerHeight/4;
+move.forEach((el, idx) => (moveEl[idx] = el.offsetTop+winH))
 // console.log("위치값!:",moveEl);
 
 // 2. 이벤트 설정하기 //
@@ -167,9 +169,15 @@ quickMenuItems.forEach(item => {
     const targetSection = $(e.currentTarget).attr('href');
     console.log(targetSection);
 
+    // 위치값
+    let tgPos = $(targetSection).offset().top - winH;
+
     $('html,body').animate({
-      scrollTop: $(targetSection).offset().top + "px"
-    },400)
+      scrollTop: tgPos + "px"
+    },400);
+
+    // 부드러운 스크롤 위치값 업데이트
+    updatePos(tgPos);
 
     // if(targetSection){
     //   //해당 섹션으로 부드럽게 스크롤
