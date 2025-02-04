@@ -21,19 +21,39 @@
     <!-- JS 연결 -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script defer src="./js/inc.js"></script>
-    <script defer src="./js/main.js"></script>
+
   </head>
   <body>
-    <main class="mian-area">
+    <main class="main-area">
       
       <section class="swiper mySwiper">
         <div class="swiper-wrapper">
-          
-
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </section>
+
+      <div class="modal">
+        <div class="modal-inner">
+          <div class="close-box">
+            <span class="close">X</span>
+          </div>
+          <div id="threejs-container"></div>
+        </div>
+    </div>
+
     </main>
   </body>
+
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js",
+            "three/examples/jsm/loaders/GLTFLoader.js": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/loaders/GLTFLoader.js",
+            "three/examples/jsm/controls/OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/controls/OrbitControls.js"
+        }
+    }
+    </script>
+    <script defer type="module" src="./js/main.js"></script>
+
 </html>

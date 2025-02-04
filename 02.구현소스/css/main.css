@@ -583,14 +583,17 @@ img {
     background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
     font-family: "Orbitron", serif;
   }
-  body .swiper .swiper-wrapper .swiper-slide {
+  body .main-area {
+    position: relative;
+  }
+  body .main-area .swiper .swiper-wrapper .swiper-slide {
     transition: transform 1s ease-in;
   }
-  body .swiper .swiper-wrapper .main-section {
+  body .main-area .swiper .swiper-wrapper .main-section {
     height: 100vh;
     position: relative;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-top {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-top {
     z-index: 1;
     position: absolute;
     top: 13%;
@@ -598,19 +601,19 @@ img {
     transform: translateX(-50%);
     color: white;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-top .tit {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-top .tit {
     font-size: 80px;
     text-align: center;
     letter-spacing: 10px;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 450px;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area .click-btn {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -618,16 +621,17 @@ img {
     font-size: 50px;
     display: none;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area .click-btn span {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box span {
     color: rgba(255, 255, 255, 0.7568627451);
+    cursor: pointer;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area img {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area img {
     height: 100%;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box {
     display: block;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
     position: absolute;
     bottom: 5%;
@@ -635,23 +639,22 @@ img {
     transform: translateX(-50%);
     color: white;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
     margin: 0 30px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
     font-size: 25px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
     margin-top: 10px;
     font-size: 15px;
-    white-space: nowrap;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
     margin-top: 30px;
     float: right;
     width: 100px;
@@ -664,17 +667,64 @@ img {
     border-radius: 25px;
     transition: 0.3s;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
     background-color: #4583c6;
   }
-  body .swiper .swiper-button-next, body .swiper .swiper-button-prev {
+  body .main-area .swiper .swiper-button-next,
+  body .main-area .swiper .swiper-button-prev {
     color: white;
   }
-  body .swiper .swiper-button-prev {
+  body .main-area .swiper .swiper-button-prev {
     left: 5%;
   }
-  body .swiper .swiper-button-next {
+  body .main-area .swiper .swiper-button-next {
     right: 5%;
+  }
+  body .main-area .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+  body .main-area .modal .modal-inner {
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80%;
+    max-width: 90%;
+    aspect-ratio: 1;
+    background-image: url("../images/sub/background_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  body .main-area .modal .modal-inner .close-box {
+    text-align: end;
+  }
+  body .main-area .modal .modal-inner .close-box .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+  }
+  body .main-area .modal .modal-inner #threejs-container {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-area .modal .modal-inner #threejs-container canvas {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-area .modal.active {
+    display: block;
   }
 }
 @media (max-width: 480px) {
@@ -682,14 +732,17 @@ img {
     background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
     font-family: "Orbitron", serif;
   }
-  body .swiper .swiper-wrapper .swiper-slide {
+  body .main-area {
+    position: relative;
+  }
+  body .main-area .swiper .swiper-wrapper .swiper-slide {
     transition: transform 1s ease-in;
   }
-  body .swiper .swiper-wrapper .main-section {
+  body .main-area .swiper .swiper-wrapper .main-section {
     height: 100vh;
     position: relative;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-top {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-top {
     z-index: 1;
     position: absolute;
     top: 20%;
@@ -697,20 +750,19 @@ img {
     transform: translateX(-50%);
     color: white;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-top .tit {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-top .tit {
     font-size: 60px;
     text-align: center;
     letter-spacing: 10px;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 300px;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area .click-btn {
-    display: none;
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -718,13 +770,17 @@ img {
     font-size: 50px;
     display: none;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area .click-btn span {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box span {
     color: rgba(255, 255, 255, 0.7568627451);
+    cursor: pointer;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area img {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area img {
     height: 100%;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box {
+    display: block;
+  }
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
     position: absolute;
     bottom: 10%;
@@ -732,22 +788,22 @@ img {
     transform: translateX(-50%);
     color: white;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
     margin: 0 5px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
-    font-size: 25px;
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
+    font-size: 23px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
     margin-top: 30px;
     float: right;
     width: 100px;
@@ -760,18 +816,63 @@ img {
     border-radius: 25px;
     transition: 0.3s;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
     background-color: #4583c6;
   }
-  body .swiper .swiper-button-next,
-  body .swiper .swiper-button-prev {
+  body .main-area .swiper .swiper-button-next,
+  body .main-area .swiper .swiper-button-prev {
     color: white;
   }
-  body .swiper .swiper-button-prev {
+  body .main-area .swiper .swiper-button-prev {
     left: 5%;
   }
-  body .swiper .swiper-button-next {
+  body .main-area .swiper .swiper-button-next {
     right: 5%;
+  }
+  body .main-area .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+  body .main-area .modal .modal-inner {
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    aspect-ratio: 1;
+    background-image: url("../images/sub/background_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  body .main-area .modal .modal-inner .close-box {
+    text-align: end;
+  }
+  body .main-area .modal .modal-inner .close-box .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+  }
+  body .main-area .modal .modal-inner #threejs-container {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-area .modal .modal-inner #threejs-container canvas {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-area .modal.active {
+    display: block;
   }
 }
 @media (min-width: 1150px) {
@@ -779,14 +880,17 @@ img {
     background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
     font-family: "Orbitron", serif;
   }
-  body .swiper .swiper-wrapper .swiper-slide {
-    transition: transform 1s ease-in;
+  body .main-area {
+    position: relative;
   }
-  body .swiper .swiper-wrapper .main-section {
+  body .main-area .swiper .swiper-wrapper .swiper-slide {
+    transition: transform 1s ease-in-out;
+  }
+  body .main-area .swiper .swiper-wrapper .main-section {
     height: 100vh;
     position: relative;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-top {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-top {
     z-index: 1;
     position: absolute;
     top: 10%;
@@ -794,19 +898,19 @@ img {
     transform: translateX(-50%);
     color: white;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-top .tit {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-top .tit {
     font-size: 100px;
     text-align: center;
     letter-spacing: 10px;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 500px;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area .click-btn {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -814,16 +918,17 @@ img {
     font-size: 50px;
     display: none;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area .click-btn span {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box span {
     color: rgba(255, 255, 255, 0.7568627451);
+    cursor: pointer;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area img {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area img {
     height: 100%;
   }
-  body .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn {
+  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box {
     display: block;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
     position: absolute;
     bottom: 5%;
@@ -831,25 +936,25 @@ img {
     transform: translateX(-50%);
     color: white;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
     margin: 0 30px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
     font-size: 30px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit span {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit span {
     white-space: pre-wrap; /* 공백과 줄바꿈을 그대로 유지 */
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
     margin-top: 10px;
     font-size: 17px;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
     margin-top: 30px;
     float: right;
     width: 100px;
@@ -862,17 +967,62 @@ img {
     border-radius: 25px;
     transition: 0.3s;
   }
-  body .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
+  body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
     background-color: #4583c6;
   }
-  body .swiper .swiper-button-next,
-  body .swiper .swiper-button-prev {
+  body .main-area .swiper .swiper-button-next,
+  body .main-area .swiper .swiper-button-prev {
     color: white;
   }
-  body .swiper .swiper-button-prev {
+  body .main-area .swiper .swiper-button-prev {
     left: 5%;
   }
-  body .swiper .swiper-button-next {
+  body .main-area .swiper .swiper-button-next {
     right: 5%;
+  }
+  body .main-area .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+  body .main-area .modal .modal-inner {
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    aspect-ratio: 1;
+    background-image: url("../images/sub/background_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  body .main-area .modal .modal-inner .close-box {
+    text-align: end;
+  }
+  body .main-area .modal .modal-inner .close-box .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+  }
+  body .main-area .modal .modal-inner #threejs-container {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-area .modal .modal-inner #threejs-container canvas {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-area .modal.active {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
