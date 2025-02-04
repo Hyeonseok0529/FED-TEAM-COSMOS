@@ -4,9 +4,7 @@
 import myFn from "./my_function.js";
 
 // 부드러운 스크롤 함수 불러오기
-import startSS from "./smoothScroll23.js";
-// 호출
-startSS();
+import {startSS, updatePos} from "./smoothScroll23.js";
 
 
 import planetData from "./data_sub.json" with{type:'json'};

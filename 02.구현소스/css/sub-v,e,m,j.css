@@ -602,7 +602,6 @@ body .spin-box span {
 body .spin-box span img {
   position: fixed;
   transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  scale: 0.6;
 }
 body .first-area {
   color: #fff;
