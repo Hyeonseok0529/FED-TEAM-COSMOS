@@ -49,10 +49,28 @@ $(".gallery img").click(function () {
   let currImg = $(this).attr("src"); /* .find(''); */
   console.log(currImg);
 
+  // 이미지 제목 배열 가져오기
+  let imgArray = selData.gallery;
+
+  // 이미지 배열에서 클릭된 이미지의 순서 찾기
+  let imgIndex = -1;
+  for (let i = 0; i < imgArray.length; i++){
+    if (currImg.includes(imgArray[i])){
+      imgIndex = i;
+      break;
+    }
+  }
+  
+  // 이미지 설명 가져오기 ( 배열의 같은 인덱스 위치에 저장된 설명)
+  let imgCaption = imgIndex !== -1 ? selData.galleryDesc[imgIndex] : "No description available";
+
   // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
   $smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
 
-  // 3. 상세이미지 보기 박스 보이기
+
+  // 3. figcaption에 행성 이미지 배열 데이터 찾아서 입력하기
+
+  // 4. 상세이미지 보기 박스 보이기
   $gallerySmenu.fadeIn(300);
 }); ///// click /////
 

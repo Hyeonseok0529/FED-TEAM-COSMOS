@@ -836,6 +836,7 @@ body .first-area div p {
   top: 11vh;
   right: 14vh;
   border-radius: 50%;
+  scale: 2;
 }
 .gallery-smenu .smenu-contbox {
   width: 100%;

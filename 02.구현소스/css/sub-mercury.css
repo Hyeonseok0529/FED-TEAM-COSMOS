@@ -951,6 +951,7 @@ body .gallery-smenu > button {
   top: 11vh;
   right: 14vh;
   border-radius: 50%;
+  scale: 2;
 }
 body .gallery-smenu .smenu-contbox {
   width: 100%;
