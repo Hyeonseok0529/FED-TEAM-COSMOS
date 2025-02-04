@@ -37,20 +37,17 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                font-size: 50px;
-                display: none;
-                span {
-                  color: #ffffffc1;
+                font-size: 30px;
+                .click-btn{
+                  display: none;
+                }
+                .touch-btn {
+                  color: #ffffff7a;
                   cursor: pointer;
                 }
               }
               img {
                 height: 100%;
-              }
-              &:hover {
-                .click-btn-box {
-                  display: block;
-                }
               }
             }
             .tbox-bottom {
