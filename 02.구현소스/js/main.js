@@ -1,3 +1,5 @@
+import { init3D } from './3d.js';
+
 const main = document.querySelector('.mySwiper > .swiper-wrapper');
 
 fetch('./js/data_main.json')
@@ -11,9 +13,7 @@ fetch('./js/data_main.json')
           </div>
           <div class="planet-area">
             <img src="${v.imgSrc}" alt="${v.imgAlt}" draggable="false"">
-            <div class="click-btn">
-              <span href="">Click</span>
-            </div>
+        <div class="click-btn-box"><span class="click-btn" data-modeling="${v.modeling}">Click</span></div>
           </div>
           <div class="tbox-bottom">
             <div class="con-wrap">
@@ -38,11 +38,32 @@ fetch('./js/data_main.json')
       loop: true,
       speed: 700,
       allowTouchMove: false,
+      // mousewheel : true, 
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
     });
+
+    const modalBtn = document.querySelectorAll(".click-btn");
+const closeBtn = document.querySelector(".close");
+const modal = document.querySelector(".modal");
+
+modalBtn.forEach((item) => {
+  item.onclick = () => {
+      modal.classList.add("active");
+      const modelingValue = item.getAttribute("data-modeling");
+
+      init3D(modelingValue); // 클릭 시 3D 초기화 함수 호출
+  };
+});
+
+closeBtn.onclick = () => {
+  modal.classList.remove("active");
+  const container = document.getElementById('threejs-container');
+  container.innerHTML = ''; // 모달 닫을 때 3D 씬 초기화
+};
+
   });
 
 
@@ -59,7 +80,7 @@ const handleScroll = (event) => {
   isScrolling = true;
 
   // 스크롤 방향 감지
-  const delta = event.deltaY; // 음수: 위로, 양수: 아래로
+  const delta = event.deltaY
 
   if (delta > 0 && currentIndex < sections.length - 1) {
     currentIndex++;
@@ -75,3 +96,5 @@ const handleScroll = (event) => {
 
 // 마우스 휠 이벤트 등록
 window.addEventListener('wheel', handleScroll);
+
+
