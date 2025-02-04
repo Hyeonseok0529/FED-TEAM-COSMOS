@@ -36,9 +36,13 @@ fetch('./js/data_main.json')
 
     new Swiper(".mySwiper", {
       loop: true,
-      speed: 700,
+      speed: 1000,
       allowTouchMove: false,
       // mousewheel : true, 
+      // autoplay : {  // 자동 슬라이드 설정
+      //   delay : 3000,
+      //   disableOnInteraction : false,
+      // },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
