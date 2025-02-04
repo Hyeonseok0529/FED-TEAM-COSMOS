@@ -4,17 +4,21 @@
 // 부드러운 스크롤 2024.04 변수선언개정
 // arranged by Tom Brace Parker
 
+// 전역변수 스크롤 위치값
+let scrollPos;
+// -> 다른 코딩으로 스크롤 이동시 이 변수에 일치필요!!!
+
 // startSS()함수를 호출하여 사용
-export default function startSS() {
+function startSS() {
   // 전체 스크롤 대상일때 document를 보냄
-  new SmoothScroll(document, 30, 30);
+  new SmoothScroll(document, 20, 5);
   // 특정박스일 경우 document.querySelector(선택요소)를 씀!
   // new SmoothScroll(document.querySelector('.wrap'), 60, 12)
 }
 
-// 전역변수 스크롤 위치값
-let scrollPos;
-// -> 다른 코딩으로 스크롤 이동시 이 변수에 일치필요!!!
+function updatePos(x){
+  scrollPos = x;
+}
 
 function SmoothScroll(scrollTarget, speed, smooth) {
   // scrollTarget - 대상요소, speed - 스크롤애니속도, smooth - 부드러운정도
@@ -68,17 +72,17 @@ function SmoothScroll(scrollTarget, speed, smooth) {
           (e.wheelDelta / e.detail / 40) * (e.detail > 0 ? 1 : -1)
         ); // Opera
       else return -e.detail / 3; // Firefox
-    } else return e.wheelDelta / 20; // IE,Safari,Chrome
+    } else return e.wheelDelta / 45; // IE,Safari,Chrome
   }
 
   function update() {
     moving = true;
 
-    let delta = (scrollPos - scrollTarget.scrollTop) / smooth;
+    let delta = (scrollPos - scrollTarget.scrollTop) / (smooth * 1.5);
 
     scrollTarget.scrollTop += delta;
 
-    if (Math.abs(delta) > 0.5) requestFrame(update);
+    if (Math.abs(delta) > 0.2) requestFrame(update);
     else moving = false;
   }
 
@@ -96,3 +100,6 @@ function SmoothScroll(scrollTarget, speed, smooth) {
     );
   })();
 }
+
+
+export { startSS, updatePos };

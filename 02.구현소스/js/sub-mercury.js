@@ -4,7 +4,7 @@
 import myFn from "./my_function.js";
 
 // 부드러운 스크롤 함수 불러오기
-import startSS from "./smoothScroll23.js";
+import {startSS, updatePos} from "./smoothScroll23.js";
 
 import planetData from "./data_sub.json" with{type:'json'};
 // console.log(planetData);
@@ -56,6 +56,7 @@ $(".gallery img").click(function () {
   $gallerySmenu.fadeIn(300);
 }); ///// click /////
 
+// 닫기 버튼 활성화 //
 $closeBtn.click(() => $gallerySmenu.fadeOut(300));
 
 const rangeId = ["typed2", "typed3", "typed4", "typed5","typed6", "typed7","typed8", "typed9"];
@@ -106,7 +107,9 @@ const movePlanet = myFn.qs(".planetImg");
 
 // 이벤트 대상 위치값 담기
 const moveEl = [];
-move.forEach((el, idx) => (moveEl[idx] = el.offsetTop))
+// 보정수치 - 화면 높이값의 2/3
+let winH = window.innerHeight/4;
+move.forEach((el, idx) => (moveEl[idx] = el.offsetTop+winH))
 // console.log("위치값!:",moveEl);
 
 // 2. 이벤트 설정하기 //
@@ -161,32 +164,27 @@ quickMenuItems.forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault(); // 기본동작 방지 (스크롤 이동 방지)
 
-    // 클릭된 메뉴의 href에서 id값을 가져옴
-    const sectionId = e.target.getAttribute('href').substring(1);
-
     // 해당 id를 가진 요소를 찾음
-    const targetSection = document.getElementById(sectionId);
+    // const targetSection = document.getElementById(sectionId);
+    const targetSection = $(e.currentTarget).attr('href');
+    console.log(targetSection);
 
-    if(targetSection){
-      //해당 섹션으로 부드럽게 스크롤
-      targetSection.scrollIntoView({
-        behavior:'smooth', // 부드러운 스크롤
-        block: 'start' // 섹션의 시작 부분으로 스크롤
-      });
-    }
-  });
+    // 위치값
+    let tgPos = $(targetSection).offset().top - winH;
+
+    $('html,body').animate({
+      scrollTop: tgPos + "px"
+    },400);
+
+    // 부드러운 스크롤 위치값 업데이트
+    updatePos(tgPos);
+
+    // if(targetSection){
+    //   //해당 섹션으로 부드럽게 스크롤
+    //   targetSection.scrollIntoView({
+    //     behavior:'smooth', // 부드러운 스크롤
+    //     block: 'center' // 섹션의 시작 부분으로 스크롤
+    //   }); // scrollIntoView //
+    // } //// if /////
+  }); // addEventListener // 
 });
-
-$(document).ready(function(){
-  $(".quick-menu a[href='#gallery']").click(function (e) {
-    e.preventDefault();
-
-    let targetOffset = $(".gallery-tit.move").offset().top; // 대상 위치 가져오기
-
-    $("html,body").animate({
-      scrollTop: targetOffset - ($(window).height() / 2)+ ($("gallery-tit.move").outerHeight() /2),
-    }, 800, // 애니메이션 시간 800 ms
-    "easeOutExpo"  
-  ); /// animate ///
-  });  /// click ///
-}); //// ready ////
