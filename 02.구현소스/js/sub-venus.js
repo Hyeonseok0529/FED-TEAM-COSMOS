@@ -24,10 +24,8 @@ document.title = planetKey
 // 행성 키값에 따라 이미지 변경 //
 let planetImg = myFn.qs(".planetImg");
 if(planetImg){
-  let lowerPlanetKey = planetKey.toLowerCase();
-  planetImg.src=`/FED-TEAM-COSMOS/images/sub/${lowerPlanetKey}/${lowerPlanetKey}.png`;
+  planetImg.src=`./images/sub/${planetKey.toLowerCase()}/${planetKey.toLowerCase()}.png`;
 } // if //
-
 // 지구, 화성인 경우 scale 1로 설정
 if (planetKey === "EARTH" || planetKey === "MARS") {
   planetImg.style.scale = "1"; // scale 1로 설정
