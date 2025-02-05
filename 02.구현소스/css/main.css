@@ -648,6 +648,7 @@ img {
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
     font-size: 25px;
+    white-space: nowrap;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
     margin-top: 10px;
@@ -781,7 +782,7 @@ img {
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -795,11 +796,12 @@ img {
     margin: 0 10px;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
-    font-size: 23px;
+    font-size: 20px;
+    white-space: nowrap;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .info {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a {
     margin-top: 30px;
