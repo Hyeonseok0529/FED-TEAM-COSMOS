@@ -672,7 +672,7 @@ body .first-area div p {
   z-index: 99;
   position: fixed;
   top: 50%;
-  left: 0;
+  right: 0;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -690,7 +690,7 @@ body .first-area div p {
     top: 20%;
     z-index: 99;
     scale: 0.8;
-    translate: -100%;
+    translate: 100%;
     transition: 0.4s cubic-bezier(0.46, -0.39, 0.2, 1.48);
   }
   .quick-menu.active {
@@ -699,7 +699,7 @@ body .first-area div p {
   /* 퀵메뉴 토글 버튼 스타일 */
   .toggle-btn {
     position: fixed;
-    left: 10px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.6);
@@ -708,7 +708,7 @@ body .first-area div p {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 9;
     transition: background 0.3s ease;
     opacity: 1;
     font-size: 25px;
