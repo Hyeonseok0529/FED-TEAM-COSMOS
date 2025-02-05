@@ -75,12 +75,12 @@ export function init3D(modelingSrc) {
 
       animateRotation(); // 회전 애니메이션 시작
     },
-    (xhr) => {
-      console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-    },
-    (error) => {
-      console.error("모델 로딩 실패", error);
-    }
+    // (xhr) => {
+    //   console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+    // },
+    // (error) => {
+    //   console.error("모델 로딩 실패", error);
+    // }
   );
 
   // 윈도우 리사이즈 대응
