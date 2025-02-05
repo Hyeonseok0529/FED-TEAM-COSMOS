@@ -30,7 +30,7 @@ fetch("./js/data_main.json")
               </div>
             </div>
             <div class="link-btn">
-              <a href="#">View More</a>
+              <a href="${v.href}">View More</a>
             </div>
           </div>
         </div>

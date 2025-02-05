@@ -6,7 +6,8 @@
       "type": "terrestrial",
       "imgSrc": "./images/main/mercury.png",
       "imgAlt": "mercury image",
-      "modeling": "./images/main/3D_modeling/mercury.glb"
+      "modeling": "./images/main/3D_modeling/mercury.glb",
+      "href" : "./sub-mercury.html"
     },
     {
       "name": "Venus",
@@ -14,7 +15,8 @@
       "type": "terrestrial",
       "imgSrc": "./images/main/venus.png",
       "imgAlt": "mercury image",
-      "modeling": "./images/main/3D_modeling/venus.glb"
+      "modeling": "./images/main/3D_modeling/venus.glb",
+      "href" : "./sub-venus.html?planet=VENUS"
     },
     {
       "name": "Earth",
@@ -22,7 +24,8 @@
       "type": "terrestrial",
       "imgSrc": "./images/main/earth.png",
       "imgAlt": "mercury image",
-      "modeling": "./images/main/3D_modeling/earth.glb"
+      "modeling": "./images/main/3D_modeling/earth.glb",
+      "href" : "./sub-venus.html?planet=EARTH"
     },
     {
       "name": "Mars",
@@ -30,28 +33,32 @@
       "type": "terrestrial",
       "imgSrc": "./images/main/mars.png",
       "imgAlt": "mercury image",
-      "modeling": "./images/main/3D_modeling/mars.glb"
+      "modeling": "./images/main/3D_modeling/mars.glb",
+      "href" : "./sub-venus.html?planet=MARS"
     },
     {
       "name": "Jupiter",
       "days": "4,333 Earth days",
       "type": "Gas Giant",
       "imgSrc": "./images/main/jupiter.png",
-      "modeling": "./images/main/3D_modeling/jupiter.glb"
+      "modeling": "./images/main/3D_modeling/jupiter.glb",
+      "href" : "./sub-venus.html?planet=JUPITER"
     },
     {
       "name": "Saturn",
       "days": "10,759 Earth days",
       "type": "Gas Giant",
       "imgSrc": "./images/main/saturn.png",
-      "modeling": "./images/main/3D_modeling/saturn.glb"
+      "modeling": "./images/main/3D_modeling/saturn.glb",
+      "href" : "./sub-venus.html?planet=SATURN"
     },
     {
       "name": "Uranus",
       "days": "30,687 Earth days",
       "type": "Ice Giant",
       "imgSrc": "./images/main/uranus.png",
-      "modeling": "./images/main/3D_modeling/uranus.glb"
+      "modeling": "./images/main/3D_modeling/uranus.glb",
+      "href" : "./sub-venus.html?planet=URANUS"
     },
     {
       "name": "Neptune",
@@ -59,7 +66,8 @@
       "type": "Ice Giant",
       "imgSrc": "./images/main/neptune.png",
       "imgAlt": "mercury image",
-      "modeling": "./images/main/3D_modeling/neptune.glb"
+      "modeling": "./images/main/3D_modeling/neptune.glb",
+      "href" : "./sub-venus.html?planet=NEPTUNE"
     }
   ]
 }
