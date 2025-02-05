@@ -274,7 +274,6 @@ body {
 
   // gallery 영역 //////////////////////////////////////////
   .gallery {
-    margin-bottom: 100rem;
     scale: .9;
 
     /* 타이틀 */
@@ -469,7 +468,7 @@ body {
   z-index: 99;
   position: fixed;
   top: 50%;
-  right: 0;
+  left: 0;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -488,6 +487,7 @@ body {
     top: 20%;
     z-index: 99;
     scale: 0.8;
+    left: auto;
     right: 0;
     translate: 100%;
     transition: 0.4s cubic-bezier(0.46, -0.39, 0.2, 1.48);

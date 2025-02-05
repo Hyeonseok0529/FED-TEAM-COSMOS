@@ -216,9 +216,9 @@ $(document).ready(function () {
 
     // 버튼 텍스트 변경
     if ($(".quick-menu").hasClass("active")) {
-      $(this).text("≪");
-    } else {
       $(this).text("≫");
+    } else {
+      $(this).text("≪");
     }
   });
 });
