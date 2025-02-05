@@ -293,12 +293,11 @@ body {
     transition: 0.3s;
     overflow: hidden;
     border-radius: 10px;
-    // &:hover {
-    // box-shadow: 0 0 30px aqua;
-    // translate: -1% -1%;
-    // z-index: 9;
-    // scale: 1.1;
-    // }
+    &:hover {
+    box-shadow: 0 0 30px aqua;
+    translate: -1% -1%;
+    z-index: 9;
+    }
     &:nth-child(2) {
       grid-area: 1 / 2 / 2 / 4;
       aspect-ratio: 2 / 1;
