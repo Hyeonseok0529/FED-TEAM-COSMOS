@@ -30,7 +30,7 @@ fetch("./js/data_main.json")
               </div>
             </div>
             <div class="link-btn">
-              <a href="#">View More</a>
+              <a href="${v.href}">View More</a>
             </div>
           </div>
         </div>
@@ -40,12 +40,6 @@ fetch("./js/data_main.json")
     new Swiper(".mySwiper", {
       loop: true,
       speed: 1000,
-      allowTouchMove: false,
-      // mousewheel : true,
-      // autoplay : {  // 자동 슬라이드 설정
-      //   delay : 3000,
-      //   disableOnInteraction : false,
-      // },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -62,6 +56,7 @@ fetch("./js/data_main.json")
         const modelingValue = item.getAttribute("data-modeling");
 
         init3D(modelingValue); // 클릭 시 3D 초기화 함수 호출
+
       };
     });
 

@@ -67,7 +67,7 @@ export function init3D(modelingSrc) {
       // 모델을 자동으로 회전하게 하기
       function animateRotation() {
         if (isAutoRotating) {
-          model.rotation.y += 0.005;
+          model.rotation.y += 0.002;
         }
         requestAnimationFrame(animateRotation);
         renderer.render(scene, camera);
