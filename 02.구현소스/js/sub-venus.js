@@ -21,10 +21,10 @@ const selData = planetData [planetKey];
 //행성 키값 : 페이지 타이틀 //
 document.title = planetKey
 
-// 행성 키값에 따s라 이미지 변경 //
+// 행성 키값에 따라 이미지 변경 //
 let planetImg = myFn.qs(".planetImg");
 if(planetImg){
-  planetImg.src=`./images/sub/${planetKey}/${planetKey}.png`;
+  planetImg.src=`/FED-TEAM-COSMOS/images/sub/${planetKey}/${planetKey}.png`;
 } // if //
 
 // 지구, 화성인 경우 scale 1로 설정
