@@ -1,3 +1,5 @@
+import { init3D } from "./3d.js";
+
 window.addEventListener('load', () => {
   const popup = document.querySelector('.swiper-popup');
   
@@ -17,7 +19,6 @@ window.addEventListener('load', () => {
   }, 2000);
 });
 
-// 기존 코드 유지
 const main = document.querySelector(".mySwiper > .swiper-wrapper");
 
 fetch("./js/data_main.json")
