@@ -94,16 +94,9 @@
         }
         .swiper-button-next,
         .swiper-button-prev {
-          color: white;
+          display: none;
         }
 
-        .swiper-button-prev {
-          left: 5%;
-        }
-
-        .swiper-button-next {
-          right: 5%;
-        }
       }
       .modal {
         display: none;
@@ -152,6 +145,28 @@
 
       .modal.active {
         display: block;
+      }
+      .swiper-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 450px;
+        border-radius: 30px;
+        background-color: #ffffff50;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+  
+      /* 이미지 스타일 */
+      .swiper-image {
+        height: 80%;
+        opacity: 90%;
       }
     }
   }

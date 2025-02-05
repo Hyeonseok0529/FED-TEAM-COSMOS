@@ -1,5 +1,23 @@
-import { init3D } from "./3d.js";
+window.addEventListener('load', () => {
+  const popup = document.querySelector('.swiper-popup');
+  
+  // 팝업을 1초 뒤에 나타나게 함
+  setTimeout(() => {
+    popup.style.display = 'flex';
+    popup.style.opacity = 1; // 팝업이 1초 동안 서서히 보이게 함
+  }, 0); // 페이지 로드 직후
 
+  // 2초 뒤에 팝업을 사라지게 함
+  setTimeout(() => {
+    popup.style.opacity = 0;
+    
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 1000);
+  }, 2000);
+});
+
+// 기존 코드 유지
 const main = document.querySelector(".mySwiper > .swiper-wrapper");
 
 fetch("./js/data_main.json")
@@ -40,9 +58,16 @@ fetch("./js/data_main.json")
     new Swiper(".mySwiper", {
       loop: true,
       speed: 1000,
+      allowTouchMove: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        1150: {
+          allowTouchMove: false,
+        },
       },
     });
 
@@ -56,7 +81,6 @@ fetch("./js/data_main.json")
         const modelingValue = item.getAttribute("data-modeling");
 
         init3D(modelingValue); // 클릭 시 3D 초기화 함수 호출
-
       };
     });
 
@@ -66,33 +90,3 @@ fetch("./js/data_main.json")
       container.innerHTML = ""; // 모달 닫을 때 3D 씬 초기화
     };
   });
-
-// script.js
-const container = document.querySelector(".container");
-const sections = document.querySelectorAll(".section");
-let currentIndex = 0;
-let isScrolling = false;
-
-// 스크롤 이벤트 핸들러
-const handleScroll = (event) => {
-  if (isScrolling) return;
-
-  isScrolling = true;
-
-  // 스크롤 방향 감지
-  const delta = event.deltaY;
-
-  if (delta > 0 && currentIndex < sections.length - 1) {
-    currentIndex++;
-  } else if (delta < 0 && currentIndex > 0) {
-    currentIndex--;
-  }
-
-  // 스크롤 딜레이 후 잠금 해제
-  setTimeout(() => {
-    isScrolling = false;
-  }, 800); // 0.8초 후 잠금 해제
-};
-
-// 마우스 휠 이벤트 등록
-window.addEventListener("wheel", handleScroll);

@@ -64,7 +64,7 @@
               &:hover {
                 .click-btn-box {
                   display: block;
-                  .touch-btn{
+                  .touch-btn {
                     display: none;
                   }
                 }
@@ -175,6 +175,11 @@
 
       .modal.active {
         display: block;
+      }
+
+      /* 팝업 기본 스타일 */
+      .swiper-popup {
+        display: none;
       }
     }
   }

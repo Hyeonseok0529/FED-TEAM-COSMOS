@@ -40,20 +40,24 @@
           </div>
           <div id="threejs-container"></div>
         </div>
-    </div>
+      </div>
+
+      <!-- 로딩 팝업 -->
+      <div class="swiper-popup">
+        <img src="./images/main/slide.png" alt="swiper Image" class="swiper-image" />
+      </div>
 
     </main>
-  </body>
 
-  <script type="importmap">
-    {
+    <script type="importmap">
+      {
         "imports": {
             "three": "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js",
             "three/examples/jsm/loaders/GLTFLoader.js": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/loaders/GLTFLoader.js",
             "three/examples/jsm/controls/OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/controls/OrbitControls.js"
         }
-    }
+      }
     </script>
     <script defer type="module" src="./js/main.js"></script>
-
+  </body>
 </html>
