@@ -446,6 +446,7 @@ body {
 .scbar::-webkit-scrollbar {
   /* 전체 스크롤바 크기변경 */
   width: 7px;
+  display: none;
 }
 .scbar::-webkit-scrollbar-thumb {
   /* 스크롤바 */
