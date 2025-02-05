@@ -633,6 +633,9 @@ body .first-area div p {
     justify-content: center;
     top: -10rem;
   }
+  body .spin-box img {
+    scale: 0.5;
+  }
   body .first-area {
     margin-left: 0;
     justify-content: center;
@@ -652,6 +655,9 @@ body .first-area div p {
     width: 80%;
     font-size: 2rem;
     margin-bottom: 5.5vh;
+  }
+  body .first-area div {
+    margin-bottom: 3rem;
   }
   body .first-area div h1 {
     font-size: 10vw;
@@ -675,6 +681,10 @@ body .first-area div p {
   letter-spacing: 1px;
 }
 
+.toggle-btn {
+  opacity: 0;
+}
+
 @media (max-width: 1000px) {
   .quick-menu {
     top: 20%;
@@ -685,6 +695,26 @@ body .first-area div p {
   }
   .quick-menu.active {
     translate: 0;
+  }
+  /* 퀵메뉴 토글 버튼 스타일 */
+  .toggle-btn {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+    opacity: 1;
+    font-size: 25px;
+  }
+  .toggle-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 .quick-menu ul {

@@ -107,12 +107,16 @@ body {
     .spin-box {
       justify-content: center;
       top: -10rem;
+      img{
+        scale:.5;
+      }
     }
     .first-area {
       @include query-set();
       height: 89vh;
       margin-bottom: 10rem;
       div {
+        margin-bottom: 3rem;
         h1 {
           font-size: 10vw;
         }
@@ -145,6 +149,12 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   letter-spacing: 1px;
 }
+
+
+.toggle-btn {
+  opacity: 0;
+}
+
 @include tablet-medium {
   .quick-menu {
     top: 20%;
@@ -155,6 +165,28 @@ body {
   }
   .quick-menu.active {
     translate: 0;
+  }
+  // 퀵메뉴 호출 버튼 //
+  /* 퀵메뉴 토글 버튼 스타일 */
+  .toggle-btn {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+    opacity: 1;
+    font-size: 25px;
+  }
+
+  .toggle-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 

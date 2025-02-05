@@ -209,3 +209,17 @@ $(window).scroll(function(){
     $planetImg.stop().animate({opacity:1},300);
   }
 })
+
+// 퀵메뉴 호출버튼 // 
+$(document).ready(function () {
+  $(".toggle-btn").click(function () {
+    $(".quick-menu").toggleClass("active");
+
+    // 버튼 텍스트 변경
+    if ($(".quick-menu").hasClass("active")) {
+      $(this).text("≪");
+    } else {
+      $(this).text("≫");
+    }
+  });
+});
