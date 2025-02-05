@@ -1027,4 +1027,7 @@ img {
   body .main-area .modal.active {
     display: block;
   }
+}
+::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
