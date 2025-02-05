@@ -488,7 +488,8 @@ body {
     top: 20%;
     z-index: 99;
     scale: 0.8;
-    translate: -100%;
+    right: 0;
+    translate: 100%;
     transition: 0.4s cubic-bezier(0.46, -0.39, 0.2, 1.48);
   }
   .quick-menu.active {
