@@ -53,7 +53,7 @@
             .tbox-bottom {
               z-index: 1;
               position: absolute;
-              bottom: 10%;
+              bottom: 15%;
               left: 50%;
               transform: translateX(-50%);
               color: white;
@@ -62,11 +62,13 @@
                 .planet-info {
                   margin: 0 10px;
                   .tit {
-                    font-size: 23px;
+                    
+                    font-size: 20px;
+                    white-space: nowrap;
                   }
                   .info {
                     margin-top: 10px;
-                    font-size: 14px;
+                    font-size: 13px;
                   }
                 }
               }
