@@ -25,7 +25,7 @@ document.title = planetKey
 let planetImg = myFn.qs(".planetImg");
 if(planetImg){
   let lowerPlanetKey = planetKey.toLowerCase();
-  planetImg.src=`/images/sub/${lowerPlanetKey}/${lowerPlanetKey}.png`;
+  planetImg.src=`/FED-TEAM-COSMOS/images/sub/${lowerPlanetKey}/${lowerPlanetKey}.png`;
 } // if //
 
 // 지구, 화성인 경우 scale 1로 설정
