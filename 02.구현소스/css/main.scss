@@ -14,6 +14,7 @@
 @media (min-width: 1150px) {
   body {
     background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
+
     font-family: $font-set;
 
     .main-area {
@@ -145,11 +146,11 @@
           left: 50%;
           transform: translate(-50%, -50%);
           height: 80%;
-          width: 90%;
+          min-width: 90%;
           aspect-ratio: 1;
           background-image: url("../images/sub/background_1.jpg");
           background-repeat: no-repeat;
-          background-size: 100% 100%;
+          background-size: 120% 120%;
           .close-box {
             text-align: end;
             .close {

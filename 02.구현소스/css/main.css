@@ -604,7 +604,7 @@ img {
   body .main-area .swiper .swiper-wrapper .main-section .tbox-top .tit {
     font-size: 80px;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
   }
   body .main-area .swiper .swiper-wrapper .main-section .planet-area {
     position: absolute;
@@ -752,7 +752,7 @@ img {
   body .main-area .swiper .swiper-wrapper .main-section .tbox-top .tit {
     font-size: 60px;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 1px;
   }
   body .main-area .swiper .swiper-wrapper .main-section .planet-area {
     position: absolute;
@@ -792,7 +792,7 @@ img {
     align-items: center;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info {
-    margin: 0 5px;
+    margin: 0 10px;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
     font-size: 23px;
@@ -999,11 +999,11 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 80%;
-    width: 90%;
+    min-width: 90%;
     aspect-ratio: 1;
     background-image: url("../images/sub/background_1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 120% 120%;
   }
   body .main-area .modal .modal-inner .close-box {
     text-align: end;

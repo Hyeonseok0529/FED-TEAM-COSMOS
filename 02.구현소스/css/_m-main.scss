@@ -23,7 +23,7 @@
               .tit {
                 font-size: 60px;
                 text-align: center;
-                letter-spacing: 10px;
+                letter-spacing: 1px;
               }
             }
             .planet-area {
@@ -60,7 +60,7 @@
               .con-wrap {
                 @include flex(space-between, center);
                 .planet-info {
-                  margin: 0 5px;
+                  margin: 0 10px;
                   .tit {
                     font-size: 23px;
                   }
