@@ -38,7 +38,7 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 30px;
-                .click-btn{
+                .click-btn {
                   display: none;
                 }
                 .touch-btn {
@@ -163,7 +163,7 @@
       width: 350px;
       height: 350px;
       border-radius: 30px;
-      background-color: #ffffff39;
+      background-color: #ffffff50;
       display: none; /* 처음에는 숨김 */
       align-items: center;
       justify-content: center;
@@ -175,7 +175,22 @@
     /* 이미지 스타일 */
     .swiper-image {
       height: 80%;
-      opacity: 80%;
+      opacity: 90%;
+      animation: shake 1s ease-in-out infinite;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translateX(-15px);
+      }
+
+      50% {
+        transform: translateX(15px);
+      }
+
+      100% {
+        transform: translateX(-15px);
+      }
     }
   }
 }

@@ -38,7 +38,7 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 50px;
-                .click-btn{
+                .click-btn {
                   display: none;
                 }
                 .touch-btn {
@@ -96,7 +96,6 @@
         .swiper-button-prev {
           display: none;
         }
-
       }
       .modal {
         display: none;
@@ -162,11 +161,26 @@
         opacity: 0;
         transition: opacity 1s ease-in-out;
       }
-  
+
       /* 이미지 스타일 */
       .swiper-image {
         height: 80%;
         opacity: 90%;
+        animation: shake 1s ease-in-out infinite;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(-15px);
+        }
+        
+        50% {
+          transform: translateX(15px);
+        }
+        
+        100% {
+          transform: translateX(-15px);
+        }
       }
     }
   }
