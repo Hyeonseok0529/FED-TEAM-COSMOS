@@ -275,6 +275,8 @@ body {
   // gallery 영역 //////////////////////////////////////////
   .gallery {
     margin-bottom: 100rem;
+    scale: .9;
+
     /* 타이틀 */
     h2 {
       margin-bottom: 10vh;
@@ -285,6 +287,9 @@ body {
     }
 
     @include tablet-medium {
+      section.gallery{ 
+        scale: .9;
+      }
       .gallery-tit {
         font-size: 3.9rem;
       }

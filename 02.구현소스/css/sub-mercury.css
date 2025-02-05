@@ -878,6 +878,7 @@ body .structure-area div p {
 }
 body .gallery {
   margin-bottom: 100rem;
+  scale: 0.9;
   /* 타이틀 */
   /* 그리드박스 */
   /* 그리드 각 박스 공통 */
@@ -898,6 +899,9 @@ body .gallery h2 {
   font-size: max(4vw, 54px);
 }
 @media (max-width: 1000px) {
+  body .gallery section.gallery {
+    scale: 0.9;
+  }
   body .gallery .gallery-tit {
     font-size: 3.9rem;
   }
