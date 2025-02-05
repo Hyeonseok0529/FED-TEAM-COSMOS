@@ -581,7 +581,6 @@ img {
 body {
   background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
   font-family: "Orbitron", serif;
-  letter-spacing: 2px;
 }
 body .spin-box {
   position: fixed;
@@ -603,6 +602,9 @@ body .spin-box span img {
   position: fixed;
   transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
   left: 10%;
+}
+body main {
+  letter-spacing: 2px;
 }
 body .first-area, body .namesake-area, body .introduction-area {
   color: #fff;
@@ -637,10 +639,12 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
-    height: 90vh;
-    margin-bottom: 10rem;
+    height: 30vh;
+    height: 82vh;
+    margin-bottom: 30rem;
   }
   body .first-area div, body .namesake-area div, body .introduction-area div {
+    height: 3rem;
     width: 100%;
     align-items: center;
     text-align: left;
@@ -650,7 +654,10 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
   }
   body .first-area div p, body .namesake-area div p, body .introduction-area div p {
     width: 80%;
-    font-size: 2.3rem;
+    font-size: min(14px, 2.7vw);
+  }
+  body .first-area div, body .namesake-area div, body .introduction-area div {
+    height: 15rem;
   }
   body .first-area div p, body .namesake-area div p, body .introduction-area div p {
     text-align: center;
@@ -684,10 +691,12 @@ body .introduction-area div p {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
+    height: 30vh;
     flex-wrap: wrap;
     align-items: center;
   }
   body .introduction-area div {
+    height: 3rem;
     width: 100%;
     align-items: center;
     text-align: left;
@@ -697,7 +706,7 @@ body .introduction-area div p {
   }
   body .introduction-area div p {
     width: 80%;
-    font-size: 2.3rem;
+    font-size: min(14px, 2.7vw);
   }
   body .introduction-area div p {
     text-align: center;
@@ -729,11 +738,13 @@ body .namesake-area div p {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
+    height: 30vh;
     text-align: center;
     flex-wrap: wrap;
     align-items: center;
   }
   body .namesake-area div {
+    height: 3rem;
     width: 100%;
     align-items: center;
     text-align: left;
@@ -743,11 +754,12 @@ body .namesake-area div p {
   }
   body .namesake-area div p {
     width: 80%;
-    font-size: 2.3rem;
+    font-size: min(14px, 2.7vw);
   }
   body .namesake-area div p {
     font-size: 3.2rem;
     text-align: center;
+    font-size: min(14px, 2.7vw);
   }
 }
 body .potential-area {
@@ -785,11 +797,13 @@ body .potential-area div p {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
+    height: 30vh;
     margin-top: 0;
     flex-wrap: wrap;
     align-items: center;
   }
   body .potential-area div {
+    height: 3rem;
     width: 100%;
     align-items: center;
     text-align: left;
@@ -799,7 +813,7 @@ body .potential-area div p {
   }
   body .potential-area div p {
     width: 80%;
-    font-size: 2.3rem;
+    font-size: min(14px, 2.7vw);
   }
   body .potential-area div p {
     text-align: center;
@@ -840,8 +854,10 @@ body .structure-area div p {
     margin-left: 0;
     justify-content: center;
     align-items: flex-end;
+    height: 30vh;
   }
   body .structure-area div {
+    height: 3rem;
     width: 100%;
     align-items: center;
     text-align: left;
@@ -851,7 +867,7 @@ body .structure-area div p {
   }
   body .structure-area div p {
     width: 80%;
-    font-size: 2.3rem;
+    font-size: min(14px, 2.7vw);
   }
   body .structure-area div {
     gap: 3rem;
@@ -880,6 +896,11 @@ body .gallery h2 {
   color: #fff;
   text-align: center;
   font-size: max(4vw, 54px);
+}
+@media (max-width: 1000px) {
+  body .gallery .gallery-tit {
+    font-size: 3.9rem;
+  }
 }
 body .gallery .grid {
   display: grid;
@@ -976,8 +997,16 @@ body .gallery-smenu .img-flex .smenu-imgbox img {
   width: 100%;
 }
 body .gallery-smenu .img-flex figcaption {
-  font-size: 2rem;
+  font-size: 14px;
   color: #fff;
+}
+@media (max-width: 1000px) {
+  body .gallery-smenu > button {
+    right: 6rem;
+  }
+  body .gallery-smenu figcaption {
+    text-align: center;
+  }
 }
 body .planet-area {
   display: flex;
@@ -1036,12 +1065,43 @@ body .planet-area div p {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.toggle-btn {
+  opacity: 0;
 }
 
 @media (max-width: 1000px) {
   .quick-menu {
-    top: 70%;
+    top: 20%;
     z-index: 99;
+    scale: 0.8;
+    translate: -100%;
+    transition: 0.4s cubic-bezier(0.46, -0.39, 0.2, 1.48);
+  }
+  .quick-menu.active {
+    translate: 0;
+  }
+  /* 퀵메뉴 토글 버튼 스타일 */
+  .toggle-btn {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+    opacity: 1;
+    font-size: 25px;
+  }
+  .toggle-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 .quick-menu ul {

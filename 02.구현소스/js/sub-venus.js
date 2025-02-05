@@ -21,7 +21,7 @@ const selData = planetData [planetKey];
 //행성 키값 : 페이지 타이틀 //
 document.title = planetKey
 
-// 행성 키값에 따라 이미지 변경 //
+// 행성 키값에 따s라 이미지 변경 //
 let planetImg = myFn.qs(".planetImg");
 if(planetImg){
   planetImg.src=`./images/sub/${planetKey}/${planetKey}.png`;
@@ -185,3 +185,27 @@ $(".gallery img").click(function () {
 
 // 닫기 버튼 활성화 //
 $closeBtn.click(() => $gallerySmenu.fadeOut(300));
+
+// 행성 페이드 아웃 - 인 //
+$(window).scroll(function(){
+  // 현재 스크롤 위치
+  let scrollTop = $(window).scrollTop();
+
+  // #first-area 위치값
+  let firstAreaTop = $("#first-area").offset().top;
+  let firstAreaBottom = firstAreaTop + $("#first-area").outerHeight();
+
+  // 위치값 조절
+  let offset =  400;
+
+  // .planetImg 요소 선택
+  let $planetImg = $(".planetImg");
+
+  // 현재 스크롤 first-area를 벗어나면 페이드아웃, 안에 있으면 페이드 인
+  // fadeIn,fadeOut은 뚝뚝 끊기는 현상이 있어서 Opacity,animate로 수정해봄.
+  if(scrollTop > firstAreaBottom - offset) {
+    $planetImg.stop().animate({opacity:0},300);
+  } else {
+    $planetImg.stop().animate({opacity:1},300);
+  }
+})

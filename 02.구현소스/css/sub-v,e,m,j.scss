@@ -19,7 +19,6 @@
 body {
   background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
   font-family: $font-set;
-  letter-spacing: 2px;
 
   .spin-box {
     position: fixed;
@@ -60,14 +59,20 @@ body {
       width: 100%;
       align-items: center;
       text-align: left;
+
       h2 {
         line-height: 6rem;
       }
       p {
         width: 80%;
         font-size: 2rem;
+        margin-bottom: 5.5vh;
       }
     }
+  }
+
+  main {
+    letter-spacing: 2px;
   }
 
   // 첫 컨텐츠 영역 ////////////////////////////////////////////////////////////////////////
@@ -109,9 +114,10 @@ body {
       margin-bottom: 10rem;
       div {
         h1 {
-          font-size: 9rem;
+          font-size: 10vw;
         }
         p {
+          font-size: 2.3vw;
         }
       }
     }
@@ -137,10 +143,18 @@ body {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
 }
 @include tablet-medium {
   .quick-menu {
-    top: 30%;
+    top: 20%;
+    z-index: 99;
+    scale: 0.8;
+    translate: -100%;
+    transition: 0.4s cubic-bezier(0.46, -0.39, 0.2, 1.48);
+  }
+  .quick-menu.active {
+    translate: 0;
   }
 }
 
@@ -247,10 +261,10 @@ body {
     overflow: hidden;
     border-radius: 10px;
     // &:hover {
-      // box-shadow: 0 0 30px aqua;
-      // translate: -1% -1%;
-      // z-index: 9;
-      // scale: 1.1;
+    // box-shadow: 0 0 30px aqua;
+    // translate: -1% -1%;
+    // z-index: 9;
+    // scale: 1.1;
     // }
     &:nth-child(2) {
       grid-area: 1 / 2 / 2 / 4;
@@ -338,16 +352,29 @@ body {
       }
     }
     figcaption {
-      font-size: 14px;
+      font-size: 1.7rem;
       color: #fff;
     }
   }
 }
+
+@include tablet-medium {
+  .gallery-smenu {
+    > button {
+      right: 6rem;
+    }
+    figcaption {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
 @include tablet-medium {
   .quick-menu {
     top: 27%;
     width: 13vh;
-    ul li a{
+    ul li a {
       font-size: 13px;
     }
   }

@@ -581,7 +581,6 @@ img {
 body {
   background: url(../images/sub/background_1.jpg) no-repeat fixed top/cover;
   font-family: "Orbitron", serif;
-  letter-spacing: 2px;
 }
 body .spin-box {
   position: fixed;
@@ -602,6 +601,9 @@ body .spin-box span {
 body .spin-box span img {
   position: fixed;
   transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+body main {
+  letter-spacing: 2px;
 }
 body .first-area {
   color: #fff;
@@ -649,9 +651,13 @@ body .first-area div p {
   body .first-area div p {
     width: 80%;
     font-size: 2rem;
+    margin-bottom: 5.5vh;
   }
   body .first-area div h1 {
-    font-size: 9rem;
+    font-size: 10vw;
+  }
+  body .first-area div p {
+    font-size: 2.3vw;
   }
 }
 
@@ -666,11 +672,19 @@ body .first-area div p {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
 }
 
 @media (max-width: 1000px) {
   .quick-menu {
-    top: 30%;
+    top: 20%;
+    z-index: 99;
+    scale: 0.8;
+    translate: -100%;
+    transition: 0.4s cubic-bezier(0.46, -0.39, 0.2, 1.48);
+  }
+  .quick-menu.active {
+    translate: 0;
   }
 }
 .quick-menu ul {
@@ -861,10 +875,19 @@ body .first-area div p {
   width: 100%;
 }
 .gallery-smenu .img-flex figcaption {
-  font-size: 14px;
+  font-size: 1.7rem;
   color: #fff;
 }
 
+@media (max-width: 1000px) {
+  .gallery-smenu > button {
+    right: 6rem;
+  }
+  .gallery-smenu figcaption {
+    font-size: 14px;
+    text-align: center;
+  }
+}
 @media (max-width: 1000px) {
   .quick-menu {
     top: 27%;
