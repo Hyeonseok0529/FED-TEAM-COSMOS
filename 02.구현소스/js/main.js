@@ -68,6 +68,7 @@ fetch("./js/data_main.json")
       breakpoints: {
         1150: {
           allowTouchMove: false,
+          
         },
       },
     });
