@@ -40,6 +40,7 @@ if (planetKey === "VENUS"){
 // Default 상태 출력 //
 if (selData) {
   document.querySelector(".desc-tit h1").textContent = selData.name.toUpperCase();
+  document.querySelector("h2").textContent = "GALLERY OF "+selData.name.toUpperCase();
   document.querySelector(".desc-desc p").textContent = selData.first;
 }
 
