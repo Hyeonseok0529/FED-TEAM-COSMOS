@@ -28,13 +28,13 @@ if(planetImg){
 } // if //
 // 지구, 화성인 경우 scale 1로 설정
 if (planetKey === "EARTH" || planetKey === "MARS") {
-  planetImg.style.scale = "1"; // scale 1로 설정
+  planetImg.style.height = "500px";
 } // if //
 if (planetKey === "JUPITER" || planetKey === "VENUS"){
-  planetImg.style.scale = ".5"; // scale .7로 설정
+  planetImg.style.height = "500px"; 
 }
 if (planetKey === "VENUS"){
-  planetImg.style.scale = ".6"; // scale .7로 설정
+  planetImg.style.height = "500px";
 }
 
 // Default 상태 출력 //
