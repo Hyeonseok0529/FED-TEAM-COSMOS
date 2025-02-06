@@ -70,6 +70,12 @@ body {
         font-size: min(14px, 2.7vw);
       }
     }
+    // 모바일 미디어 쿼리 //
+    @include mobile {
+     div > h2 {
+        font-size: 40px;
+      }
+    }
   }
 
   main {
@@ -99,6 +105,13 @@ body {
       p {
         width: 50vw;
         font-size: 2.4rem;
+      }
+
+      // 모바일 미디어 쿼리 //
+      @include mobile {
+        h1 {
+          font-size: 60px;
+        }
       }
     }
   }
@@ -274,7 +287,7 @@ body {
 
   // gallery 영역 //////////////////////////////////////////
   .gallery {
-    scale: .9;
+    scale: 0.9;
 
     /* 타이틀 */
     h2 {
@@ -286,8 +299,8 @@ body {
     }
 
     @include tablet-medium {
-      section.gallery{ 
-        scale: .9;
+      section.gallery {
+        scale: 0.9;
       }
       .gallery-tit {
         font-size: 3.9rem;
@@ -481,7 +494,6 @@ body {
   opacity: 0;
 }
 
-
 @include tablet-medium {
   .quick-menu {
     top: 20%;
@@ -514,7 +526,6 @@ body {
     font-size: 25px;
   }
 }
-
 
 .quick-menu ul {
   list-style: none;

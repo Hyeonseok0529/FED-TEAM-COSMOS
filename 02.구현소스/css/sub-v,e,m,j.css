@@ -656,6 +656,14 @@ body .first-area div p {
     font-size: 2rem;
     margin-bottom: 5.5vh;
   }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  body .first-area h1,
+  body .first-area h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
   body .first-area div {
     margin-bottom: 3rem;
   }
@@ -664,6 +672,14 @@ body .first-area div p {
   }
   body .first-area div p {
     font-size: 2.3vw;
+  }
+}
+@media (max-width: 500px) {
+  body .first-area div h1, body .first-area div h2 {
+    font-size: 40px;
+  }
+  body .first-area div p {
+    font-size: 13px;
   }
 }
 
@@ -915,6 +931,8 @@ body .first-area div p {
 .gallery-smenu .img-flex figcaption {
   font-size: 1.7rem;
   color: #fff;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 @media (max-width: 1000px) {
