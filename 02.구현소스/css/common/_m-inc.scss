@@ -1,4 +1,10 @@
 @media (max-width: 480px) {
+  //////// cursor /////////
+  body{
+    .cursor{
+      display: none;
+    }
+  }
   /////////////////// header ///////////////////
   #header {
     position: fixed;
