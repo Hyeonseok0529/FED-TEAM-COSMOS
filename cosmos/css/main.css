@@ -970,7 +970,7 @@ img {
     /* 팝업 기본 스타일 */
   }
   body .main-area .swiper .swiper-wrapper .swiper-slide {
-    transition: transform 1s ease-in-out, opacity 0.3s ease; /* 크기와 opacity 변화 */
+    transition: transform 1s ease-in-out, opacity 0.3s ease;
     left: 50%;
     transform: translateX(-50%) scale(0.7);
     opacity: 0.8;
@@ -1020,6 +1020,7 @@ img {
     transform: translate(-50%, -50%);
     font-size: 50px;
     display: none;
+    z-index: 99999;
   }
   body .main-area .swiper .swiper-wrapper .main-section .planet-area .click-btn-box .click-btn {
     color: rgba(255, 255, 255, 0.7568627451);
@@ -1074,6 +1075,7 @@ img {
   body .main-area .swiper .swiper-button-next,
   body .main-area .swiper .swiper-button-prev {
     color: white;
+    z-index: 9999;
   }
   body .main-area .swiper .swiper-button-prev {
     left: 5%;

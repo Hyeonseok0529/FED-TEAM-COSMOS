@@ -20,7 +20,7 @@
       .swiper {
         .swiper-wrapper {
           .swiper-slide {
-            transition: transform 1s ease-in-out, opacity 0.3s ease; /* 크기와 opacity 변화 */
+            transition: transform 1s ease-in-out, opacity 0.3s ease;
             left: 50%;
             transform: translateX(-50%) scale(0.7);
             opacity: 0.8; 
@@ -36,7 +36,6 @@
               }
             }
 
-            // 기본적으로 텍스트와 버튼 숨김
             .tbox-top,
             .tbox-bottom,
             .click-btn-box {
@@ -77,6 +76,7 @@
                 transform: translate(-50%, -50%);
                 font-size: 50px;
                 display: none;
+                z-index: 99999;
 
                 .click-btn {
                   color: #ffffffc1;
@@ -144,6 +144,7 @@
         .swiper-button-next,
         .swiper-button-prev {
           color: white;
+          z-index: 9999;
         }
 
         .swiper-button-prev {
