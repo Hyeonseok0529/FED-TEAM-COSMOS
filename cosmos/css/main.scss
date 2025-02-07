@@ -25,10 +25,9 @@
             transform: translateX(-50%) scale(0.7);
             opacity: 0.8;
 
-          
             &.swiper-slide-active {
               transform: translateX(-50%) scale(1);
-              opacity: 1; 
+              opacity: 1;
               .tbox-top,
               .tbox-bottom,
               .click-btn {
@@ -149,19 +148,6 @@
               }
             }
           }
-        }
-
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: white;
-        }
-
-        .swiper-button-prev {
-          left: 5%;
-        }
-
-        .swiper-button-next {
-          right: 5%;
         }
       }
 
