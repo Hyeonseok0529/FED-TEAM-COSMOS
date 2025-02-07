@@ -60,7 +60,6 @@ quickMenuItems.forEach(item => {
 
     // 클릭된 메뉴의 id를 가져옴
     const sectionId = e.target.getAttribute('href').substring(1);
-
     // 'gallery' 메뉴를 제외한 경우, 최상단으로 스크롤
     if(sectionId !== 'gallery-area'){
       // 최상단으로 스크롤 
@@ -119,8 +118,6 @@ quickMenuItems.forEach(item => {
   })
 })
 
-// 퀵메뉴 기능 함수 export // 
-function quickMenuFn(){
 // gallery 퀵 메뉴 클릭시 해당 섹션으로 이동 // 
 myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
   e.preventDefault(); // 기본 동작 방지
@@ -133,7 +130,6 @@ myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
     scrollTop: $(galleryTitle).offset().top + "px"
   },400)
 }); // click //
-}
 
 
 
