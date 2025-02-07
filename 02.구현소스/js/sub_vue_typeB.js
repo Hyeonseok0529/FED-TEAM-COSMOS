@@ -5,7 +5,7 @@ import { QmenuComp } from './components/qmenu.js';
 // console.log(QmenuComp);
 
 // 기능 함수 호출 //
-import { quickMenuFn } from "./sub-venus.js";
+import initFn from "./sub-venus.js";
 // console.log(quickMenuFn);
 
 /******************************* 
@@ -24,6 +24,6 @@ new Vue({
 
     // 4-2. mounted() : DOM관련코드 작성
     mounted(){
-        quickMenuFn();
+        initFn();
     },
 });
