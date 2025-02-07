@@ -8,7 +8,7 @@ import {startSS, updatePos} from "./smoothScroll23.js";
 
 
 import planetData from "./data_sub.json" with{type:'json'};
-console.log(planetData);
+// console.log(planetData);
 
 export default function initFn(){
 
@@ -134,7 +134,6 @@ myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
   },400)
 }); // click //
 }
-console.log(quickMenuFn());
 
 
 

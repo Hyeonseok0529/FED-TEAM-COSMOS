@@ -69,10 +69,14 @@ body {
       p {
         width: 80%;
         font-size: min(14px, 2.7vw);
+        text-align: justify;
+        word-break: break-all;
+        line-height: 1.5;
       }
     }
     // 모바일 미디어 쿼리 //
     @include mobile {
+      .first-area{
      div > h2 {
         font-size: 40px;
       }

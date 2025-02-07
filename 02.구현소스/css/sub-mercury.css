@@ -686,8 +686,14 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
-  body .first-area div > h2, body .namesake-area div > h2, body .introduction-area div > h2 {
+  body .first-area .first-area div > h2, body .namesake-area .first-area div > h2, body .first-area .namesake-area div > h2, body .namesake-area .namesake-area div > h2, body .introduction-area .first-area div > h2, body .introduction-area .namesake-area div > h2, body .first-area .introduction-area div > h2, body .namesake-area .introduction-area div > h2, body .introduction-area .introduction-area div > h2 {
     font-size: 40px;
+  }
+  body .first-area .first-area p, body .namesake-area .first-area p, body .first-area .namesake-area p, body .namesake-area .namesake-area p, body .introduction-area .first-area p, body .introduction-area .namesake-area p, body .first-area .introduction-area p, body .namesake-area .introduction-area p, body .introduction-area .introduction-area p {
+    font-size: 13px;
+    text-align: justify;
+    word-break: break-all;
+    line-height: 1.5;
   }
 }
 @media (max-width: 1000px) {
@@ -746,8 +752,14 @@ body .introduction-area div p {
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
-  body .introduction-area div > h2 {
+  body .introduction-area .first-area div > h2, body .introduction-area .namesake-area div > h2, body .introduction-area .introduction-area div > h2 {
     font-size: 40px;
+  }
+  body .introduction-area .first-area p, body .introduction-area .namesake-area p, body .introduction-area .introduction-area p {
+    font-size: 13px;
+    text-align: justify;
+    word-break: break-all;
+    line-height: 1.5;
   }
 }
 @media (max-width: 1000px) {
@@ -802,8 +814,14 @@ body .namesake-area div p {
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
-  body .namesake-area div > h2 {
+  body .namesake-area .first-area div > h2, body .namesake-area .introduction-area div > h2, body .namesake-area .namesake-area div > h2 {
     font-size: 40px;
+  }
+  body .namesake-area .first-area p, body .namesake-area .introduction-area p, body .namesake-area .namesake-area p {
+    font-size: 13px;
+    text-align: justify;
+    word-break: break-all;
+    line-height: 1.5;
   }
 }
 @media (max-width: 1000px) {
@@ -869,8 +887,14 @@ body .potential-area div p {
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
-  body .potential-area div > h2 {
+  body .potential-area .first-area div > h2, body .potential-area .introduction-area div > h2, body .potential-area .namesake-area div > h2 {
     font-size: 40px;
+  }
+  body .potential-area .first-area p, body .potential-area .introduction-area p, body .potential-area .namesake-area p {
+    font-size: 13px;
+    text-align: justify;
+    word-break: break-all;
+    line-height: 1.5;
   }
 }
 @media (max-width: 1000px) {
@@ -931,8 +955,14 @@ body .structure-area div p {
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
-  body .structure-area div > h2 {
+  body .structure-area .first-area div > h2, body .structure-area .introduction-area div > h2, body .structure-area .namesake-area div > h2 {
     font-size: 40px;
+  }
+  body .structure-area .first-area p, body .structure-area .introduction-area p, body .structure-area .namesake-area p {
+    font-size: 13px;
+    text-align: justify;
+    word-break: break-all;
+    line-height: 1.5;
   }
 }
 @media (max-width: 1000px) {
