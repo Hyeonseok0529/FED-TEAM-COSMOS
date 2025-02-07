@@ -1,11 +1,11 @@
 import { init3D } from "./3d.js";
 
-window.addEventListener("load", () => {
-  const popup = document.querySelector(".swiper-popup");
+window.addEventListener('load', () => {
+  const popup = document.querySelector('.swiper-popup');
 
   // 팝업을 1초 뒤에 나타나게 함
   setTimeout(() => {
-    popup.style.display = "flex";
+    popup.style.display = 'flex';
     popup.style.opacity = 0.5; // 팝업이 1초 동안 서서히 보이게 함
   }, 0); // 페이지 로드 직후
 
@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     popup.style.opacity = 0;
     setTimeout(() => {
-      popup.style.display = "none";
+      popup.style.display = 'none';
     }, 1000);
   }, 1500);
 });
@@ -68,16 +68,18 @@ fetch("./js/data_main.json")
     });
 
     // 행성 이미지를 클릭했을 때 해당 슬라이드로 이동
-    const planetImages = document.querySelectorAll(".planet-area img");
-    planetImages.forEach((image) => {
-      image.addEventListener("click", (e) => {
-        const slideIndex = parseInt(e.target.getAttribute("data-slide"), 10);
+    const planetImages = document.querySelectorAll('.planet-area img');
+    planetImages.forEach(image => {
+      image.addEventListener('click', (e) => {
+        const clickedPlanet = e.target;
+        const currentIndex = Array.from(planetImages).indexOf(clickedPlanet);
 
-        const realIndex = swiper.loopedSlides
-          ? slideIndex + swiper.loopedSlides
-          : slideIndex;
-
-        swiper.slideTo(realIndex);
+        const isPrev = currentIndex < swiper.activeIndex;
+        if (isPrev) {
+          swiper.slidePrev();
+        } else {
+          swiper.slideNext();
+        }
       });
     });
 
