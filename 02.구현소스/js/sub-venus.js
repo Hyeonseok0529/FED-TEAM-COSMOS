@@ -27,19 +27,18 @@ if(planetImg){
   planetImg.src=`./images/sub/${planetKey.toLowerCase()}/${planetKey.toLowerCase()}.png`;
 } // if //
 // 지구, 화성인 경우 scale 1로 설정
-if (planetKey === "EARTH" || planetKey === "MARS") {
+if (planetKey === "EARTH" || planetKey === "MARS" || planetKey === "SATURN" || planetKey === "URANUS" || planetKey === "NEPTUNE") {
   planetImg.style.height = "500px";
 } // if //
 if (planetKey === "JUPITER" || planetKey === "VENUS"){
-  planetImg.style.height = "500px"; 
+  planetImg.style.height = "400px"; 
 }
-if (planetKey === "VENUS"){
-  planetImg.style.height = "500px";
-}
+
 
 // Default 상태 출력 //
 if (selData) {
   document.querySelector(".desc-tit h1").textContent = selData.name.toUpperCase();
+  document.querySelector("h2").textContent = "GALLERY OF "+selData.name.toUpperCase();
   document.querySelector(".desc-desc p").textContent = selData.first;
 }
 

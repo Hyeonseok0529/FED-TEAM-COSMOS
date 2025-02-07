@@ -630,6 +630,11 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
   width: 50vw;
   font-size: 2.4rem;
 }
+@media (max-width: 500px) {
+  body .first-area div h1, body .namesake-area div h1, body .introduction-area div h1 {
+    font-size: 60px;
+  }
+}
 @media (max-width: 1000px) {
   body .spin-box {
     justify-content: center;
@@ -648,6 +653,7 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .first-area div h2, body .namesake-area div h2, body .introduction-area div h2 {
     line-height: 6rem;
@@ -656,6 +662,13 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
     width: 80%;
     font-size: min(14px, 2.7vw);
   }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  body .first-area div > h2, body .namesake-area div > h2, body .introduction-area div > h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
   body .first-area div, body .namesake-area div, body .introduction-area div {
     height: 15rem;
   }
@@ -700,6 +713,7 @@ body .introduction-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .introduction-area div h2 {
     line-height: 6rem;
@@ -708,6 +722,13 @@ body .introduction-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
   }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  body .introduction-area div > h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
   body .introduction-area div p {
     text-align: center;
   }
@@ -748,6 +769,7 @@ body .namesake-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .namesake-area div h2 {
     line-height: 6rem;
@@ -756,6 +778,13 @@ body .namesake-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
   }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  body .namesake-area div > h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
   body .namesake-area div p {
     font-size: 3.2rem;
     text-align: center;
@@ -807,6 +836,7 @@ body .potential-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .potential-area div h2 {
     line-height: 6rem;
@@ -815,6 +845,13 @@ body .potential-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
   }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  body .potential-area div > h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
   body .potential-area div p {
     text-align: center;
   }
@@ -861,6 +898,7 @@ body .structure-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .structure-area div h2 {
     line-height: 6rem;
@@ -869,6 +907,13 @@ body .structure-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
   }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  body .structure-area div > h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
   body .structure-area div {
     gap: 3rem;
   }

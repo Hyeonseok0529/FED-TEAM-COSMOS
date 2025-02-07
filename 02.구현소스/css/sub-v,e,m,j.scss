@@ -69,6 +69,13 @@ body {
         margin-bottom: 5.5vh;
       }
     }
+    // 모바일 미디어 쿼리 //
+    @include mobile {
+      h1,
+      h2 {
+        font-size: 40px;
+      }
+    }
   }
 
   main {
@@ -107,8 +114,8 @@ body {
     .spin-box {
       justify-content: center;
       top: -10rem;
-      img{
-        scale:.5;
+      img {
+        scale: 0.5;
       }
     }
     .first-area {
@@ -126,6 +133,19 @@ body {
       }
     }
   }
+        // 모바일 미디어 쿼리 //
+        @include mobile {
+          .first-area {
+            div{
+              h1,h2{
+                font-size: 40px;
+              }
+              p{
+                font-size: 13px;
+              }
+            }
+          }
+        }
 
   @mixin common-box {
     display: flex;
@@ -149,7 +169,6 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   letter-spacing: 1px;
 }
-
 
 .toggle-btn {
   opacity: 0;
@@ -296,9 +315,9 @@ body {
     overflow: hidden;
     border-radius: 10px;
     &:hover {
-    box-shadow: 0 0 30px aqua;
-    translate: -1% -1%;
-    z-index: 9;
+      box-shadow: 0 0 30px aqua;
+      translate: -1% -1%;
+      z-index: 9;
     }
     &:nth-child(2) {
       grid-area: 1 / 2 / 2 / 4;
@@ -388,6 +407,8 @@ body {
     figcaption {
       font-size: 1.7rem;
       color: #fff;
+      margin-left: 5px;
+      margin-right: 5px;
     }
   }
 }
