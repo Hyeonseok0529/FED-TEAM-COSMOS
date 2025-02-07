@@ -695,10 +695,6 @@ img {
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
     background-color: #4583c6;
   }
-  body .main-area .swiper .swiper-button-next,
-  body .main-area .swiper .swiper-button-prev {
-    display: none;
-  }
   body .main-area .modal {
     display: none;
     position: fixed;
@@ -870,17 +866,6 @@ img {
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
     background-color: #4583c6;
-  }
-  body .main-area .swiper .swiper-button-next,
-  body .main-area .swiper .swiper-button-prev {
-    color: white;
-    display: none;
-  }
-  body .main-area .swiper .swiper-button-prev {
-    left: 5%;
-  }
-  body .main-area .swiper .swiper-button-next {
-    right: 5%;
   }
   body .main-area .modal {
     display: none;
@@ -1076,16 +1061,6 @@ img {
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .link-btn a:hover {
     background-color: #4583c6;
-  }
-  body .main-area .swiper .swiper-button-next,
-  body .main-area .swiper .swiper-button-prev {
-    color: white;
-  }
-  body .main-area .swiper .swiper-button-prev {
-    left: 5%;
-  }
-  body .main-area .swiper .swiper-button-next {
-    right: 5%;
   }
   body .main-area .modal {
     display: none;
