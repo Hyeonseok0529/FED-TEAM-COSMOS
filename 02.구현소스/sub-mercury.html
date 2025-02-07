@@ -30,7 +30,7 @@
     <script defer src="./js/inc.js"></script>
 
     <!-- 서브뷰 JS -->
-    <script type="module" src="./js/sub_vue.js"></script>
+    <script type="module" src="./js/sub_vue_typeA.js"></script>
   </head>
   <body class="scbar">
     <div id="planet-app">
@@ -140,19 +140,6 @@
         <h2 class="gallery-tit" id="gallery-area">gellery of mercury</h2>
         <!-- 그리드 레이아웃박스 -->
         <div class="grid"></div>
-        <script>
-          let hCode = "";
-          for (let i = 1; i <= 6; i++) {
-            hCode += `
-              <div>
-                <img src="./images/sub/mercury/${i}.jpg" alt="planet">
-              </div>
-            `;
-          } ///// for //////
-
-          // .grid에 요소출력
-          document.querySelector(".grid").innerHTML = hCode;
-        </script>
       </section>
 
       <section>

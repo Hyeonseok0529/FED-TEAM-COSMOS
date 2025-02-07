@@ -1,4 +1,4 @@
-// 서브페이지 뷰적용 JS - sub_vue.js
+// 서브페이지 뷰적용 JS - sub_vue_typeA.js
 // 컴포넌트 불러오기 //
 
 import { QmenuComp } from './components/qmenu.js';

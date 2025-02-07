@@ -9,6 +9,12 @@
     <!-- 서브 SCSS -->
     <link rel="stylesheet" href="./css/sub-v,e,m,j.css" />
 
+    <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <!-- 뷰JS vuex CDN -->
+    <script src="https://unpkg.com/vuex@3.0.0"></script>
+
     <!-- 제이쿼리 라이브러리 -->
     <script src="./js/jquery-3.7.1.min.js"></script>
 
@@ -22,18 +28,14 @@
 
     <!-- 메인 JS 불러오기 -->
     <script type="module" src="./js/sub-venus.js"></script>
+
+    <!-- 서브뷰 JS -->
+    <script type="module" src="./js/sub_vue_typeB.js"></script>
   </head>
   <body class="scbar">
     <!-- 퀵메뉴바 -->
-    <div class="quick-menu">
-      <ul>
-        <li><a href="#first">Main</a></li>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#namesake">Namesake</a></li>
-        <li><a href="#potential">Potential</a></li>
-        <li><a href="#structure">Structure</a></li>
-        <li><a href="#gallery-area">Gallery</a></li>
-      </ul>
+    <div id="planet-app">
+      <qmenu-comp></qmenu-comp>
     </div>
 
     <!-- 퀵메뉴바 호출버튼 -->

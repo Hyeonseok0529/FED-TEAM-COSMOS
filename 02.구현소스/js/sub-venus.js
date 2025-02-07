@@ -10,6 +10,9 @@ import {startSS, updatePos} from "./smoothScroll23.js";
 import planetData from "./data_sub.json" with{type:'json'};
 console.log(planetData);
 
+export default function initFn(){
+
+
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
 
@@ -17,6 +20,7 @@ console.log(planetData);
 let urlParams = new URLSearchParams(window.location.search);
 let planetKey = urlParams.get("planet") || "VENUS"; // 기본값은 venus
 const selData = planetData [planetKey];
+
 
 //행성 키값 : 페이지 타이틀 //
 document.title = planetKey
@@ -44,11 +48,10 @@ if (selData) {
 
 // 퀵메뉴 a 태그 변수 //
 const quickMenuItems = document.querySelectorAll('.quick-menu a');
-
 quickMenuItems.forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault(); //기본동작 방지 (스크롤이동)
-
+    
     // 모든 메뉴에서 active 클래스 제거
     quickMenuItems.forEach(menu => menu.classList.remove('active'));
 
@@ -72,14 +75,18 @@ quickMenuItems.forEach(item => {
        // 트랜지션을 위해 먼저 클래스를 제거하고, 잠시 후에 다시 추가하여 애니메이션 효과를 주기
        const titleElement = document.querySelector(".desc-tit h1");
        const descElement = document.querySelector(".desc-desc p");
- 
+      //  console.log(sectionId);
        // 현재 활성화된 클래스 제거
        titleElement.classList.remove('show');
        descElement.classList.remove('show');
+       
+       
+       let newSectionId = sectionId.replace('-area','');
+      //  console.log(sectionId);
  
        // 트랜지션 효과를 위해 잠시 대기 후 새로운 내용으로 업데이트
        setTimeout(() => {
-         switch (sectionId) {
+         switch (newSectionId) {
            case 'first':
              titleElement.textContent = selData.name.toUpperCase();
              descElement.textContent = selData.first;
@@ -112,7 +119,8 @@ quickMenuItems.forEach(item => {
   })
 })
 
-
+// 퀵메뉴 기능 함수 export // 
+function quickMenuFn(){
 // gallery 퀵 메뉴 클릭시 해당 섹션으로 이동 // 
 myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
   e.preventDefault(); // 기본 동작 방지
@@ -125,6 +133,8 @@ myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
     scrollTop: $(galleryTitle).offset().top + "px"
   },400)
 }); // click //
+}
+console.log(quickMenuFn());
 
 
 
@@ -160,7 +170,7 @@ $(".gallery img").click(function () {
 
   // 1. 클릭된 박스의 이미지 읽어오기
   let currImg = $(this).attr("src"); /* .find(''); */
-  console.log(currImg);
+  // console.log(currImg);
 
 
 
@@ -170,7 +180,7 @@ $(".gallery img").click(function () {
   
     // 해당 인덱스의 요약제목 가져오기
     let captionText = galleryData[imgIndex] || "No description";
-    console.log(captionText);
+    // console.log(captionText);
 
       // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
   $smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
@@ -221,3 +231,6 @@ $(document).ready(function () {
     }
   });
 });
+
+
+} /////////// initFn ////////////////////////

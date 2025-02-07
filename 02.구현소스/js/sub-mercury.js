@@ -13,7 +13,7 @@ import planetData from "./data_sub.json" with{type:'json'};
 // let planetKey = location.search.split('=')[1];
 let planetKey = "MERCURY";
 const selData = planetData[planetKey];
-console.log(selData);
+// console.log(selData);
 
 // 부드러운 스크롤 함수호출
 startSS();
@@ -58,7 +58,7 @@ $(".gallery img").click(function () {
 
   // 1. 클릭된 박스의 이미지 읽어오기
   let currImg = $(this).attr("src"); /* .find(''); */
-  console.log(currImg);
+  // console.log(currImg);
 
   // 이미지 파일명에서 숫자만 추출
   let imgIndex = parseInt(currImg.match(/\/(\d+)\.jpg$/)[1]) - 1;
@@ -196,7 +196,7 @@ quickMenuItems.forEach((item) => {
     // 해당 id를 가진 요소를 찾음
     // const targetSection = document.getElementById(sectionId);
     const targetSection = $(e.currentTarget).attr("href");
-    console.log(targetSection);
+    // console.log(targetSection);
 
     // 위치값
     let tgPos = $(targetSection).offset().top - winH;
@@ -234,3 +234,5 @@ $(document).ready(function () {
     }
   });
 });
+
+if(window.innerWidth < 1000) setInitialPosition();
