@@ -6,7 +6,7 @@ import { QmenuComp } from './components/qmenu.js';
 
 // 기능 함수 호출 //
 import { quickMenuFn } from "./sub-mercury.js";
-
+// console.log(quickMenuFn);
 
 /******************************* 
     메인 뷰 인스턴스 생성하기 

@@ -181,12 +181,14 @@ function setInitialPosition() {
 window.addEventListener("resize", setInitialPosition);
 window.addEventListener("scroll", moving);
 
+// 퀵메뉴 기능 함수 export // 
+export function quickMenuFn(){
+
 // 퀵 메뉴 a태그 변수
 const quickMenuItems = myFn.qsa(".quick-menu a");
 // console.log(quickMenuItems);
 
 // 각 메뉴 항목에 클릭 이벤트 추가
-export function quickMenuFn(){
 quickMenuItems.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.preventDefault(); // 기본동작 방지 (스크롤 이동 방지)
