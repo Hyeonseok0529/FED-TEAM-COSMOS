@@ -48,6 +48,22 @@ img {
 
 /* 폰트체 */
 @media (min-width: 1150px) {
+  body {
+    cursor: url("../images/cursor/planet-cursor.png") 12 12, auto;
+  }
+  body .cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transform: translate(10px, -50px);
+    transition: all 0.2s linear;
+    z-index: 999999999;
+  }
+  body .cursor img {
+    height: 100%;
+  }
   #header {
     font-family: "Orbitron", serif;
     position: fixed;
@@ -181,6 +197,9 @@ img {
   }
 }
 @media (min-width: 481px) and (max-width: 1149px) {
+  body .cursor {
+    display: none;
+  }
   #header {
     position: fixed;
     width: 100%;
@@ -380,6 +399,9 @@ img {
   }
 }
 @media (max-width: 480px) {
+  body .cursor {
+    display: none;
+  }
   #header {
     position: fixed;
     width: 100%;
