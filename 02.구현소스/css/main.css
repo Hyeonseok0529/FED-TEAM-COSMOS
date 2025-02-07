@@ -970,7 +970,24 @@ img {
     /* 팝업 기본 스타일 */
   }
   body .main-area .swiper .swiper-wrapper .swiper-slide {
-    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 0.3s ease; /* 크기와 opacity 변화 */
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.8;
+  }
+  body .main-area .swiper .swiper-wrapper .swiper-slide.swiper-slide-active {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  body .main-area .swiper .swiper-wrapper .swiper-slide.swiper-slide-active .tbox-top,
+  body .main-area .swiper .swiper-wrapper .swiper-slide.swiper-slide-active .tbox-bottom,
+  body .main-area .swiper .swiper-wrapper .swiper-slide.swiper-slide-active .click-btn-box {
+    display: block;
+  }
+  body .main-area .swiper .swiper-wrapper .swiper-slide .tbox-top,
+  body .main-area .swiper .swiper-wrapper .swiper-slide .tbox-bottom,
+  body .main-area .swiper .swiper-wrapper .swiper-slide .click-btn-box {
+    display: none;
   }
   body .main-area .swiper .swiper-wrapper .main-section {
     height: 100vh;
@@ -1011,12 +1028,6 @@ img {
   body .main-area .swiper .swiper-wrapper .main-section .planet-area img {
     height: 100%;
   }
-  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box {
-    display: block;
-  }
-  body .main-area .swiper .swiper-wrapper .main-section .planet-area:hover .click-btn-box .touch-btn {
-    display: none;
-  }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom {
     z-index: 1;
     position: absolute;
@@ -1035,6 +1046,7 @@ img {
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit {
     font-size: 30px;
+    width: 250px;
   }
   body .main-area .swiper .swiper-wrapper .main-section .tbox-bottom .con-wrap .planet-info .tit span {
     white-space: pre-wrap; /* 공백과 줄바꿈을 그대로 유지 */
