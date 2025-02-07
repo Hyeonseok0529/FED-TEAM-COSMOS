@@ -51,7 +51,11 @@ img {
   body {
     cursor: url("../images/cursor/planet-cursor.png") 12 12, auto;
   }
+<<<<<<< HEAD
   body .cursor {
+=======
+  #cursor .cursor {
+>>>>>>> sub
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +65,11 @@ img {
     transition: all 0.2s linear;
     z-index: 999999999;
   }
+<<<<<<< HEAD
   body .cursor img {
+=======
+  #cursor .cursor img {
+>>>>>>> sub
     height: 100%;
   }
   #header {
@@ -197,7 +205,11 @@ img {
   }
 }
 @media (min-width: 481px) and (max-width: 1149px) {
+<<<<<<< HEAD
   body .cursor {
+=======
+  #cursor .cursor {
+>>>>>>> sub
     display: none;
   }
   #header {
@@ -399,7 +411,11 @@ img {
   }
 }
 @media (max-width: 480px) {
+<<<<<<< HEAD
   body .cursor {
+=======
+  #cursor .cursor {
+>>>>>>> sub
     display: none;
   }
   #header {
