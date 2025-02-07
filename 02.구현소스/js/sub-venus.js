@@ -8,7 +8,7 @@ import {startSS, updatePos} from "./smoothScroll23.js";
 
 
 import planetData from "./data_sub.json" with{type:'json'};
-console.log(planetData);
+// console.log(planetData);
 
 // 행성키 변수 : url?planet=venus
 // let planetKey = location.search.split('=')[1];
@@ -112,7 +112,6 @@ quickMenuItems.forEach(item => {
   })
 })
 
-
 // gallery 퀵 메뉴 클릭시 해당 섹션으로 이동 // 
 myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
   e.preventDefault(); // 기본 동작 방지
@@ -125,7 +124,6 @@ myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
     scrollTop: $(galleryTitle).offset().top + "px"
   },400)
 }); // click //
-
 
 
 // 행성이름으로 grid img 출력 //
@@ -160,7 +158,7 @@ $(".gallery img").click(function () {
 
   // 1. 클릭된 박스의 이미지 읽어오기
   let currImg = $(this).attr("src"); /* .find(''); */
-  console.log(currImg);
+  // console.log(currImg);
 
 
 
@@ -170,7 +168,7 @@ $(".gallery img").click(function () {
   
     // 해당 인덱스의 요약제목 가져오기
     let captionText = galleryData[imgIndex] || "No description";
-    console.log(captionText);
+    // console.log(captionText);
 
       // 2. 읽어온 내용을 서브 컨텐츠 박스에 넣기
   $smenuImgbox.html(`<img src="${currImg}" alt="이미지">`);
