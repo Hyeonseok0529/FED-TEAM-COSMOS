@@ -9,6 +9,12 @@
     <!-- 서브 SCSS -->
     <link rel="stylesheet" href="./css/sub-mercury.css" />
 
+    <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <!-- 뷰JS vuex CDN -->
+    <script src="https://unpkg.com/vuex@3.0.0"></script>
+
     <!-- 제이쿼리 라이브러리 -->
     <script src="./js/jquery-3.7.1.min.js"></script>
 
@@ -22,28 +28,27 @@
 
     <!-- include(header ,footer) -->
     <script defer src="./js/inc.js"></script>
+
+    <!-- 서브뷰 JS -->
+    <script type="module" src="./js/sub_vue.js"></script>
   </head>
   <body class="scbar">
-       <!-- 퀵메뉴바 -->
-       <div class="quick-menu">
-        <ul>
-          <li><a href="#first-area">Main</a></li>
-          <li><a href="#introduction-area">Introduction</a></li>
-          <li><a href="#namesake-area">Namesake</a></li>
-          <li><a href="#potential-area">Potential</a></li>
-          <li><a href="#structure-area">Structure</a></li>
-          <li><a href="#gallery-area">Gallery</a></li>
-        </ul>
-      </div>
-      <!-- 퀵메뉴바 호출버튼 -->
-      <button class="toggle-btn">≪</button>
-  
+    <div id="planet-app">
+      <qmenu-comp></qmenu-comp>
+    </div>
+    <!-- 퀵메뉴바 호출버튼 -->
+    <button class="toggle-btn">≪</button>
+
     <!-- [ 메인영역 ] -->
     <main class="s-main-area">
       <!-- 행성 -->
       <div class="spin-box">
         <span>
-          <img src="./images/sub/mercury/mercury_1.png" alt="moving planet" class="planetImg" />
+          <img
+            src="./images/sub/mercury/mercury_1.png"
+            alt="moving planet"
+            class="planetImg"
+          />
         </span>
       </div>
       <!-- 1. 첫 컨텐츠 영역 -->
@@ -63,7 +68,7 @@
               <span id="typed1" style="white-space: pre"></span>
             </p>
             <p>
-              <span id="typed2" style="white-space: pre" ></span>
+              <span id="typed2" style="white-space: pre"></span>
             </p>
           </div>
         </div>
@@ -74,9 +79,7 @@
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h2>
-                    INTRODUCTION
-            </h2>
+            <h2>INTRODUCTION</h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
@@ -92,9 +95,7 @@
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h2>
-              NAMESAKE
-            </h2>
+            <h2>NAMESAKE</h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
@@ -108,9 +109,7 @@
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h2>
-                POTENTIAL
-            </h2>
+            <h2>POTENTIAL</h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
@@ -126,9 +125,7 @@
         <div class="desc-box">
           <!-- 1-1) 타이틀 -->
           <div class="desc-tit">
-            <h2>
-              STRUCTURE
-            </h2>
+            <h2>STRUCTURE</h2>
           </div>
           <!-- 1-2) 설명 -->
           <div class="desc-desc">
@@ -140,7 +137,7 @@
       </section>
       <!-- 갤러리 영역 -->
       <section class="gallery">
-        <h2 class="gallery-tit"  id="gallery-area" >gellery of mercury</h2>
+        <h2 class="gallery-tit" id="gallery-area">gellery of mercury</h2>
         <!-- 그리드 레이아웃박스 -->
         <div class="grid"></div>
         <script>

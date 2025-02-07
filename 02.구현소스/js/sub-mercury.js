@@ -30,6 +30,18 @@ namesake.textContent = selData.namesake;
 potential.textContent = selData.potential;
 structure.textContent = selData.structure;
 
+// 갤러리 이미지 출력 //
+let hCode = "";
+for (let i = 1; i <= 6; i++) {
+  hCode += `
+    <div>
+      <img src="./images/sub/mercury/${i}.jpg" alt="planet">
+    </div>
+  `;
+} ///// for //////
+// .grid에 요소출력
+document.querySelector(".grid").innerHTML = hCode;
+
 // 갤러리 사진클릭시 원본보기//
 // 이벤트 대상 : .gallery > div
 // 변경대상: .smenu-contbox img
@@ -174,10 +186,11 @@ const quickMenuItems = myFn.qsa(".quick-menu a");
 // console.log(quickMenuItems);
 
 // 각 메뉴 항목에 클릭 이벤트 추가
+export function quickMenuFn(){
 quickMenuItems.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.preventDefault(); // 기본동작 방지 (스크롤 이동 방지)
-
+    
     // 해당 id를 가진 요소를 찾음
     // const targetSection = document.getElementById(sectionId);
     const targetSection = $(e.currentTarget).attr("href");
@@ -205,6 +218,7 @@ quickMenuItems.forEach((item) => {
     // } //// if /////
   }); // addEventListener //
 });
+}
 
 $(document).ready(function () {
   $(".toggle-btn").click(function () {
