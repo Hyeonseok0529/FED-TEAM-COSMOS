@@ -653,6 +653,7 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .first-area div h2, body .namesake-area div h2, body .introduction-area div h2 {
     line-height: 6rem;
@@ -712,6 +713,7 @@ body .introduction-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .introduction-area div h2 {
     line-height: 6rem;
@@ -767,6 +769,7 @@ body .namesake-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .namesake-area div h2 {
     line-height: 6rem;
@@ -833,6 +836,7 @@ body .potential-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .potential-area div h2 {
     line-height: 6rem;
@@ -894,6 +898,7 @@ body .structure-area div p {
     width: 100%;
     align-items: center;
     text-align: left;
+    gap: 10px;
   }
   body .structure-area div h2 {
     line-height: 6rem;
