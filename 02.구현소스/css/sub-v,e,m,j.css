@@ -877,7 +877,6 @@ body .first-area div p {
   margin: 0 auto;
   margin-bottom: 10vh;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: min(1.5vw, 15px) min(1vw, 10px);
 }
 .gallery .grid > div {
   /* 부모자격 */
