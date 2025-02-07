@@ -12,7 +12,7 @@ export function init3D(modelingSrc) {
   // 씬, 카메라, 렌더러 설정
   const scene = new THREE.Scene();
   scene.background = null; // 배경을 투명으로 설정
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // ✅ alpha: true로 투명 배경 활성화
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setSize(container.clientWidth, container.clientHeight);
   container.appendChild(renderer.domElement);
 

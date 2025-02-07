@@ -92,3 +92,13 @@ fetch("./js/data_main.json")
       container.innerHTML = ""; // 모달 닫을 때 3D 씬 초기화
     };
   });
+
+
+  // 커서
+  const cursor = document.querySelector('.cursor');
+  document.addEventListener("mousemove",function(e){
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    cursor.style.left = mouseX + "px";
+    cursor.style.top = mouseY + "px";
+  });
