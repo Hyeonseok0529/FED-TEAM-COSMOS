@@ -15,20 +15,20 @@
   body {
     background: url(../images/sub/background_1.jpg) no-repeat fixed top / cover;
     font-family: $font-set;
-    cursor: url("../images/cursor/planet-cursor.png") 12 12, auto;
-    .cursor {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50px;
-      height: 50px;
-      transform: translate(10px, -50px);
-      transition: all 0.2s linear;
-      z-index: 999999999;
-      img{
-        height: 100%;
-      }
-    }
+    // cursor: url("../images/cursor/planet-cursor.png") 12 12, auto;
+    // .cursor {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 50px;
+    //   height: 50px;
+    //   transform: translate(10px, -50px);
+    //   transition: all 0.2s linear;
+    //   z-index: 999999999;
+    //   img{
+    //     height: 100%;
+    //   }
+    // }
     .main-area {
       position: relative;
       .swiper {
