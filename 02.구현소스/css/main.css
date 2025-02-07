@@ -50,6 +50,9 @@ img {
 @media (min-width: 1150px) {
   body {
     cursor: url("../images/cursor/planet-cursor.png") 12 12, auto;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   #cursor .cursor {
     position: absolute;
