@@ -112,8 +112,10 @@ quickMenuItems.forEach(item => {
   })
 })
 
+// 퀵메뉴 기능 함수 export // 
+export function quickMenuFn(){
 // gallery 퀵 메뉴 클릭시 해당 섹션으로 이동 // 
-myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
+document.querySelector(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
   e.preventDefault(); // 기본 동작 방지
 
   // .gallery-tit 할당
@@ -124,6 +126,7 @@ myFn.qs(".quick-menu a[href='#gallery-area']").addEventListener("click",(e) => {
     scrollTop: $(galleryTitle).offset().top + "px"
   },400)
 }); // click //
+}
 
 
 // 행성이름으로 grid img 출력 //
