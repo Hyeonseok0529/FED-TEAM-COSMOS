@@ -625,7 +625,12 @@ body .spin-box span {
 body .spin-box span img {
   position: fixed;
   transition: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  left: 100%;
+  left: 10%;
+}
+@media (max-width: 500px) {
+  body .first-area div > h2, body .namesake-area div > h2, body .introduction-area div > h2 {
+    font-size: 40px;
+  }
 }
 body main {
   letter-spacing: 2px;
@@ -685,20 +690,10 @@ body .first-area div p, body .namesake-area div p, body .introduction-area div p
   body .first-area div p, body .namesake-area div p, body .introduction-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
-  }
-}
-@media (max-width: 1000px) and (max-width: 500px) {
-  body .first-area .first-area div > h2, body .namesake-area .first-area div > h2, body .first-area .namesake-area div > h2, body .namesake-area .namesake-area div > h2, body .introduction-area .first-area div > h2, body .introduction-area .namesake-area div > h2, body .first-area .introduction-area div > h2, body .namesake-area .introduction-area div > h2, body .introduction-area .introduction-area div > h2 {
-    font-size: 40px;
-  }
-  body .first-area .first-area p, body .namesake-area .first-area p, body .first-area .namesake-area p, body .namesake-area .namesake-area p, body .introduction-area .first-area p, body .introduction-area .namesake-area p, body .first-area .introduction-area p, body .namesake-area .introduction-area p, body .introduction-area .introduction-area p {
-    font-size: 13px;
     text-align: justify;
     word-break: break-all;
     line-height: 1.5;
   }
-}
-@media (max-width: 1000px) {
   body .first-area div, body .namesake-area div, body .introduction-area div {
     height: 15rem;
   }
@@ -751,20 +746,10 @@ body .introduction-area div p {
   body .introduction-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
-  }
-}
-@media (max-width: 1000px) and (max-width: 500px) {
-  body .introduction-area .first-area div > h2, body .introduction-area .namesake-area div > h2, body .introduction-area .introduction-area div > h2 {
-    font-size: 40px;
-  }
-  body .introduction-area .first-area p, body .introduction-area .namesake-area p, body .introduction-area .introduction-area p {
-    font-size: 13px;
     text-align: justify;
     word-break: break-all;
     line-height: 1.5;
   }
-}
-@media (max-width: 1000px) {
   body .introduction-area div p {
     text-align: center;
   }
@@ -813,20 +798,10 @@ body .namesake-area div p {
   body .namesake-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
-  }
-}
-@media (max-width: 1000px) and (max-width: 500px) {
-  body .namesake-area .first-area div > h2, body .namesake-area .introduction-area div > h2, body .namesake-area .namesake-area div > h2 {
-    font-size: 40px;
-  }
-  body .namesake-area .first-area p, body .namesake-area .introduction-area p, body .namesake-area .namesake-area p {
-    font-size: 13px;
     text-align: justify;
     word-break: break-all;
     line-height: 1.5;
   }
-}
-@media (max-width: 1000px) {
   body .namesake-area div p {
     font-size: 3.2rem;
     text-align: center;
@@ -837,7 +812,7 @@ body .potential-area {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 6vw;
+  margin-left: 160px;
   color: #fff;
   height: 50vh;
   margin-top: 50rem;
@@ -886,20 +861,10 @@ body .potential-area div p {
   body .potential-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
-  }
-}
-@media (max-width: 1000px) and (max-width: 500px) {
-  body .potential-area .first-area div > h2, body .potential-area .introduction-area div > h2, body .potential-area .namesake-area div > h2 {
-    font-size: 40px;
-  }
-  body .potential-area .first-area p, body .potential-area .introduction-area p, body .potential-area .namesake-area p {
-    font-size: 13px;
     text-align: justify;
     word-break: break-all;
     line-height: 1.5;
   }
-}
-@media (max-width: 1000px) {
   body .potential-area div p {
     text-align: center;
   }
@@ -908,7 +873,7 @@ body .structure-area {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 6vw;
+  margin-left: 160px;
   color: #fff;
   height: 50vh;
   margin-bottom: 50rem;
@@ -954,20 +919,10 @@ body .structure-area div p {
   body .structure-area div p {
     width: 80%;
     font-size: min(14px, 2.7vw);
-  }
-}
-@media (max-width: 1000px) and (max-width: 500px) {
-  body .structure-area .first-area div > h2, body .structure-area .introduction-area div > h2, body .structure-area .namesake-area div > h2 {
-    font-size: 40px;
-  }
-  body .structure-area .first-area p, body .structure-area .introduction-area p, body .structure-area .namesake-area p {
-    font-size: 13px;
     text-align: justify;
     word-break: break-all;
     line-height: 1.5;
   }
-}
-@media (max-width: 1000px) {
   body .structure-area div {
     gap: 3rem;
   }
@@ -1012,7 +967,6 @@ body .gallery .grid {
   margin: 0 auto;
   margin-bottom: 10vh;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: min(1.5vw, 15px) min(1vw, 10px);
 }
 body .gallery .grid > div {
   /* 부모자격 */
@@ -1120,7 +1074,7 @@ body .planet-area {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 6vw;
+  margin-left: 160px;
   color: #fff;
   margin-left: 0;
 }

@@ -132,8 +132,9 @@ setTyped(
 // 1. 대상선정 :
 // (1) 이벤트 대상 : #typed5 , .gallery
 const move = myFn.qsa(".move");
-// (2) 변경대상 : .spin-box
+// (2) 변경대상 : .planetImg
 const movePlanet = myFn.qs(".planetImg");
+const quickMenu = myFn.qs(".quick-menu");
 // console.log("변경대상",movePlanet);
 
 // 이벤트 대상 위치값 담기
@@ -159,8 +160,11 @@ function moving() {
   // console.log("스크롤 위치값:",scY,movePlanet);
 
   if (scY > moveEl[2]) movePlanet.style.left = "37%";
-  else if (scY < moveEl[1]) movePlanet.style.left = "10%";
-  else if (scY > moveEl[0]) movePlanet.style.left = "60%";
+  else if (scY < moveEl[1]) 
+    movePlanet.style.left = "10%";
+  else if (scY > moveEl[0]) 
+    movePlanet.style.left = "60%";
+    
 } ///// showEl함수 /////
 
 // 행성중앙 보정함수
@@ -222,6 +226,7 @@ quickMenuItems.forEach((item) => {
 });
 }
 
+// 퀵메뉴 버튼 클래스 active 반영하여 변경 //
 $(document).ready(function () {
   $(".toggle-btn").click(function () {
     $(".quick-menu").toggleClass("active");
