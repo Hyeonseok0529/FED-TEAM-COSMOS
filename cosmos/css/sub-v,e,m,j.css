@@ -55,6 +55,7 @@ img {
             user-select: none;
   }
   #cursor .cursor {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
